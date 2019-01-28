@@ -1,5 +1,5 @@
 module.exports = (options) => {
-  const { threshold } = options;
+  const { threshold, verbose } = options;
 
   const analyse = (report) => {
     let passCount = 0;
@@ -11,6 +11,10 @@ module.exports = (options) => {
           totalCount ++;
           if (scenario.result == 'passed') {
             passCount ++;
+          }
+
+          if (verbose) {
+            console.log(scenario.name + ' | ' + scenario.result + ' -> ' + passCount + ' / ' + totalCount + ' | ' + passCount/totalCount);
           }
         })
       });

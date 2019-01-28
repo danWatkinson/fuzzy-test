@@ -9,6 +9,7 @@ program
   .version('0.1.0')
   .option('-t, --threshold <float>', 'set threshold')
   .option('-r, --reportDirectory <path>', 'set source directory')
+  .option('-v, --verbose', 'show scenarios and results during processing')
   .parse(process.argv);
 
 const report = combinedReport(program);
