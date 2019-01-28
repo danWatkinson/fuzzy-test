@@ -1,0 +1,40 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 7,
+        "name": "Open website",
+        "description": "",
+        "id": "web;open-website",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 110229052,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "a step that passes",
+            "match": {
+              "location": "StepDefs.a_step_that_passes()"
+            },
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 6,
+            "name": "@wip"
+          }
+        ]
+      }
+    ],
+    "name": "Web",
+    "description": "In order to ...\nAs a ...\nI want to ...",
+    "id": "web",
+    "keyword": "Feature",
+    "uri": "features/OneScenario.OneStep.Passing.feature"
+  }
+]

@@ -1,0 +1,67 @@
+[
+  {
+    "line": 3,
+    "elements": [
+      {
+        "line": 13,
+        "name": "Users can perform a search",
+        "description": "",
+        "id": "google-search;users-can-perform-a-search",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5469,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I search for \"magentys\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "magentys",
+                  "offset": 14
+                }
+              ],
+              "location": "HomeStepDef.I_search_for_term(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4770,
+              "status": "failed"
+            },
+            "line": 15,
+            "name": "I should see the results page",
+            "match": {
+              "location": "ResultsStepDef.I_should_see_the_results_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4996,
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "I should see only relevant results",
+            "match": {
+              "location": "ResultsStepDef.I_should_see_only_relevant_results()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@google"
+          },
+          {
+            "name": "@complete"
+          }
+        ]
+      }
+    ]
+  }
+]

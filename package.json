@@ -1,0 +1,30 @@
+{
+  "name": "fuzzy-test",
+  "version": "1.0.0",
+  "description": "Reads cucumber json output and a config file. Passes or fails the cucumber json based on configured thresholds.",
+  "bin": {
+    "fuzzy-test": "src/cli.js"
+  },
+  "main": "./src/cli.js",
+  "scripts": {
+    "test": "mocha \"src/**/*.test.js\""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@sinonjs/referee-sinon": "^5.0.0",
+    "chai": "^4.2.0",
+    "chai-arrays": "^2.0.0",
+    "jest": "^23.6.0",
+    "jsverify": "^0.8.4",
+    "knuth-shuffle": "^1.0.8",
+    "mocha": "^5.2.0",
+    "mock-fs": "^4.7.0",
+    "proxyquire": "^2.1.0",
+    "sinon": "^7.2.3",
+    "sinon-chai": "^3.3.0"
+  },
+  "dependencies": {
+    "commander": "^2.19.0"
+  }
+}

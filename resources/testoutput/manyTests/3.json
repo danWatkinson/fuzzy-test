@@ -1,0 +1,1013 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 7,
+        "name": "On page with inputs",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2887554763,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I have navigated to the local page \"/input.html\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/input.html",
+                  "offset": 36
+                }
+              ],
+              "location": "TableStepDef.i_have_navigated_to_the_local_page(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 11,
+        "name": "Delete the text from an input",
+        "description": "",
+        "id": "input-actions;delete-the-text-from-an-input",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "com.google.inject.ProvisionException: Unable to provision, see the following errors:\n\n1) Error in custom provider, com.google.inject.OutOfScopeException: Cannot access Key[type\u003dcom.acme.samples.local.context.LocalContext, annotation\u003d[none]] outside of a scoping block\n  at com.acme.guice.AcmeModule.configure(AcmeModule.java:20)\n  while locating com.acme.samples.local.context.LocalContext\n    for parameter 1 at com.acme.samples.local.stepdef.InputStepDef.\u003cinit\u003e(InputStepDef.java:27)\n  at com.acme.samples.local.stepdef.InputStepDef.class(InputStepDef.java:27)\n  while locating com.acme.samples.local.stepdef.InputStepDef\n\n1 error\n\tat com.google.inject.internal.InjectorImpl$2.get(InjectorImpl.java:1025)\n\tat com.google.inject.internal.InjectorImpl.getInstance(InjectorImpl.java:1051)\n\tat cucumber.runtime.java.guice.impl.GuiceFactory.getInstance(GuiceFactory.java:42)\n\tat cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:57)\n\tat cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:50)\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:63)\n\tat cucumber.runner.TestStep.run(TestStep.java:49)\n\tat cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:43)\n\tat cucumber.runner.TestCase.run(TestCase.java:44)\n\tat cucumber.runner.Runner.runPickle(Runner.java:40)\n\tat cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:67)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:22)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:72)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:122)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:64)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:131)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)\n\tat ✽.I choose to delete the text from \"withContent\"(features/samples/local/input.feature:12)\nCaused by: com.google.inject.OutOfScopeException: Cannot access Key[type\u003dcom.acme.samples.local.context.LocalContext, annotation\u003d[none]] outside of a scoping block\n\tat cucumber.runtime.java.guice.impl.SequentialScenarioScope$1.get(SequentialScenarioScope.java:34)\n\tat com.google.inject.internal.InternalFactoryToProviderAdapter.get(InternalFactoryToProviderAdapter.java:41)\n\tat com.google.inject.internal.SingleParameterInjector.inject(SingleParameterInjector.java:38)\n\tat com.google.inject.internal.SingleParameterInjector.getAll(SingleParameterInjector.java:62)\n\tat com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:104)\n\tat com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:85)\n\tat com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:267)\n\tat com.google.inject.internal.ProviderToInternalFactoryAdapter$1.call(ProviderToInternalFactoryAdapter.java:46)\n\tat com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1103)\n\tat com.google.inject.internal.ProviderToInternalFactoryAdapter.get(ProviderToInternalFactoryAdapter.java:40)\n\tat cucumber.runtime.java.guice.impl.SequentialScenarioScope$1.get(SequentialScenarioScope.java:40)\n\tat com.google.inject.internal.InternalFactoryToProviderAdapter.get(InternalFactoryToProviderAdapter.java:41)\n\tat com.google.inject.internal.InjectorImpl$2$1.call(InjectorImpl.java:1016)\n\tat com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1092)\n\tat com.google.inject.internal.InjectorImpl$2.get(InjectorImpl.java:1012)\n\tat com.google.inject.internal.InjectorImpl.getInstance(InjectorImpl.java:1051)\n\tat cucumber.runtime.java.guice.impl.GuiceFactory.getInstance(GuiceFactory.java:42)\n\tat cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:57)\n\tat cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:50)\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:63)\n\tat cucumber.runner.TestStep.run(TestStep.java:49)\n\tat cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:43)\n\tat cucumber.runner.TestCase.run(TestCase.java:44)\n\tat cucumber.runner.Runner.runPickle(Runner.java:40)\n\tat cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:67)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:22)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:72)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:122)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:64)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:131)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)\n",
+              "duration": 19439418,
+              "status": "failed"
+            },
+            "line": 12,
+            "name": "I choose to delete the text from \"withContent\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "withContent",
+                  "offset": 34
+                }
+              ],
+              "location": "InputStepDef.i_choose_to_delete_the_text_from(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 9388,
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "\"withContent\" shall contain \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "withContent",
+                  "offset": 1
+                },
+                {
+                  "val": "",
+                  "offset": 29
+                }
+              ],
+              "location": "InputStepDef.shall_contain(String,String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@local"
+          },
+          {
+            "name": "@complete"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "On page with inputs",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 163031245,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I have navigated to the local page \"/input.html\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/input.html",
+                  "offset": 36
+                }
+              ],
+              "location": "TableStepDef.i_have_navigated_to_the_local_page(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 16,
+        "name": "Clear the text from an input",
+        "description": "",
+        "id": "input-actions;clear-the-text-from-an-input",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "com.google.inject.ProvisionException: Unable to provision, see the following errors:\n\n1) Error in custom provider, com.google.inject.OutOfScopeException: Cannot access Key[type\u003dcom.acme.samples.local.context.LocalContext, annotation\u003d[none]] outside of a scoping block\n  at com.acme.guice.AcmeModule.configure(AcmeModule.java:20)\n  while locating com.acme.samples.local.context.LocalContext\n    for parameter 1 at com.acme.samples.local.stepdef.InputStepDef.\u003cinit\u003e(InputStepDef.java:27)\n  at com.acme.samples.local.stepdef.InputStepDef.class(InputStepDef.java:27)\n  while locating com.acme.samples.local.stepdef.InputStepDef\n\n1 error\n\tat com.google.inject.internal.InjectorImpl$2.get(InjectorImpl.java:1025)\n\tat com.google.inject.internal.InjectorImpl.getInstance(InjectorImpl.java:1051)\n\tat cucumber.runtime.java.guice.impl.GuiceFactory.getInstance(GuiceFactory.java:42)\n\tat cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:57)\n\tat cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:50)\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:63)\n\tat cucumber.runner.TestStep.run(TestStep.java:49)\n\tat cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:43)\n\tat cucumber.runner.TestCase.run(TestCase.java:44)\n\tat cucumber.runner.Runner.runPickle(Runner.java:40)\n\tat cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:67)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:22)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:72)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:122)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:64)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:131)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)\n\tat ✽.I choose to clear the text from \"withContent\"(features/samples/local/input.feature:17)\nCaused by: com.google.inject.OutOfScopeException: Cannot access Key[type\u003dcom.acme.samples.local.context.LocalContext, annotation\u003d[none]] outside of a scoping block\n\tat cucumber.runtime.java.guice.impl.SequentialScenarioScope$1.get(SequentialScenarioScope.java:34)\n\tat com.google.inject.internal.InternalFactoryToProviderAdapter.get(InternalFactoryToProviderAdapter.java:41)\n\tat com.google.inject.internal.SingleParameterInjector.inject(SingleParameterInjector.java:38)\n\tat com.google.inject.internal.SingleParameterInjector.getAll(SingleParameterInjector.java:62)\n\tat com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:104)\n\tat com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:85)\n\tat com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:267)\n\tat com.google.inject.internal.ProviderToInternalFactoryAdapter$1.call(ProviderToInternalFactoryAdapter.java:46)\n\tat com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1103)\n\tat com.google.inject.internal.ProviderToInternalFactoryAdapter.get(ProviderToInternalFactoryAdapter.java:40)\n\tat cucumber.runtime.java.guice.impl.SequentialScenarioScope$1.get(SequentialScenarioScope.java:40)\n\tat com.google.inject.internal.InternalFactoryToProviderAdapter.get(InternalFactoryToProviderAdapter.java:41)\n\tat com.google.inject.internal.InjectorImpl$2$1.call(InjectorImpl.java:1016)\n\tat com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1092)\n\tat com.google.inject.internal.InjectorImpl$2.get(InjectorImpl.java:1012)\n\tat com.google.inject.internal.InjectorImpl.getInstance(InjectorImpl.java:1051)\n\tat cucumber.runtime.java.guice.impl.GuiceFactory.getInstance(GuiceFactory.java:42)\n\tat cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:57)\n\tat cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:50)\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:63)\n\tat cucumber.runner.TestStep.run(TestStep.java:49)\n\tat cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:43)\n\tat cucumber.runner.TestCase.run(TestCase.java:44)\n\tat cucumber.runner.Runner.runPickle(Runner.java:40)\n\tat cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:67)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:22)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:72)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:122)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:64)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:131)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)\n",
+              "duration": 11197809,
+              "status": "failed"
+            },
+            "line": 17,
+            "name": "I choose to clear the text from \"withContent\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "withContent",
+                  "offset": 33
+                }
+              ],
+              "location": "InputStepDef.i_choose_to_clear_the_text_from(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5845,
+              "status": "skipped"
+            },
+            "line": 18,
+            "name": "\"withContent\" shall contain \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "withContent",
+                  "offset": 1
+                },
+                {
+                  "val": "",
+                  "offset": 29
+                }
+              ],
+              "location": "InputStepDef.shall_contain(String,String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@local"
+          },
+          {
+            "name": "@complete"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "On page with inputs",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 119649609,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I have navigated to the local page \"/input.html\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/input.html",
+                  "offset": 36
+                }
+              ],
+              "location": "TableStepDef.i_have_navigated_to_the_local_page(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 21,
+        "name": "Type text into input, clearing the input first",
+        "description": "",
+        "id": "input-actions;type-text-into-input--clearing-the-input-first",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "cucumber.runtime.CucumberException: Could not convert arguments for step [^I choose to type \"(.*?)\" from \"(.*?)\"$] defined at \u0027com.acme.samples.local.stepdef.InputStepDef.i_choose_to_type_from(String\u003e,String) in file:/Users/dan/work/MagenTys/ee/cinnamon/acceptance-test/target/test-classes/\u0027.\nThe details are in the stacktrace below.\n\tat cucumber.runner.PickleStepDefinitionMatch.couldNotConvertArguments(PickleStepDefinitionMatch.java:69)\n\tat cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:46)\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:63)\n\tat cucumber.runner.TestStep.run(TestStep.java:49)\n\tat cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:43)\n\tat cucumber.runner.TestCase.run(TestCase.java:44)\n\tat cucumber.runner.Runner.runPickle(Runner.java:40)\n\tat cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:67)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:22)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:72)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:122)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:64)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:131)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)\nCaused by: io.cucumber.cucumberexpressions.CucumberExpressionException: ParameterType {anonymous} failed to transform [This is my new content] to java.util.List\u003cjava.lang.String\u003e\n\tat io.cucumber.cucumberexpressions.ParameterType.transform(ParameterType.java:190)\n\tat io.cucumber.cucumberexpressions.Argument.getValue(Argument.java:64)\n\tat io.cucumber.stepexpression.ExpressionArgument.getValue(ExpressionArgument.java:15)\n\tat cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:41)\n\t... 30 more\nCaused by: java.lang.IllegalArgumentException: Can\u0027t transform \u0027This is my new content\u0027 to java.util.List\u003cjava.lang.String\u003e\nBuiltInParameterTransformer only supports a limited number of class types\nConsider using a different object mapper or register a parameter type for java.util.List\u003cjava.lang.String\u003e\n\tat io.cucumber.cucumberexpressions.BuiltInParameterTransformer.createIllegalArgumentException(BuiltInParameterTransformer.java:84)\n\tat io.cucumber.cucumberexpressions.BuiltInParameterTransformer.transform(BuiltInParameterTransformer.java:23)\n\tat io.cucumber.cucumberexpressions.ObjectMapperTransformer.transform(ObjectMapperTransformer.java:18)\n\tat io.cucumber.cucumberexpressions.ParameterType$TransformerAdaptor.transform(ParameterType.java:215)\n\tat io.cucumber.cucumberexpressions.ParameterType.transform(ParameterType.java:186)\n\t... 33 more\n",
+              "duration": 271754,
+              "status": "failed"
+            },
+            "line": 22,
+            "name": "I choose to type \"This is my new content\" from \"withContent\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "This is my new content",
+                  "offset": 18
+                },
+                {
+                  "val": "withContent",
+                  "offset": 48
+                }
+              ],
+              "location": "InputStepDef.i_choose_to_type_from(String\u003e,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5213,
+              "status": "skipped"
+            },
+            "line": 23,
+            "name": "\"withContent\" shall contain \"This is my new content\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "withContent",
+                  "offset": 1
+                },
+                {
+                  "val": "This is my new content",
+                  "offset": 29
+                }
+              ],
+              "location": "InputStepDef.shall_contain(String,String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@local"
+          },
+          {
+            "name": "@complete"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "On page with inputs",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 123956378,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I have navigated to the local page \"/input.html\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/input.html",
+                  "offset": 36
+                }
+              ],
+              "location": "TableStepDef.i_have_navigated_to_the_local_page(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 26,
+        "name": "Type text into input, with a delay",
+        "description": "",
+        "id": "input-actions;type-text-into-input--with-a-delay",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "com.google.inject.ProvisionException: Unable to provision, see the following errors:\n\n1) Error in custom provider, com.google.inject.OutOfScopeException: Cannot access Key[type\u003dcom.acme.samples.local.context.LocalContext, annotation\u003d[none]] outside of a scoping block\n  at com.acme.guice.AcmeModule.configure(AcmeModule.java:20)\n  while locating com.acme.samples.local.context.LocalContext\n    for parameter 1 at com.acme.samples.local.stepdef.InputStepDef.\u003cinit\u003e(InputStepDef.java:27)\n  at com.acme.samples.local.stepdef.InputStepDef.class(InputStepDef.java:27)\n  while locating com.acme.samples.local.stepdef.InputStepDef\n\n1 error\n\tat com.google.inject.internal.InjectorImpl$2.get(InjectorImpl.java:1025)\n\tat com.google.inject.internal.InjectorImpl.getInstance(InjectorImpl.java:1051)\n\tat cucumber.runtime.java.guice.impl.GuiceFactory.getInstance(GuiceFactory.java:42)\n\tat cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:57)\n\tat cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:50)\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:63)\n\tat cucumber.runner.TestStep.run(TestStep.java:49)\n\tat cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:43)\n\tat cucumber.runner.TestCase.run(TestCase.java:44)\n\tat cucumber.runner.Runner.runPickle(Runner.java:40)\n\tat cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:67)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:22)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:72)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:122)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:64)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:131)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)\n\tat ✽.I choose to type \"This is my new content\" from \"withContent\" with keystroke delay 50 milliseconds(features/samples/local/input.feature:27)\nCaused by: com.google.inject.OutOfScopeException: Cannot access Key[type\u003dcom.acme.samples.local.context.LocalContext, annotation\u003d[none]] outside of a scoping block\n\tat cucumber.runtime.java.guice.impl.SequentialScenarioScope$1.get(SequentialScenarioScope.java:34)\n\tat com.google.inject.internal.InternalFactoryToProviderAdapter.get(InternalFactoryToProviderAdapter.java:41)\n\tat com.google.inject.internal.SingleParameterInjector.inject(SingleParameterInjector.java:38)\n\tat com.google.inject.internal.SingleParameterInjector.getAll(SingleParameterInjector.java:62)\n\tat com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:104)\n\tat com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:85)\n\tat com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:267)\n\tat com.google.inject.internal.ProviderToInternalFactoryAdapter$1.call(ProviderToInternalFactoryAdapter.java:46)\n\tat com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1103)\n\tat com.google.inject.internal.ProviderToInternalFactoryAdapter.get(ProviderToInternalFactoryAdapter.java:40)\n\tat cucumber.runtime.java.guice.impl.SequentialScenarioScope$1.get(SequentialScenarioScope.java:40)\n\tat com.google.inject.internal.InternalFactoryToProviderAdapter.get(InternalFactoryToProviderAdapter.java:41)\n\tat com.google.inject.internal.InjectorImpl$2$1.call(InjectorImpl.java:1016)\n\tat com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1092)\n\tat com.google.inject.internal.InjectorImpl$2.get(InjectorImpl.java:1012)\n\tat com.google.inject.internal.InjectorImpl.getInstance(InjectorImpl.java:1051)\n\tat cucumber.runtime.java.guice.impl.GuiceFactory.getInstance(GuiceFactory.java:42)\n\tat cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:57)\n\tat cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:50)\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:63)\n\tat cucumber.runner.TestStep.run(TestStep.java:49)\n\tat cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:43)\n\tat cucumber.runner.TestCase.run(TestCase.java:44)\n\tat cucumber.runner.Runner.runPickle(Runner.java:40)\n\tat cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:67)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:22)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:72)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:122)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:64)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:131)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)\n",
+              "duration": 8829869,
+              "status": "failed"
+            },
+            "line": 27,
+            "name": "I choose to type \"This is my new content\" from \"withContent\" with keystroke delay 50 milliseconds",
+            "match": {
+              "arguments": [
+                {
+                  "val": "This is my new content",
+                  "offset": 18
+                },
+                {
+                  "val": "withContent",
+                  "offset": 48
+                },
+                {
+                  "val": "50",
+                  "offset": 82
+                }
+              ],
+              "location": "InputStepDef.i_choose_to_type_from_with_keystroke_delay_milliseconds(String,String,int)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5935,
+              "status": "skipped"
+            },
+            "line": 28,
+            "name": "\"withContent\" shall contain \"This is my new content\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "withContent",
+                  "offset": 1
+                },
+                {
+                  "val": "This is my new content",
+                  "offset": 29
+                }
+              ],
+              "location": "InputStepDef.shall_contain(String,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3869,
+              "status": "skipped"
+            },
+            "line": 29,
+            "name": "it shall take over 1 seconds",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 19
+                }
+              ],
+              "location": "InputStepDef.it_shall_take_over_seconds(int)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@local"
+          },
+          {
+            "name": "@complete"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "On page with inputs",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 105487005,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I have navigated to the local page \"/input.html\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/input.html",
+                  "offset": 36
+                }
+              ],
+              "location": "TableStepDef.i_have_navigated_to_the_local_page(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 32,
+        "name": "Type text into input, using Selenium Keys enum",
+        "description": "",
+        "id": "input-actions;type-text-into-input--using-selenium-keys-enum",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "cucumber.runtime.CucumberException: Could not convert arguments for step [^I choose to type \"(.*?)\" from \"(.*?)\"$] defined at \u0027com.acme.samples.local.stepdef.InputStepDef.i_choose_to_type_from(String\u003e,String) in file:/Users/dan/work/MagenTys/ee/cinnamon/acceptance-test/target/test-classes/\u0027.\nThe details are in the stacktrace below.\n\tat cucumber.runner.PickleStepDefinitionMatch.couldNotConvertArguments(PickleStepDefinitionMatch.java:69)\n\tat cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:46)\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:63)\n\tat cucumber.runner.TestStep.run(TestStep.java:49)\n\tat cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:43)\n\tat cucumber.runner.TestCase.run(TestCase.java:44)\n\tat cucumber.runner.Runner.runPickle(Runner.java:40)\n\tat cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:67)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:22)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:72)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:122)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:64)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:131)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)\nCaused by: io.cucumber.cucumberexpressions.CucumberExpressionException: ParameterType {anonymous} failed to transform [This is my con, BACK_SPACE, BACK_SPACE, BACK_SPACE,new content] to java.util.List\u003cjava.lang.String\u003e\n\tat io.cucumber.cucumberexpressions.ParameterType.transform(ParameterType.java:190)\n\tat io.cucumber.cucumberexpressions.Argument.getValue(Argument.java:64)\n\tat io.cucumber.stepexpression.ExpressionArgument.getValue(ExpressionArgument.java:15)\n\tat cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:41)\n\t... 30 more\nCaused by: java.lang.IllegalArgumentException: Can\u0027t transform \u0027This is my con, BACK_SPACE, BACK_SPACE, BACK_SPACE,new content\u0027 to java.util.List\u003cjava.lang.String\u003e\nBuiltInParameterTransformer only supports a limited number of class types\nConsider using a different object mapper or register a parameter type for java.util.List\u003cjava.lang.String\u003e\n\tat io.cucumber.cucumberexpressions.BuiltInParameterTransformer.createIllegalArgumentException(BuiltInParameterTransformer.java:84)\n\tat io.cucumber.cucumberexpressions.BuiltInParameterTransformer.transform(BuiltInParameterTransformer.java:23)\n\tat io.cucumber.cucumberexpressions.ObjectMapperTransformer.transform(ObjectMapperTransformer.java:18)\n\tat io.cucumber.cucumberexpressions.ParameterType$TransformerAdaptor.transform(ParameterType.java:215)\n\tat io.cucumber.cucumberexpressions.ParameterType.transform(ParameterType.java:186)\n\t... 33 more\n",
+              "duration": 114060,
+              "status": "failed"
+            },
+            "line": 33,
+            "name": "I choose to type \"This is my con, BACK_SPACE, BACK_SPACE, BACK_SPACE,new content\" from \"withContent\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "This is my con, BACK_SPACE, BACK_SPACE, BACK_SPACE,new content",
+                  "offset": 18
+                },
+                {
+                  "val": "withContent",
+                  "offset": 88
+                }
+              ],
+              "location": "InputStepDef.i_choose_to_type_from(String\u003e,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5780,
+              "status": "skipped"
+            },
+            "line": 34,
+            "name": "\"withContent\" shall contain \"This is my new content\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "withContent",
+                  "offset": 1
+                },
+                {
+                  "val": "This is my new content",
+                  "offset": 29
+                }
+              ],
+              "location": "InputStepDef.shall_contain(String,String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@local"
+          },
+          {
+            "name": "@complete"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "On page with inputs",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 110501420,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I have navigated to the local page \"/input.html\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/input.html",
+                  "offset": 36
+                }
+              ],
+              "location": "TableStepDef.i_have_navigated_to_the_local_page(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 37,
+        "name": "Type special characters into input using Selenium Keys enum",
+        "description": "",
+        "id": "input-actions;type-special-characters-into-input-using-selenium-keys-enum",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "cucumber.runtime.CucumberException: Could not convert arguments for step [^I choose to send keys \"(.*?)\" into \"(.*?)\"$] defined at \u0027com.acme.samples.local.stepdef.InputStepDef.i_choose_to_send_keys_into(String\u003e,String) in file:/Users/dan/work/MagenTys/ee/cinnamon/acceptance-test/target/test-classes/\u0027.\nThe details are in the stacktrace below.\n\tat cucumber.runner.PickleStepDefinitionMatch.couldNotConvertArguments(PickleStepDefinitionMatch.java:69)\n\tat cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:46)\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:63)\n\tat cucumber.runner.TestStep.run(TestStep.java:49)\n\tat cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:43)\n\tat cucumber.runner.TestCase.run(TestCase.java:44)\n\tat cucumber.runner.Runner.runPickle(Runner.java:40)\n\tat cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:67)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:22)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:72)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:122)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:64)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:131)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)\nCaused by: io.cucumber.cucumberexpressions.CucumberExpressionException: ParameterType {anonymous} failed to transform [BACK_SPACE,MULTIPLY] to java.util.List\u003cjava.lang.String\u003e\n\tat io.cucumber.cucumberexpressions.ParameterType.transform(ParameterType.java:190)\n\tat io.cucumber.cucumberexpressions.Argument.getValue(Argument.java:64)\n\tat io.cucumber.stepexpression.ExpressionArgument.getValue(ExpressionArgument.java:15)\n\tat cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:41)\n\t... 30 more\nCaused by: java.lang.IllegalArgumentException: Can\u0027t transform \u0027BACK_SPACE,MULTIPLY\u0027 to java.util.List\u003cjava.lang.String\u003e\nBuiltInParameterTransformer only supports a limited number of class types\nConsider using a different object mapper or register a parameter type for java.util.List\u003cjava.lang.String\u003e\n\tat io.cucumber.cucumberexpressions.BuiltInParameterTransformer.createIllegalArgumentException(BuiltInParameterTransformer.java:84)\n\tat io.cucumber.cucumberexpressions.BuiltInParameterTransformer.transform(BuiltInParameterTransformer.java:23)\n\tat io.cucumber.cucumberexpressions.ObjectMapperTransformer.transform(ObjectMapperTransformer.java:18)\n\tat io.cucumber.cucumberexpressions.ParameterType$TransformerAdaptor.transform(ParameterType.java:215)\n\tat io.cucumber.cucumberexpressions.ParameterType.transform(ParameterType.java:186)\n\t... 33 more\n",
+              "duration": 145649,
+              "status": "failed"
+            },
+            "line": 38,
+            "name": "I choose to send keys \"BACK_SPACE,MULTIPLY\" into \"withContent\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "BACK_SPACE,MULTIPLY",
+                  "offset": 23
+                },
+                {
+                  "val": "withContent",
+                  "offset": 50
+                }
+              ],
+              "location": "InputStepDef.i_choose_to_send_keys_into(String\u003e,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4120,
+              "status": "skipped"
+            },
+            "line": 39,
+            "name": "\"withContent\" shall contain \"I contain conten*\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "withContent",
+                  "offset": 1
+                },
+                {
+                  "val": "I contain conten*",
+                  "offset": 29
+                }
+              ],
+              "location": "InputStepDef.shall_contain(String,String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@local"
+          },
+          {
+            "name": "@complete"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "On page with inputs",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 111553311,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I have navigated to the local page \"/input.html\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/input.html",
+                  "offset": 36
+                }
+              ],
+              "location": "TableStepDef.i_have_navigated_to_the_local_page(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 42,
+        "name": "Double click on an element",
+        "description": "",
+        "id": "input-actions;double-click-on-an-element",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "com.google.inject.ProvisionException: Unable to provision, see the following errors:\n\n1) Error in custom provider, com.google.inject.OutOfScopeException: Cannot access Key[type\u003dcom.acme.samples.local.context.LocalContext, annotation\u003d[none]] outside of a scoping block\n  at com.acme.guice.AcmeModule.configure(AcmeModule.java:20)\n  while locating com.acme.samples.local.context.LocalContext\n    for parameter 1 at com.acme.samples.local.stepdef.InputStepDef.\u003cinit\u003e(InputStepDef.java:27)\n  at com.acme.samples.local.stepdef.InputStepDef.class(InputStepDef.java:27)\n  while locating com.acme.samples.local.stepdef.InputStepDef\n\n1 error\n\tat com.google.inject.internal.InjectorImpl$2.get(InjectorImpl.java:1025)\n\tat com.google.inject.internal.InjectorImpl.getInstance(InjectorImpl.java:1051)\n\tat cucumber.runtime.java.guice.impl.GuiceFactory.getInstance(GuiceFactory.java:42)\n\tat cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:57)\n\tat cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:50)\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:63)\n\tat cucumber.runner.TestStep.run(TestStep.java:49)\n\tat cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:43)\n\tat cucumber.runner.TestCase.run(TestCase.java:44)\n\tat cucumber.runner.Runner.runPickle(Runner.java:40)\n\tat cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:67)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:22)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:72)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:122)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:64)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:131)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)\n\tat ✽.I choose to click on \"b1\"(features/samples/local/input.feature:43)\nCaused by: com.google.inject.OutOfScopeException: Cannot access Key[type\u003dcom.acme.samples.local.context.LocalContext, annotation\u003d[none]] outside of a scoping block\n\tat cucumber.runtime.java.guice.impl.SequentialScenarioScope$1.get(SequentialScenarioScope.java:34)\n\tat com.google.inject.internal.InternalFactoryToProviderAdapter.get(InternalFactoryToProviderAdapter.java:41)\n\tat com.google.inject.internal.SingleParameterInjector.inject(SingleParameterInjector.java:38)\n\tat com.google.inject.internal.SingleParameterInjector.getAll(SingleParameterInjector.java:62)\n\tat com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:104)\n\tat com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:85)\n\tat com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:267)\n\tat com.google.inject.internal.ProviderToInternalFactoryAdapter$1.call(ProviderToInternalFactoryAdapter.java:46)\n\tat com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1103)\n\tat com.google.inject.internal.ProviderToInternalFactoryAdapter.get(ProviderToInternalFactoryAdapter.java:40)\n\tat cucumber.runtime.java.guice.impl.SequentialScenarioScope$1.get(SequentialScenarioScope.java:40)\n\tat com.google.inject.internal.InternalFactoryToProviderAdapter.get(InternalFactoryToProviderAdapter.java:41)\n\tat com.google.inject.internal.InjectorImpl$2$1.call(InjectorImpl.java:1016)\n\tat com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1092)\n\tat com.google.inject.internal.InjectorImpl$2.get(InjectorImpl.java:1012)\n\tat com.google.inject.internal.InjectorImpl.getInstance(InjectorImpl.java:1051)\n\tat cucumber.runtime.java.guice.impl.GuiceFactory.getInstance(GuiceFactory.java:42)\n\tat cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:57)\n\tat cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:50)\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:63)\n\tat cucumber.runner.TestStep.run(TestStep.java:49)\n\tat cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:43)\n\tat cucumber.runner.TestCase.run(TestCase.java:44)\n\tat cucumber.runner.Runner.runPickle(Runner.java:40)\n\tat cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:67)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:22)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:72)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:122)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:64)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:131)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)\n",
+              "duration": 7277389,
+              "status": "failed"
+            },
+            "line": 43,
+            "name": "I choose to click on \"b1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "b1",
+                  "offset": 22
+                }
+              ],
+              "location": "InputStepDef.i_choose_to_click_on(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5731,
+              "status": "skipped"
+            },
+            "line": 44,
+            "name": "I should see \"You double clicked button: NONE\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "You double clicked button: NONE",
+                  "offset": 14
+                }
+              ],
+              "location": "SelectStepDef.i_should_see(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3672,
+              "status": "skipped"
+            },
+            "line": 45,
+            "name": "I choose to double click on \"b1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "b1",
+                  "offset": 29
+                }
+              ],
+              "location": "InputStepDef.i_choose_to_double_click_on(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3745,
+              "status": "skipped"
+            },
+            "line": 46,
+            "name": "I should see \"You double clicked button: B1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "You double clicked button: B1",
+                  "offset": 14
+                }
+              ],
+              "location": "SelectStepDef.i_should_see(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@local"
+          },
+          {
+            "name": "@complete"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "On page with inputs",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 103332419,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I have navigated to the local page \"/input.html\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/input.html",
+                  "offset": 36
+                }
+              ],
+              "location": "TableStepDef.i_have_navigated_to_the_local_page(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 49,
+        "name": "Scroll an element into view",
+        "description": "",
+        "id": "input-actions;scroll-an-element-into-view",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "com.google.inject.ProvisionException: Unable to provision, see the following errors:\n\n1) Error in custom provider, com.google.inject.OutOfScopeException: Cannot access Key[type\u003dcom.acme.samples.local.context.LocalContext, annotation\u003d[none]] outside of a scoping block\n  at com.acme.guice.AcmeModule.configure(AcmeModule.java:20)\n  while locating com.acme.samples.local.context.LocalContext\n    for parameter 1 at com.acme.samples.local.stepdef.InputStepDef.\u003cinit\u003e(InputStepDef.java:27)\n  at com.acme.samples.local.stepdef.InputStepDef.class(InputStepDef.java:27)\n  while locating com.acme.samples.local.stepdef.InputStepDef\n\n1 error\n\tat com.google.inject.internal.InjectorImpl$2.get(InjectorImpl.java:1025)\n\tat com.google.inject.internal.InjectorImpl.getInstance(InjectorImpl.java:1051)\n\tat cucumber.runtime.java.guice.impl.GuiceFactory.getInstance(GuiceFactory.java:42)\n\tat cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:57)\n\tat cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:50)\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:63)\n\tat cucumber.runner.TestStep.run(TestStep.java:49)\n\tat cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:43)\n\tat cucumber.runner.TestCase.run(TestCase.java:44)\n\tat cucumber.runner.Runner.runPickle(Runner.java:40)\n\tat cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:67)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:22)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:72)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:122)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:64)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:131)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)\n\tat ✽.I choose to scroll element \"offscreen\" into view(features/samples/local/input.feature:50)\nCaused by: com.google.inject.OutOfScopeException: Cannot access Key[type\u003dcom.acme.samples.local.context.LocalContext, annotation\u003d[none]] outside of a scoping block\n\tat cucumber.runtime.java.guice.impl.SequentialScenarioScope$1.get(SequentialScenarioScope.java:34)\n\tat com.google.inject.internal.InternalFactoryToProviderAdapter.get(InternalFactoryToProviderAdapter.java:41)\n\tat com.google.inject.internal.SingleParameterInjector.inject(SingleParameterInjector.java:38)\n\tat com.google.inject.internal.SingleParameterInjector.getAll(SingleParameterInjector.java:62)\n\tat com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:104)\n\tat com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:85)\n\tat com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:267)\n\tat com.google.inject.internal.ProviderToInternalFactoryAdapter$1.call(ProviderToInternalFactoryAdapter.java:46)\n\tat com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1103)\n\tat com.google.inject.internal.ProviderToInternalFactoryAdapter.get(ProviderToInternalFactoryAdapter.java:40)\n\tat cucumber.runtime.java.guice.impl.SequentialScenarioScope$1.get(SequentialScenarioScope.java:40)\n\tat com.google.inject.internal.InternalFactoryToProviderAdapter.get(InternalFactoryToProviderAdapter.java:41)\n\tat com.google.inject.internal.InjectorImpl$2$1.call(InjectorImpl.java:1016)\n\tat com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1092)\n\tat com.google.inject.internal.InjectorImpl$2.get(InjectorImpl.java:1012)\n\tat com.google.inject.internal.InjectorImpl.getInstance(InjectorImpl.java:1051)\n\tat cucumber.runtime.java.guice.impl.GuiceFactory.getInstance(GuiceFactory.java:42)\n\tat cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:57)\n\tat cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:50)\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:63)\n\tat cucumber.runner.TestStep.run(TestStep.java:49)\n\tat cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:43)\n\tat cucumber.runner.TestCase.run(TestCase.java:44)\n\tat cucumber.runner.Runner.runPickle(Runner.java:40)\n\tat cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:67)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:22)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:72)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:122)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:64)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:131)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)\n",
+              "duration": 7504571,
+              "status": "failed"
+            },
+            "line": 50,
+            "name": "I choose to scroll element \"offscreen\" into view",
+            "match": {
+              "arguments": [
+                {
+                  "val": "offscreen",
+                  "offset": 28
+                }
+              ],
+              "location": "InputStepDef.i_choose_to_scroll_element_into_view(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5699,
+              "status": "skipped"
+            },
+            "line": 51,
+            "name": "I should see element \"offscreen\" in the viewport",
+            "match": {
+              "arguments": [
+                {
+                  "val": "should",
+                  "offset": 2
+                },
+                {
+                  "val": "offscreen",
+                  "offset": 22
+                }
+              ],
+              "location": "InputStepDef.i_should_see_element_in_the_viewport(String,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3680,
+              "status": "skipped"
+            },
+            "line": 52,
+            "name": "I should not see element \"b1\" in the viewport",
+            "match": {
+              "arguments": [
+                {
+                  "val": "should not",
+                  "offset": 2
+                },
+                {
+                  "val": "b1",
+                  "offset": 26
+                }
+              ],
+              "location": "InputStepDef.i_should_see_element_in_the_viewport(String,String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@local"
+          },
+          {
+            "name": "@complete"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "On page with inputs",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 100240960,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I have navigated to the local page \"/input.html\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/input.html",
+                  "offset": 36
+                }
+              ],
+              "location": "TableStepDef.i_have_navigated_to_the_local_page(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 55,
+        "name": "Multiple Elements have the same locator but different text / attribute",
+        "description": "",
+        "id": "input-actions;multiple-elements-have-the-same-locator-but-different-text-/-attribute",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "com.google.inject.ProvisionException: Unable to provision, see the following errors:\n\n1) Error in custom provider, com.google.inject.OutOfScopeException: Cannot access Key[type\u003dcom.acme.samples.local.context.LocalContext, annotation\u003d[none]] outside of a scoping block\n  at com.acme.guice.AcmeModule.configure(AcmeModule.java:20)\n  while locating com.acme.samples.local.context.LocalContext\n    for parameter 1 at com.acme.samples.local.stepdef.InputStepDef.\u003cinit\u003e(InputStepDef.java:27)\n  at com.acme.samples.local.stepdef.InputStepDef.class(InputStepDef.java:27)\n  while locating com.acme.samples.local.stepdef.InputStepDef\n\n1 error\n\tat com.google.inject.internal.InjectorImpl$2.get(InjectorImpl.java:1025)\n\tat com.google.inject.internal.InjectorImpl.getInstance(InjectorImpl.java:1051)\n\tat cucumber.runtime.java.guice.impl.GuiceFactory.getInstance(GuiceFactory.java:42)\n\tat cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:57)\n\tat cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:50)\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:63)\n\tat cucumber.runner.TestStep.run(TestStep.java:49)\n\tat cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:43)\n\tat cucumber.runner.TestCase.run(TestCase.java:44)\n\tat cucumber.runner.Runner.runPickle(Runner.java:40)\n\tat cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:67)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:22)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:72)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:122)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:64)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:131)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)\n\tat ✽.the following elements:(features/samples/local/input.feature:56)\nCaused by: com.google.inject.OutOfScopeException: Cannot access Key[type\u003dcom.acme.samples.local.context.LocalContext, annotation\u003d[none]] outside of a scoping block\n\tat cucumber.runtime.java.guice.impl.SequentialScenarioScope$1.get(SequentialScenarioScope.java:34)\n\tat com.google.inject.internal.InternalFactoryToProviderAdapter.get(InternalFactoryToProviderAdapter.java:41)\n\tat com.google.inject.internal.SingleParameterInjector.inject(SingleParameterInjector.java:38)\n\tat com.google.inject.internal.SingleParameterInjector.getAll(SingleParameterInjector.java:62)\n\tat com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:104)\n\tat com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:85)\n\tat com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:267)\n\tat com.google.inject.internal.ProviderToInternalFactoryAdapter$1.call(ProviderToInternalFactoryAdapter.java:46)\n\tat com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1103)\n\tat com.google.inject.internal.ProviderToInternalFactoryAdapter.get(ProviderToInternalFactoryAdapter.java:40)\n\tat cucumber.runtime.java.guice.impl.SequentialScenarioScope$1.get(SequentialScenarioScope.java:40)\n\tat com.google.inject.internal.InternalFactoryToProviderAdapter.get(InternalFactoryToProviderAdapter.java:41)\n\tat com.google.inject.internal.InjectorImpl$2$1.call(InjectorImpl.java:1016)\n\tat com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1092)\n\tat com.google.inject.internal.InjectorImpl$2.get(InjectorImpl.java:1012)\n\tat com.google.inject.internal.InjectorImpl.getInstance(InjectorImpl.java:1051)\n\tat cucumber.runtime.java.guice.impl.GuiceFactory.getInstance(GuiceFactory.java:42)\n\tat cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:57)\n\tat cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:50)\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:63)\n\tat cucumber.runner.TestStep.run(TestStep.java:49)\n\tat cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:43)\n\tat cucumber.runner.TestCase.run(TestCase.java:44)\n\tat cucumber.runner.Runner.runPickle(Runner.java:40)\n\tat cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:67)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:22)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:72)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:122)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:64)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:131)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)\n",
+              "duration": 7057397,
+              "status": "failed"
+            },
+            "line": 56,
+            "name": "the following elements:",
+            "match": {
+              "location": "InputStepDef.the_following_elements(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "locator",
+                  "name attribute",
+                  "value"
+                ]
+              },
+              {
+                "cells": [
+                  "sameLocator",
+                  "user",
+                  "username"
+                ]
+              },
+              {
+                "cells": [
+                  "sameLocator",
+                  "password",
+                  "password"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5355,
+              "status": "skipped"
+            },
+            "line": 60,
+            "name": "I choose to type \"This is my user name\" for element \"sameLocator\" with \"name\" \"user\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "This is my user name",
+                  "offset": 18
+                },
+                {
+                  "val": "sameLocator",
+                  "offset": 53
+                },
+                {
+                  "val": "name",
+                  "offset": 72
+                },
+                {
+                  "val": "user",
+                  "offset": 79
+                }
+              ],
+              "location": "InputStepDef.i_choose_to_type_for_element_with(String,String,String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3496,
+              "status": "skipped"
+            },
+            "line": 61,
+            "name": "the following elements shall be displayed:",
+            "match": {
+              "location": "InputStepDef.the_following_elements_shall_be_displayed(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "locator",
+                  "name attribute",
+                  "value"
+                ]
+              },
+              {
+                "cells": [
+                  "sameLocator",
+                  "user",
+                  "This is my user name"
+                ]
+              },
+              {
+                "cells": [
+                  "sameLocator",
+                  "password",
+                  "password"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3375,
+              "status": "skipped"
+            },
+            "line": 65,
+            "name": "I choose to type \"This is my password\" for element \"sameLocator\" with \"name\" \"password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "This is my password",
+                  "offset": 18
+                },
+                {
+                  "val": "sameLocator",
+                  "offset": 52
+                },
+                {
+                  "val": "name",
+                  "offset": 71
+                },
+                {
+                  "val": "password",
+                  "offset": 78
+                }
+              ],
+              "location": "InputStepDef.i_choose_to_type_for_element_with(String,String,String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3332,
+              "status": "skipped"
+            },
+            "line": 66,
+            "name": "the following elements shall be displayed:",
+            "match": {
+              "location": "InputStepDef.the_following_elements_shall_be_displayed(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "locator",
+                  "name attribute",
+                  "value"
+                ]
+              },
+              {
+                "cells": [
+                  "sameLocator",
+                  "user",
+                  "This is my user name"
+                ]
+              },
+              {
+                "cells": [
+                  "sameLocator",
+                  "password",
+                  "This is my password"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@local"
+          },
+          {
+            "name": "@complete"
+          }
+        ]
+      }
+    ],
+    "name": "Input Actions",
+    "description": "  In order to test applications\n  As a tester\n  I want to input data into a page",
+    "id": "input-actions",
+    "keyword": "Feature",
+    "uri": "features/samples/local/input.feature",
+    "tags": [
+      {
+        "name": "@local",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

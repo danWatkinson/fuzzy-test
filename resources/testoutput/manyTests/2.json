@@ -1,0 +1,618 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 7,
+        "name": "On page with link that opens new window",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3602083202,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I have navigated to the local page \"/switch_window_first.html\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/switch_window_first.html",
+                  "offset": 36
+                }
+              ],
+              "location": "TableStepDef.i_have_navigated_to_the_local_page(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 11,
+        "name": "Switch to the last opened window",
+        "description": "",
+        "id": "switch-to-window;switch-to-the-last-opened-window",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 504861885,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "a new window has been opened",
+            "match": {
+              "location": "SwitchWindowStepDef.a_new_window_has_been_opened()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 84475057,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I switch to the new window",
+            "match": {
+              "location": "SwitchWindowStepDef.i_switch_to_the_new_window()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 181041550,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I should see the text \"Last\" in the new window",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Last",
+                  "offset": 23
+                }
+              ],
+              "location": "SwitchWindowStepDef.i_should_see_the_text_in_the_new_window(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@local"
+          },
+          {
+            "name": "@switch_window"
+          },
+          {
+            "name": "@complete"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "On page with link that opens new window",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 157506890,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I have navigated to the local page \"/switch_window_first.html\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/switch_window_first.html",
+                  "offset": 36
+                }
+              ],
+              "location": "TableStepDef.i_have_navigated_to_the_local_page(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 17,
+        "name": "Switch to the last opened window with more than 2 windows open",
+        "description": "",
+        "id": "switch-to-window;switch-to-the-last-opened-window-with-more-than-2-windows-open",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 868642976,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "two new windows have been opened",
+            "match": {
+              "location": "SwitchWindowStepDef.two_new_windows_have_been_opened()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 49107657,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I switch to the newest window",
+            "match": {
+              "location": "SwitchWindowStepDef.i_switch_to_the_new_window()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 87859096,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I should see the text \"Last\" in the new window",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Last",
+                  "offset": 23
+                }
+              ],
+              "location": "SwitchWindowStepDef.i_should_see_the_text_in_the_new_window(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@local"
+          },
+          {
+            "name": "@switch_window"
+          },
+          {
+            "name": "@complete"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "On page with link that opens new window",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 127993727,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I have navigated to the local page \"/switch_window_first.html\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/switch_window_first.html",
+                  "offset": 36
+                }
+              ],
+              "location": "TableStepDef.i_have_navigated_to_the_local_page(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 31,
+        "name": "Switch to first window",
+        "description": "",
+        "id": "switch-to-window;switch-to-first-window;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 381852467,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "a new window has been opened",
+            "match": {
+              "location": "SwitchWindowStepDef.a_new_window_has_been_opened()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 131324270,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "I close the new window",
+            "match": {
+              "location": "SwitchWindowStepDef.i_close_the_new_window()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 49664778,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "I switch to the first window",
+            "match": {
+              "arguments": [
+                {
+                  "val": "first",
+                  "offset": 16
+                }
+              ],
+              "location": "SwitchWindowStepDef.i_switch_to_the_window(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 80430873,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "I should see the text \"First\" in the first window",
+            "match": {
+              "arguments": [
+                {
+                  "val": "First",
+                  "offset": 23
+                }
+              ],
+              "location": "SwitchWindowStepDef.i_should_see_the_text_in_the_first_window(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@local"
+          },
+          {
+            "name": "@switch_window"
+          },
+          {
+            "name": "@complete"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "On page with link that opens new window",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 102163674,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I have navigated to the local page \"/switch_window_first.html\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/switch_window_first.html",
+                  "offset": 36
+                }
+              ],
+              "location": "TableStepDef.i_have_navigated_to_the_local_page(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 32,
+        "name": "Switch to first window",
+        "description": "",
+        "id": "switch-to-window;switch-to-first-window;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 330731651,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "a new window has been opened",
+            "match": {
+              "location": "SwitchWindowStepDef.a_new_window_has_been_opened()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 113244398,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "I close the new window",
+            "match": {
+              "location": "SwitchWindowStepDef.i_close_the_new_window()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 48606606,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "I switch to the last window",
+            "match": {
+              "arguments": [
+                {
+                  "val": "last",
+                  "offset": 16
+                }
+              ],
+              "location": "SwitchWindowStepDef.i_switch_to_the_window(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 72382624,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "I should see the text \"First\" in the first window",
+            "match": {
+              "arguments": [
+                {
+                  "val": "First",
+                  "offset": 23
+                }
+              ],
+              "location": "SwitchWindowStepDef.i_should_see_the_text_in_the_first_window(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@local"
+          },
+          {
+            "name": "@switch_window"
+          },
+          {
+            "name": "@complete"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "On page with link that opens new window",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 90792231,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I have navigated to the local page \"/switch_window_first.html\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/switch_window_first.html",
+                  "offset": 36
+                }
+              ],
+              "location": "TableStepDef.i_have_navigated_to_the_local_page(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 35,
+        "name": "Switch to the window by title",
+        "description": "",
+        "id": "switch-to-window;switch-to-the-window-by-title",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 317250736,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "a new window has been opened",
+            "match": {
+              "location": "SwitchWindowStepDef.a_new_window_has_been_opened()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 148458341,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "I switch to the window with title \"Last Window\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Last Window",
+                  "offset": 35
+                }
+              ],
+              "location": "SwitchWindowStepDef.i_switch_to_the_window_with_title(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 97345110,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "I should see the text \"Last\" in the new window",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Last",
+                  "offset": 23
+                }
+              ],
+              "location": "SwitchWindowStepDef.i_should_see_the_text_in_the_new_window(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@local"
+          },
+          {
+            "name": "@switch_window"
+          },
+          {
+            "name": "@complete"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "On page with link that opens new window",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 114583312,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I have navigated to the local page \"/switch_window_first.html\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/switch_window_first.html",
+                  "offset": 36
+                }
+              ],
+              "location": "TableStepDef.i_have_navigated_to_the_local_page(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 41,
+        "name": "Switch to the window by title regular expression",
+        "description": "",
+        "id": "switch-to-window;switch-to-the-window-by-title-regular-expression",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 331532359,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "a new window has been opened",
+            "match": {
+              "location": "SwitchWindowStepDef.a_new_window_has_been_opened()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 146412269,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "I switch to the window with partial title \"Last\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Last",
+                  "offset": 43
+                }
+              ],
+              "location": "SwitchWindowStepDef.i_switch_focus_to_the_window_with_title_containing(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 80079198,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "I should see the text \"Last\" in the new window",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Last",
+                  "offset": 23
+                }
+              ],
+              "location": "SwitchWindowStepDef.i_should_see_the_text_in_the_new_window(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@local"
+          },
+          {
+            "name": "@switch_window"
+          },
+          {
+            "name": "@complete"
+          }
+        ]
+      }
+    ],
+    "name": "Switch to window",
+    "description": "  In order to test applications\n  As a tester\n  I want the ability to switch to window",
+    "id": "switch-to-window",
+    "keyword": "Feature",
+    "uri": "features/samples/local/switch_to_window.feature",
+    "tags": [
+      {
+        "name": "@local",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@switch_window",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 8
+        }
+      }
+    ]
+  }
+]

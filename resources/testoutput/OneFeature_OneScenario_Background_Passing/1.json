@@ -1,0 +1,64 @@
+[
+  {
+    "line": 3,
+    "elements": [
+      {
+        "line": 8,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 5685188,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I have opened google",
+            "match": {
+              "location": "HomeStepDef.I_have_opened_google()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 13,
+        "name": "Users can perform a search",
+        "description": "",
+        "id": "google-search;users-can-perform-a-search",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5469,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I search for \"magentys\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "magentys",
+                  "offset": 14
+                }
+              ],
+              "location": "HomeStepDef.I_search_for_term(String)"
+            },
+            "keyword": "When "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@google"
+          },
+          {
+            "name": "@complete"
+          }
+        ]
+      }
+    ]
+  }
+]

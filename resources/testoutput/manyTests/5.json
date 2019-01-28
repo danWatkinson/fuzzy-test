@@ -1,0 +1,2960 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 7,
+        "name": "On table page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3665245848,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I have navigated to the local page \"/table.html\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/table.html",
+                  "offset": 36
+                }
+              ],
+              "location": "TableStepDef.i_have_navigated_to_the_local_page(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 11,
+        "name": "Find items dynamically",
+        "description": "",
+        "id": "tables;find-items-dynamically",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 816616453,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I look in \"table1\" for \"When\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "table1",
+                  "offset": 11
+                },
+                {
+                  "val": "When",
+                  "offset": 24
+                }
+              ],
+              "location": "TableStepDef.i_look_in_for(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1631089,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I should find \"WEN\" in the same row",
+            "match": {
+              "arguments": [
+                {
+                  "val": "should",
+                  "offset": 2
+                },
+                {
+                  "val": "WEN",
+                  "offset": 15
+                }
+              ],
+              "location": "TableStepDef.i_should_find_in_the_same_row(String,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 55746,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I should not find \"bobbins\" in the same row",
+            "match": {
+              "arguments": [
+                {
+                  "val": "should not",
+                  "offset": 2
+                },
+                {
+                  "val": "bobbins",
+                  "offset": 19
+                }
+              ],
+              "location": "TableStepDef.i_should_find_in_the_same_row(String,String)"
+            },
+            "keyword": "But "
+          },
+          {
+            "result": {
+              "duration": 40194,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I should not find \"Given\" in the same row",
+            "match": {
+              "arguments": [
+                {
+                  "val": "should not",
+                  "offset": 2
+                },
+                {
+                  "val": "Given",
+                  "offset": 19
+                }
+              ],
+              "location": "TableStepDef.i_should_find_in_the_same_row(String,String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@local"
+          },
+          {
+            "name": "@table"
+          },
+          {
+            "name": "@complete"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "On table page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 334224441,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I have navigated to the local page \"/table.html\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/table.html",
+                  "offset": 36
+                }
+              ],
+              "location": "TableStepDef.i_have_navigated_to_the_local_page(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 18,
+        "name": "Click on a row",
+        "description": "",
+        "id": "tables;click-on-a-row",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1099801652,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I click on the button in table \"table3\" for row \"Text5\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "table3",
+                  "offset": 32
+                },
+                {
+                  "val": "Text5",
+                  "offset": 49
+                }
+              ],
+              "location": "TableStepDef.i_click_on_the_button_in_table_for_row(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 75010687,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "the result \"Text5\" should be displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Text5",
+                  "offset": 12
+                }
+              ],
+              "location": "TableStepDef.the_result_should_be_displayed(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@local"
+          },
+          {
+            "name": "@table"
+          },
+          {
+            "name": "@complete"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "On table page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 263907859,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I have navigated to the local page \"/table.html\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/table.html",
+                  "offset": 36
+                }
+              ],
+              "location": "TableStepDef.i_have_navigated_to_the_local_page(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 23,
+        "name": "Compare a table",
+        "description": "",
+        "id": "tables;compare-a-table",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 268716186,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "table2 should contain:",
+            "match": {
+              "location": "TableStepDef.table_should_contain(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "English",
+                  "Pirate",
+                  "Lol"
+                ]
+              },
+              {
+                "cells": [
+                  "Given",
+                  "yarrrrr!",
+                  "bobbins"
+                ]
+              },
+              {
+                "cells": [
+                  "When",
+                  "avast!",
+                  "bobbins"
+                ]
+              },
+              {
+                "cells": [
+                  "Then",
+                  "walk the plank!",
+                  "bobbins"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@local"
+          },
+          {
+            "name": "@table"
+          },
+          {
+            "name": "@complete"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "On table page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 265274792,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I have navigated to the local page \"/table.html\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/table.html",
+                  "offset": 36
+                }
+              ],
+              "location": "TableStepDef.i_have_navigated_to_the_local_page(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 31,
+        "name": "Compare a table, found from a collection",
+        "description": "",
+        "id": "tables;compare-a-table--found-from-a-collection",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 578149717,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "table \"table2\" should contain:",
+            "match": {
+              "arguments": [
+                {
+                  "val": "table2",
+                  "offset": 7
+                }
+              ],
+              "location": "TableStepDef.table_should_contain(String,DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "English",
+                  "Pirate",
+                  "Lol"
+                ]
+              },
+              {
+                "cells": [
+                  "Given",
+                  "yarrrrr!",
+                  "bobbins"
+                ]
+              },
+              {
+                "cells": [
+                  "When",
+                  "avast!",
+                  "bobbins"
+                ]
+              },
+              {
+                "cells": [
+                  "Then",
+                  "walk the plank!",
+                  "bobbins"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@local"
+          },
+          {
+            "name": "@table"
+          },
+          {
+            "name": "@complete"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "On table page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 273007232,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I have navigated to the local page \"/table.html\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/table.html",
+                  "offset": 36
+                }
+              ],
+              "location": "TableStepDef.i_have_navigated_to_the_local_page(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 39,
+        "name": "Compare a table, found from a collection",
+        "description": "",
+        "id": "tables;compare-a-table--found-from-a-collection",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 592074764,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "table \"table1\" should contain:",
+            "match": {
+              "arguments": [
+                {
+                  "val": "table1",
+                  "offset": 7
+                }
+              ],
+              "location": "TableStepDef.table_should_contain(String,DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "English",
+                  "Pirate",
+                  "Lol"
+                ]
+              },
+              {
+                "cells": [
+                  "Given",
+                  "Gangway!",
+                  "I CAN HAZ"
+                ]
+              },
+              {
+                "cells": [
+                  "When",
+                  "Blimey!",
+                  "WEN"
+                ]
+              },
+              {
+                "cells": [
+                  "Then",
+                  "Let go and haul!",
+                  "DEN"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@local"
+          },
+          {
+            "name": "@table"
+          },
+          {
+            "name": "@complete"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "On table page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 242670295,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I have navigated to the local page \"/table.html\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/table.html",
+                  "offset": 36
+                }
+              ],
+              "location": "TableStepDef.i_have_navigated_to_the_local_page(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 59,
+        "name": "Compare a pivot table, found from a collection",
+        "description": "",
+        "id": "tables;compare-a-pivot-table--found-from-a-collection;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 679674215,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "pivot table \"pivot\" should contain:",
+            "match": {
+              "arguments": [
+                {
+                  "val": "pivot",
+                  "offset": 13
+                }
+              ],
+              "location": "TableStepDef.pivot_table_should_contain(String,DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "colour",
+                  "year",
+                  "value"
+                ]
+              },
+              {
+                "cells": [
+                  "Red",
+                  "2008",
+                  "1"
+                ]
+              },
+              {
+                "cells": [
+                  "Red",
+                  "2009",
+                  "2"
+                ]
+              },
+              {
+                "cells": [
+                  "Red",
+                  "2010",
+                  "3"
+                ]
+              },
+              {
+                "cells": [
+                  "Blue",
+                  "2008",
+                  "4"
+                ]
+              },
+              {
+                "cells": [
+                  "Blue",
+                  "2009",
+                  "5"
+                ]
+              },
+              {
+                "cells": [
+                  "Blue",
+                  "2010",
+                  "6"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@local"
+          },
+          {
+            "name": "@table"
+          },
+          {
+            "name": "@complete"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "On table page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 246594263,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I have navigated to the local page \"/table.html\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/table.html",
+                  "offset": 36
+                }
+              ],
+              "location": "TableStepDef.i_have_navigated_to_the_local_page(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 60,
+        "name": "Compare a pivot table, found from a collection",
+        "description": "",
+        "id": "tables;compare-a-pivot-table--found-from-a-collection;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 651683612,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "pivot table \"pivotWithThRowHeaders\" should contain:",
+            "match": {
+              "arguments": [
+                {
+                  "val": "pivotWithThRowHeaders",
+                  "offset": 13
+                }
+              ],
+              "location": "TableStepDef.pivot_table_should_contain(String,DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "colour",
+                  "year",
+                  "value"
+                ]
+              },
+              {
+                "cells": [
+                  "Red",
+                  "2008",
+                  "1"
+                ]
+              },
+              {
+                "cells": [
+                  "Red",
+                  "2009",
+                  "2"
+                ]
+              },
+              {
+                "cells": [
+                  "Red",
+                  "2010",
+                  "3"
+                ]
+              },
+              {
+                "cells": [
+                  "Blue",
+                  "2008",
+                  "4"
+                ]
+              },
+              {
+                "cells": [
+                  "Blue",
+                  "2009",
+                  "5"
+                ]
+              },
+              {
+                "cells": [
+                  "Blue",
+                  "2010",
+                  "6"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@local"
+          },
+          {
+            "name": "@table"
+          },
+          {
+            "name": "@complete"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "On table page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 268362036,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I have navigated to the local page \"/table.html\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/table.html",
+                  "offset": 36
+                }
+              ],
+              "location": "TableStepDef.i_have_navigated_to_the_local_page(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 61,
+        "name": "Compare a pivot table, found from a collection",
+        "description": "",
+        "id": "tables;compare-a-pivot-table--found-from-a-collection;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 715993996,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "pivot table \"pivotWithNestedCells\" should contain:",
+            "match": {
+              "arguments": [
+                {
+                  "val": "pivotWithNestedCells",
+                  "offset": 13
+                }
+              ],
+              "location": "TableStepDef.pivot_table_should_contain(String,DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "colour",
+                  "year",
+                  "value"
+                ]
+              },
+              {
+                "cells": [
+                  "Red",
+                  "2008",
+                  "1"
+                ]
+              },
+              {
+                "cells": [
+                  "Red",
+                  "2009",
+                  "2"
+                ]
+              },
+              {
+                "cells": [
+                  "Red",
+                  "2010",
+                  "3"
+                ]
+              },
+              {
+                "cells": [
+                  "Blue",
+                  "2008",
+                  "4"
+                ]
+              },
+              {
+                "cells": [
+                  "Blue",
+                  "2009",
+                  "5"
+                ]
+              },
+              {
+                "cells": [
+                  "Blue",
+                  "2010",
+                  "6"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@local"
+          },
+          {
+            "name": "@table"
+          },
+          {
+            "name": "@complete"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "On table page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 224878844,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I have navigated to the local page \"/table.html\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/table.html",
+                  "offset": 36
+                }
+              ],
+              "location": "TableStepDef.i_have_navigated_to_the_local_page(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 64,
+        "name": "Compare a multicell pivot table, found from a collection",
+        "description": "",
+        "id": "tables;compare-a-multicell-pivot-table--found-from-a-collection",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "io.cucumber.datatable.TableDiffException: tables were different:\n      | colour | year | value |\n    - | Red    | 2008 | 1     |\n    + | Red    | year | 1     |\n      | Red    | 2009 | 2     |\n      | Red    | 2010 | 3     |\n    - | Blue   | 2008 | 4     |\n    + | Blue   | year | 4     |\n      | Blue   | 2009 | 5     |\n      | Blue   | 2010 | 6     |\n\n\tat io.cucumber.datatable.TableDiffException.diff(TableDiffException.java:9)\n\tat io.cucumber.datatable.DataTable.diff(DataTable.java:150)\n\tat com.acme.samples.local.stepdef.TableStepDef.multicell_pivot_table_with_colspan_of_should_contain(TableStepDef.java:86)\n\tat ✽.multicell pivot table \"pivotColspanMulticell\" with colspan of 2 should contain:(features/samples/local/table.feature:65)\n",
+              "duration": 696521592,
+              "status": "failed"
+            },
+            "line": 65,
+            "name": "multicell pivot table \"pivotColspanMulticell\" with colspan of 2 should contain:",
+            "match": {
+              "arguments": [
+                {
+                  "val": "pivotColspanMulticell",
+                  "offset": 23
+                },
+                {
+                  "val": "2",
+                  "offset": 62
+                }
+              ],
+              "location": "TableStepDef.multicell_pivot_table_with_colspan_of_should_contain(String,int,DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "colour",
+                  "year",
+                  "value"
+                ]
+              },
+              {
+                "cells": [
+                  "Red",
+                  "2008",
+                  "1"
+                ]
+              },
+              {
+                "cells": [
+                  "Red",
+                  "2009",
+                  "2"
+                ]
+              },
+              {
+                "cells": [
+                  "Red",
+                  "2010",
+                  "3"
+                ]
+              },
+              {
+                "cells": [
+                  "Blue",
+                  "2008",
+                  "4"
+                ]
+              },
+              {
+                "cells": [
+                  "Blue",
+                  "2009",
+                  "5"
+                ]
+              },
+              {
+                "cells": [
+                  "Blue",
+                  "2010",
+                  "6"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@local"
+          },
+          {
+            "name": "@table"
+          },
+          {
+            "name": "@complete"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "On table page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 253707000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I have navigated to the local page \"/table.html\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/table.html",
+                  "offset": 36
+                }
+              ],
+              "location": "TableStepDef.i_have_navigated_to_the_local_page(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 85,
+        "name": "Find a matching cell",
+        "description": "",
+        "id": "tables;find-a-matching-cell;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "error_message": "cucumber.runtime.CucumberException: Could not convert arguments for step [^I search for the first cell in \"(.*?)\" that matches:$] defined at \u0027com.acme.samples.local.stepdef.TableStepDef.i_search_for_the_first_cell_in_that_matches(String,TableMatchParams\u003e) in file:/Users/dan/work/MagenTys/ee/cinnamon/acceptance-test/target/test-classes/\u0027.\nIt appears you did not register a data table type. The details are in the stacktrace below.\n\tat cucumber.runner.PickleStepDefinitionMatch.registerTypeInConfiguration(PickleStepDefinitionMatch.java:59)\n\tat cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:44)\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:63)\n\tat cucumber.runner.TestStep.run(TestStep.java:49)\n\tat cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:43)\n\tat cucumber.runner.TestCase.run(TestCase.java:44)\n\tat cucumber.runner.Runner.runPickle(Runner.java:40)\n\tat cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:67)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:22)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:72)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:122)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:64)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:131)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)\nCaused by: io.cucumber.datatable.UndefinedDataTableTypeException: Can\u0027t convert DataTable to List\u003ccom.acme.samples.local.stepdef.TableMatchParams\u003e.\nYou can register a DataTableType using DataTableType.entry(com.acme.samples.local.stepdef.TableMatchParams.class).\nFor more control you can define your own DataTableType with a TableEntryTransformer or TableRowTransformer for com.acme.samples.local.stepdef.TableMatchParams.\n\n\tat io.cucumber.datatable.UndefinedDataTableTypeException.listNoConverterDefined(UndefinedDataTableTypeException.java:42)\n\tat io.cucumber.datatable.DataTableTypeRegistryTableConverter.toList(DataTableTypeRegistryTableConverter.java:131)\n\tat io.cucumber.datatable.DataTableTypeRegistryTableConverter.convert(DataTableTypeRegistryTableConverter.java:96)\n\tat io.cucumber.datatable.DataTable.convert(DataTable.java:362)\n\tat io.cucumber.stepexpression.StepExpressionFactory$3.transform(StepExpressionFactory.java:73)\n\tat io.cucumber.stepexpression.DataTableArgument.getValue(DataTableArgument.java:19)\n\tat cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:41)\n\t... 30 more\n",
+              "duration": 609313,
+              "status": "failed"
+            },
+            "line": 76,
+            "name": "I search for the first cell in \"pivot\" that matches:",
+            "match": {
+              "arguments": [
+                {
+                  "val": "pivot",
+                  "offset": 32
+                }
+              ],
+              "location": "TableStepDef.i_search_for_the_first_cell_in_that_matches(String,TableMatchParams\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "row",
+                  "column",
+                  "value"
+                ]
+              },
+              {
+                "cells": [
+                  "Red",
+                  "",
+                  ""
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 10983,
+              "status": "skipped"
+            },
+            "line": 79,
+            "name": "the found cell should be:",
+            "match": {
+              "location": "TableStepDef.the_found_cell_should_be(TableMatchParams\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "row",
+                  "column",
+                  "value"
+                ]
+              },
+              {
+                "cells": [
+                  "Red",
+                  "2008",
+                  "1"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@local"
+          },
+          {
+            "name": "@table"
+          },
+          {
+            "name": "@complete"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "On table page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 279353962,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I have navigated to the local page \"/table.html\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/table.html",
+                  "offset": 36
+                }
+              ],
+              "location": "TableStepDef.i_have_navigated_to_the_local_page(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 86,
+        "name": "Find a matching cell",
+        "description": "",
+        "id": "tables;find-a-matching-cell;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "error_message": "cucumber.runtime.CucumberException: Could not convert arguments for step [^I search for the first cell in \"(.*?)\" that matches:$] defined at \u0027com.acme.samples.local.stepdef.TableStepDef.i_search_for_the_first_cell_in_that_matches(String,TableMatchParams\u003e) in file:/Users/dan/work/MagenTys/ee/cinnamon/acceptance-test/target/test-classes/\u0027.\nIt appears you did not register a data table type. The details are in the stacktrace below.\n\tat cucumber.runner.PickleStepDefinitionMatch.registerTypeInConfiguration(PickleStepDefinitionMatch.java:59)\n\tat cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:44)\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:63)\n\tat cucumber.runner.TestStep.run(TestStep.java:49)\n\tat cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:43)\n\tat cucumber.runner.TestCase.run(TestCase.java:44)\n\tat cucumber.runner.Runner.runPickle(Runner.java:40)\n\tat cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:67)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:22)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:72)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:122)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:64)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:131)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)\nCaused by: io.cucumber.datatable.UndefinedDataTableTypeException: Can\u0027t convert DataTable to List\u003ccom.acme.samples.local.stepdef.TableMatchParams\u003e.\nYou can register a DataTableType using DataTableType.entry(com.acme.samples.local.stepdef.TableMatchParams.class).\nFor more control you can define your own DataTableType with a TableEntryTransformer or TableRowTransformer for com.acme.samples.local.stepdef.TableMatchParams.\n\n\tat io.cucumber.datatable.UndefinedDataTableTypeException.listNoConverterDefined(UndefinedDataTableTypeException.java:42)\n\tat io.cucumber.datatable.DataTableTypeRegistryTableConverter.toList(DataTableTypeRegistryTableConverter.java:131)\n\tat io.cucumber.datatable.DataTableTypeRegistryTableConverter.convert(DataTableTypeRegistryTableConverter.java:96)\n\tat io.cucumber.datatable.DataTable.convert(DataTable.java:362)\n\tat io.cucumber.stepexpression.StepExpressionFactory$3.transform(StepExpressionFactory.java:73)\n\tat io.cucumber.stepexpression.DataTableArgument.getValue(DataTableArgument.java:19)\n\tat cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:41)\n\t... 30 more\n",
+              "duration": 188581,
+              "status": "failed"
+            },
+            "line": 76,
+            "name": "I search for the first cell in \"pivot\" that matches:",
+            "match": {
+              "arguments": [
+                {
+                  "val": "pivot",
+                  "offset": 32
+                }
+              ],
+              "location": "TableStepDef.i_search_for_the_first_cell_in_that_matches(String,TableMatchParams\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "row",
+                  "column",
+                  "value"
+                ]
+              },
+              {
+                "cells": [
+                  "",
+                  "2009",
+                  ""
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5984,
+              "status": "skipped"
+            },
+            "line": 79,
+            "name": "the found cell should be:",
+            "match": {
+              "location": "TableStepDef.the_found_cell_should_be(TableMatchParams\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "row",
+                  "column",
+                  "value"
+                ]
+              },
+              {
+                "cells": [
+                  "Red",
+                  "2009",
+                  "2"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@local"
+          },
+          {
+            "name": "@table"
+          },
+          {
+            "name": "@complete"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "On table page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 263325649,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I have navigated to the local page \"/table.html\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/table.html",
+                  "offset": 36
+                }
+              ],
+              "location": "TableStepDef.i_have_navigated_to_the_local_page(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 87,
+        "name": "Find a matching cell",
+        "description": "",
+        "id": "tables;find-a-matching-cell;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "error_message": "cucumber.runtime.CucumberException: Could not convert arguments for step [^I search for the first cell in \"(.*?)\" that matches:$] defined at \u0027com.acme.samples.local.stepdef.TableStepDef.i_search_for_the_first_cell_in_that_matches(String,TableMatchParams\u003e) in file:/Users/dan/work/MagenTys/ee/cinnamon/acceptance-test/target/test-classes/\u0027.\nIt appears you did not register a data table type. The details are in the stacktrace below.\n\tat cucumber.runner.PickleStepDefinitionMatch.registerTypeInConfiguration(PickleStepDefinitionMatch.java:59)\n\tat cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:44)\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:63)\n\tat cucumber.runner.TestStep.run(TestStep.java:49)\n\tat cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:43)\n\tat cucumber.runner.TestCase.run(TestCase.java:44)\n\tat cucumber.runner.Runner.runPickle(Runner.java:40)\n\tat cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:67)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:22)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:72)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:122)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:64)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:131)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)\nCaused by: io.cucumber.datatable.UndefinedDataTableTypeException: Can\u0027t convert DataTable to List\u003ccom.acme.samples.local.stepdef.TableMatchParams\u003e.\nYou can register a DataTableType using DataTableType.entry(com.acme.samples.local.stepdef.TableMatchParams.class).\nFor more control you can define your own DataTableType with a TableEntryTransformer or TableRowTransformer for com.acme.samples.local.stepdef.TableMatchParams.\n\n\tat io.cucumber.datatable.UndefinedDataTableTypeException.listNoConverterDefined(UndefinedDataTableTypeException.java:42)\n\tat io.cucumber.datatable.DataTableTypeRegistryTableConverter.toList(DataTableTypeRegistryTableConverter.java:131)\n\tat io.cucumber.datatable.DataTableTypeRegistryTableConverter.convert(DataTableTypeRegistryTableConverter.java:96)\n\tat io.cucumber.datatable.DataTable.convert(DataTable.java:362)\n\tat io.cucumber.stepexpression.StepExpressionFactory$3.transform(StepExpressionFactory.java:73)\n\tat io.cucumber.stepexpression.DataTableArgument.getValue(DataTableArgument.java:19)\n\tat cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:41)\n\t... 30 more\n",
+              "duration": 103366,
+              "status": "failed"
+            },
+            "line": 76,
+            "name": "I search for the first cell in \"pivot\" that matches:",
+            "match": {
+              "arguments": [
+                {
+                  "val": "pivot",
+                  "offset": 32
+                }
+              ],
+              "location": "TableStepDef.i_search_for_the_first_cell_in_that_matches(String,TableMatchParams\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "row",
+                  "column",
+                  "value"
+                ]
+              },
+              {
+                "cells": [
+                  "",
+                  "",
+                  "5"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3725,
+              "status": "skipped"
+            },
+            "line": 79,
+            "name": "the found cell should be:",
+            "match": {
+              "location": "TableStepDef.the_found_cell_should_be(TableMatchParams\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "row",
+                  "column",
+                  "value"
+                ]
+              },
+              {
+                "cells": [
+                  "Blue",
+                  "2009",
+                  "5"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@local"
+          },
+          {
+            "name": "@table"
+          },
+          {
+            "name": "@complete"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "On table page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 212912729,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I have navigated to the local page \"/table.html\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/table.html",
+                  "offset": 36
+                }
+              ],
+              "location": "TableStepDef.i_have_navigated_to_the_local_page(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 88,
+        "name": "Find a matching cell",
+        "description": "",
+        "id": "tables;find-a-matching-cell;;5",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "error_message": "cucumber.runtime.CucumberException: Could not convert arguments for step [^I search for the first cell in \"(.*?)\" that matches:$] defined at \u0027com.acme.samples.local.stepdef.TableStepDef.i_search_for_the_first_cell_in_that_matches(String,TableMatchParams\u003e) in file:/Users/dan/work/MagenTys/ee/cinnamon/acceptance-test/target/test-classes/\u0027.\nIt appears you did not register a data table type. The details are in the stacktrace below.\n\tat cucumber.runner.PickleStepDefinitionMatch.registerTypeInConfiguration(PickleStepDefinitionMatch.java:59)\n\tat cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:44)\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:63)\n\tat cucumber.runner.TestStep.run(TestStep.java:49)\n\tat cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:43)\n\tat cucumber.runner.TestCase.run(TestCase.java:44)\n\tat cucumber.runner.Runner.runPickle(Runner.java:40)\n\tat cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:67)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:22)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:72)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:122)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:64)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:131)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)\nCaused by: io.cucumber.datatable.UndefinedDataTableTypeException: Can\u0027t convert DataTable to List\u003ccom.acme.samples.local.stepdef.TableMatchParams\u003e.\nYou can register a DataTableType using DataTableType.entry(com.acme.samples.local.stepdef.TableMatchParams.class).\nFor more control you can define your own DataTableType with a TableEntryTransformer or TableRowTransformer for com.acme.samples.local.stepdef.TableMatchParams.\n\n\tat io.cucumber.datatable.UndefinedDataTableTypeException.listNoConverterDefined(UndefinedDataTableTypeException.java:42)\n\tat io.cucumber.datatable.DataTableTypeRegistryTableConverter.toList(DataTableTypeRegistryTableConverter.java:131)\n\tat io.cucumber.datatable.DataTableTypeRegistryTableConverter.convert(DataTableTypeRegistryTableConverter.java:96)\n\tat io.cucumber.datatable.DataTable.convert(DataTable.java:362)\n\tat io.cucumber.stepexpression.StepExpressionFactory$3.transform(StepExpressionFactory.java:73)\n\tat io.cucumber.stepexpression.DataTableArgument.getValue(DataTableArgument.java:19)\n\tat cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:41)\n\t... 30 more\n",
+              "duration": 112903,
+              "status": "failed"
+            },
+            "line": 76,
+            "name": "I search for the first cell in \"pivot\" that matches:",
+            "match": {
+              "arguments": [
+                {
+                  "val": "pivot",
+                  "offset": 32
+                }
+              ],
+              "location": "TableStepDef.i_search_for_the_first_cell_in_that_matches(String,TableMatchParams\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "row",
+                  "column",
+                  "value"
+                ]
+              },
+              {
+                "cells": [
+                  "Red",
+                  "2010",
+                  "3"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4611,
+              "status": "skipped"
+            },
+            "line": 79,
+            "name": "the found cell should be:",
+            "match": {
+              "location": "TableStepDef.the_found_cell_should_be(TableMatchParams\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "row",
+                  "column",
+                  "value"
+                ]
+              },
+              {
+                "cells": [
+                  "Red",
+                  "2010",
+                  "3"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@local"
+          },
+          {
+            "name": "@table"
+          },
+          {
+            "name": "@complete"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "On table page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 213785487,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I have navigated to the local page \"/table.html\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/table.html",
+                  "offset": 36
+                }
+              ],
+              "location": "TableStepDef.i_have_navigated_to_the_local_page(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 89,
+        "name": "Find a matching cell",
+        "description": "",
+        "id": "tables;find-a-matching-cell;;6",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "error_message": "cucumber.runtime.CucumberException: Could not convert arguments for step [^I search for the first cell in \"(.*?)\" that matches:$] defined at \u0027com.acme.samples.local.stepdef.TableStepDef.i_search_for_the_first_cell_in_that_matches(String,TableMatchParams\u003e) in file:/Users/dan/work/MagenTys/ee/cinnamon/acceptance-test/target/test-classes/\u0027.\nIt appears you did not register a data table type. The details are in the stacktrace below.\n\tat cucumber.runner.PickleStepDefinitionMatch.registerTypeInConfiguration(PickleStepDefinitionMatch.java:59)\n\tat cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:44)\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:63)\n\tat cucumber.runner.TestStep.run(TestStep.java:49)\n\tat cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:43)\n\tat cucumber.runner.TestCase.run(TestCase.java:44)\n\tat cucumber.runner.Runner.runPickle(Runner.java:40)\n\tat cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:67)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:22)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:72)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:122)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:64)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:131)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)\nCaused by: io.cucumber.datatable.UndefinedDataTableTypeException: Can\u0027t convert DataTable to List\u003ccom.acme.samples.local.stepdef.TableMatchParams\u003e.\nYou can register a DataTableType using DataTableType.entry(com.acme.samples.local.stepdef.TableMatchParams.class).\nFor more control you can define your own DataTableType with a TableEntryTransformer or TableRowTransformer for com.acme.samples.local.stepdef.TableMatchParams.\n\n\tat io.cucumber.datatable.UndefinedDataTableTypeException.listNoConverterDefined(UndefinedDataTableTypeException.java:42)\n\tat io.cucumber.datatable.DataTableTypeRegistryTableConverter.toList(DataTableTypeRegistryTableConverter.java:131)\n\tat io.cucumber.datatable.DataTableTypeRegistryTableConverter.convert(DataTableTypeRegistryTableConverter.java:96)\n\tat io.cucumber.datatable.DataTable.convert(DataTable.java:362)\n\tat io.cucumber.stepexpression.StepExpressionFactory$3.transform(StepExpressionFactory.java:73)\n\tat io.cucumber.stepexpression.DataTableArgument.getValue(DataTableArgument.java:19)\n\tat cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:41)\n\t... 30 more\n",
+              "duration": 120862,
+              "status": "failed"
+            },
+            "line": 76,
+            "name": "I search for the first cell in \"pivotWithThRowHeaders\" that matches:",
+            "match": {
+              "arguments": [
+                {
+                  "val": "pivotWithThRowHeaders",
+                  "offset": 32
+                }
+              ],
+              "location": "TableStepDef.i_search_for_the_first_cell_in_that_matches(String,TableMatchParams\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "row",
+                  "column",
+                  "value"
+                ]
+              },
+              {
+                "cells": [
+                  "Red",
+                  "2010",
+                  "3"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4371,
+              "status": "skipped"
+            },
+            "line": 79,
+            "name": "the found cell should be:",
+            "match": {
+              "location": "TableStepDef.the_found_cell_should_be(TableMatchParams\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "row",
+                  "column",
+                  "value"
+                ]
+              },
+              {
+                "cells": [
+                  "Red",
+                  "2010",
+                  "3"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@local"
+          },
+          {
+            "name": "@table"
+          },
+          {
+            "name": "@complete"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "On table page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 232498873,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I have navigated to the local page \"/table.html\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/table.html",
+                  "offset": 36
+                }
+              ],
+              "location": "TableStepDef.i_have_navigated_to_the_local_page(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 90,
+        "name": "Find a matching cell",
+        "description": "",
+        "id": "tables;find-a-matching-cell;;7",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "error_message": "cucumber.runtime.CucumberException: Could not convert arguments for step [^I search for the first cell in \"(.*?)\" that matches:$] defined at \u0027com.acme.samples.local.stepdef.TableStepDef.i_search_for_the_first_cell_in_that_matches(String,TableMatchParams\u003e) in file:/Users/dan/work/MagenTys/ee/cinnamon/acceptance-test/target/test-classes/\u0027.\nIt appears you did not register a data table type. The details are in the stacktrace below.\n\tat cucumber.runner.PickleStepDefinitionMatch.registerTypeInConfiguration(PickleStepDefinitionMatch.java:59)\n\tat cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:44)\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:63)\n\tat cucumber.runner.TestStep.run(TestStep.java:49)\n\tat cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:43)\n\tat cucumber.runner.TestCase.run(TestCase.java:44)\n\tat cucumber.runner.Runner.runPickle(Runner.java:40)\n\tat cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:67)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:22)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:72)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:122)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:64)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:131)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)\nCaused by: io.cucumber.datatable.UndefinedDataTableTypeException: Can\u0027t convert DataTable to List\u003ccom.acme.samples.local.stepdef.TableMatchParams\u003e.\nYou can register a DataTableType using DataTableType.entry(com.acme.samples.local.stepdef.TableMatchParams.class).\nFor more control you can define your own DataTableType with a TableEntryTransformer or TableRowTransformer for com.acme.samples.local.stepdef.TableMatchParams.\n\n\tat io.cucumber.datatable.UndefinedDataTableTypeException.listNoConverterDefined(UndefinedDataTableTypeException.java:42)\n\tat io.cucumber.datatable.DataTableTypeRegistryTableConverter.toList(DataTableTypeRegistryTableConverter.java:131)\n\tat io.cucumber.datatable.DataTableTypeRegistryTableConverter.convert(DataTableTypeRegistryTableConverter.java:96)\n\tat io.cucumber.datatable.DataTable.convert(DataTable.java:362)\n\tat io.cucumber.stepexpression.StepExpressionFactory$3.transform(StepExpressionFactory.java:73)\n\tat io.cucumber.stepexpression.DataTableArgument.getValue(DataTableArgument.java:19)\n\tat cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:41)\n\t... 30 more\n",
+              "duration": 121646,
+              "status": "failed"
+            },
+            "line": 76,
+            "name": "I search for the first cell in \"pivotWithNestedCells\" that matches:",
+            "match": {
+              "arguments": [
+                {
+                  "val": "pivotWithNestedCells",
+                  "offset": 32
+                }
+              ],
+              "location": "TableStepDef.i_search_for_the_first_cell_in_that_matches(String,TableMatchParams\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "row",
+                  "column",
+                  "value"
+                ]
+              },
+              {
+                "cells": [
+                  "Red",
+                  "2010",
+                  "3"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4714,
+              "status": "skipped"
+            },
+            "line": 79,
+            "name": "the found cell should be:",
+            "match": {
+              "location": "TableStepDef.the_found_cell_should_be(TableMatchParams\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "row",
+                  "column",
+                  "value"
+                ]
+              },
+              {
+                "cells": [
+                  "Red",
+                  "2010",
+                  "3"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@local"
+          },
+          {
+            "name": "@table"
+          },
+          {
+            "name": "@complete"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "On table page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 220194580,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I have navigated to the local page \"/table.html\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/table.html",
+                  "offset": 36
+                }
+              ],
+              "location": "TableStepDef.i_have_navigated_to_the_local_page(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 91,
+        "name": "Find a matching cell",
+        "description": "",
+        "id": "tables;find-a-matching-cell;;8",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "error_message": "cucumber.runtime.CucumberException: Could not convert arguments for step [^I search for the first cell in \"(.*?)\" that matches:$] defined at \u0027com.acme.samples.local.stepdef.TableStepDef.i_search_for_the_first_cell_in_that_matches(String,TableMatchParams\u003e) in file:/Users/dan/work/MagenTys/ee/cinnamon/acceptance-test/target/test-classes/\u0027.\nIt appears you did not register a data table type. The details are in the stacktrace below.\n\tat cucumber.runner.PickleStepDefinitionMatch.registerTypeInConfiguration(PickleStepDefinitionMatch.java:59)\n\tat cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:44)\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:63)\n\tat cucumber.runner.TestStep.run(TestStep.java:49)\n\tat cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:43)\n\tat cucumber.runner.TestCase.run(TestCase.java:44)\n\tat cucumber.runner.Runner.runPickle(Runner.java:40)\n\tat cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:67)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:22)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:72)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:122)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:64)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:131)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)\nCaused by: io.cucumber.datatable.UndefinedDataTableTypeException: Can\u0027t convert DataTable to List\u003ccom.acme.samples.local.stepdef.TableMatchParams\u003e.\nYou can register a DataTableType using DataTableType.entry(com.acme.samples.local.stepdef.TableMatchParams.class).\nFor more control you can define your own DataTableType with a TableEntryTransformer or TableRowTransformer for com.acme.samples.local.stepdef.TableMatchParams.\n\n\tat io.cucumber.datatable.UndefinedDataTableTypeException.listNoConverterDefined(UndefinedDataTableTypeException.java:42)\n\tat io.cucumber.datatable.DataTableTypeRegistryTableConverter.toList(DataTableTypeRegistryTableConverter.java:131)\n\tat io.cucumber.datatable.DataTableTypeRegistryTableConverter.convert(DataTableTypeRegistryTableConverter.java:96)\n\tat io.cucumber.datatable.DataTable.convert(DataTable.java:362)\n\tat io.cucumber.stepexpression.StepExpressionFactory$3.transform(StepExpressionFactory.java:73)\n\tat io.cucumber.stepexpression.DataTableArgument.getValue(DataTableArgument.java:19)\n\tat cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:41)\n\t... 30 more\n",
+              "duration": 120523,
+              "status": "failed"
+            },
+            "line": 76,
+            "name": "I search for the first cell in \"pivotMulticellColumnHeader\" that matches:",
+            "match": {
+              "arguments": [
+                {
+                  "val": "pivotMulticellColumnHeader",
+                  "offset": 32
+                }
+              ],
+              "location": "TableStepDef.i_search_for_the_first_cell_in_that_matches(String,TableMatchParams\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "row",
+                  "column",
+                  "value"
+                ]
+              },
+              {
+                "cells": [
+                  "Red",
+                  "",
+                  ""
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4500,
+              "status": "skipped"
+            },
+            "line": 79,
+            "name": "the found cell should be:",
+            "match": {
+              "location": "TableStepDef.the_found_cell_should_be(TableMatchParams\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "row",
+                  "column",
+                  "value"
+                ]
+              },
+              {
+                "cells": [
+                  "Red",
+                  "year",
+                  "1"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@local"
+          },
+          {
+            "name": "@table"
+          },
+          {
+            "name": "@complete"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "On table page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 212384942,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I have navigated to the local page \"/table.html\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/table.html",
+                  "offset": 36
+                }
+              ],
+              "location": "TableStepDef.i_have_navigated_to_the_local_page(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 92,
+        "name": "Find a matching cell",
+        "description": "",
+        "id": "tables;find-a-matching-cell;;9",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "error_message": "cucumber.runtime.CucumberException: Could not convert arguments for step [^I search for the first cell in \"(.*?)\" that matches:$] defined at \u0027com.acme.samples.local.stepdef.TableStepDef.i_search_for_the_first_cell_in_that_matches(String,TableMatchParams\u003e) in file:/Users/dan/work/MagenTys/ee/cinnamon/acceptance-test/target/test-classes/\u0027.\nIt appears you did not register a data table type. The details are in the stacktrace below.\n\tat cucumber.runner.PickleStepDefinitionMatch.registerTypeInConfiguration(PickleStepDefinitionMatch.java:59)\n\tat cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:44)\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:63)\n\tat cucumber.runner.TestStep.run(TestStep.java:49)\n\tat cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:43)\n\tat cucumber.runner.TestCase.run(TestCase.java:44)\n\tat cucumber.runner.Runner.runPickle(Runner.java:40)\n\tat cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:67)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:22)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:72)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:122)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:64)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:131)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)\nCaused by: io.cucumber.datatable.UndefinedDataTableTypeException: Can\u0027t convert DataTable to List\u003ccom.acme.samples.local.stepdef.TableMatchParams\u003e.\nYou can register a DataTableType using DataTableType.entry(com.acme.samples.local.stepdef.TableMatchParams.class).\nFor more control you can define your own DataTableType with a TableEntryTransformer or TableRowTransformer for com.acme.samples.local.stepdef.TableMatchParams.\n\n\tat io.cucumber.datatable.UndefinedDataTableTypeException.listNoConverterDefined(UndefinedDataTableTypeException.java:42)\n\tat io.cucumber.datatable.DataTableTypeRegistryTableConverter.toList(DataTableTypeRegistryTableConverter.java:131)\n\tat io.cucumber.datatable.DataTableTypeRegistryTableConverter.convert(DataTableTypeRegistryTableConverter.java:96)\n\tat io.cucumber.datatable.DataTable.convert(DataTable.java:362)\n\tat io.cucumber.stepexpression.StepExpressionFactory$3.transform(StepExpressionFactory.java:73)\n\tat io.cucumber.stepexpression.DataTableArgument.getValue(DataTableArgument.java:19)\n\tat cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:41)\n\t... 30 more\n",
+              "duration": 133948,
+              "status": "failed"
+            },
+            "line": 76,
+            "name": "I search for the first cell in \"pivotMulticellColumnHeader\" that matches:",
+            "match": {
+              "arguments": [
+                {
+                  "val": "pivotMulticellColumnHeader",
+                  "offset": 32
+                }
+              ],
+              "location": "TableStepDef.i_search_for_the_first_cell_in_that_matches(String,TableMatchParams\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "row",
+                  "column",
+                  "value"
+                ]
+              },
+              {
+                "cells": [
+                  "",
+                  "2009",
+                  ""
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4632,
+              "status": "skipped"
+            },
+            "line": 79,
+            "name": "the found cell should be:",
+            "match": {
+              "location": "TableStepDef.the_found_cell_should_be(TableMatchParams\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "row",
+                  "column",
+                  "value"
+                ]
+              },
+              {
+                "cells": [
+                  "Red",
+                  "2009",
+                  "2"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@local"
+          },
+          {
+            "name": "@table"
+          },
+          {
+            "name": "@complete"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "On table page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 245081443,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I have navigated to the local page \"/table.html\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/table.html",
+                  "offset": 36
+                }
+              ],
+              "location": "TableStepDef.i_have_navigated_to_the_local_page(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 95,
+        "name": "Find a matching cell",
+        "description": "",
+        "id": "tables;find-a-matching-cell;;10",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "error_message": "cucumber.runtime.CucumberException: Could not convert arguments for step [^I search for the first cell in \"(.*?)\" that matches:$] defined at \u0027com.acme.samples.local.stepdef.TableStepDef.i_search_for_the_first_cell_in_that_matches(String,TableMatchParams\u003e) in file:/Users/dan/work/MagenTys/ee/cinnamon/acceptance-test/target/test-classes/\u0027.\nIt appears you did not register a data table type. The details are in the stacktrace below.\n\tat cucumber.runner.PickleStepDefinitionMatch.registerTypeInConfiguration(PickleStepDefinitionMatch.java:59)\n\tat cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:44)\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:63)\n\tat cucumber.runner.TestStep.run(TestStep.java:49)\n\tat cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:43)\n\tat cucumber.runner.TestCase.run(TestCase.java:44)\n\tat cucumber.runner.Runner.runPickle(Runner.java:40)\n\tat cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:67)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:22)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:72)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:122)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:64)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:131)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)\nCaused by: io.cucumber.datatable.UndefinedDataTableTypeException: Can\u0027t convert DataTable to List\u003ccom.acme.samples.local.stepdef.TableMatchParams\u003e.\nYou can register a DataTableType using DataTableType.entry(com.acme.samples.local.stepdef.TableMatchParams.class).\nFor more control you can define your own DataTableType with a TableEntryTransformer or TableRowTransformer for com.acme.samples.local.stepdef.TableMatchParams.\n\n\tat io.cucumber.datatable.UndefinedDataTableTypeException.listNoConverterDefined(UndefinedDataTableTypeException.java:42)\n\tat io.cucumber.datatable.DataTableTypeRegistryTableConverter.toList(DataTableTypeRegistryTableConverter.java:131)\n\tat io.cucumber.datatable.DataTableTypeRegistryTableConverter.convert(DataTableTypeRegistryTableConverter.java:96)\n\tat io.cucumber.datatable.DataTable.convert(DataTable.java:362)\n\tat io.cucumber.stepexpression.StepExpressionFactory$3.transform(StepExpressionFactory.java:73)\n\tat io.cucumber.stepexpression.DataTableArgument.getValue(DataTableArgument.java:19)\n\tat cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:41)\n\t... 30 more\n",
+              "duration": 185960,
+              "status": "failed"
+            },
+            "line": 76,
+            "name": "I search for the first cell in \"pivotMulticellColumnHeader\" that matches:",
+            "match": {
+              "arguments": [
+                {
+                  "val": "pivotMulticellColumnHeader",
+                  "offset": 32
+                }
+              ],
+              "location": "TableStepDef.i_search_for_the_first_cell_in_that_matches(String,TableMatchParams\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "row",
+                  "column",
+                  "value"
+                ]
+              },
+              {
+                "cells": [
+                  "Red",
+                  "2010",
+                  "3"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3657,
+              "status": "skipped"
+            },
+            "line": 79,
+            "name": "the found cell should be:",
+            "match": {
+              "location": "TableStepDef.the_found_cell_should_be(TableMatchParams\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "row",
+                  "column",
+                  "value"
+                ]
+              },
+              {
+                "cells": [
+                  "Red",
+                  "2010",
+                  "3"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@local"
+          },
+          {
+            "name": "@table"
+          },
+          {
+            "name": "@complete"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "On table page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 273380058,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I have navigated to the local page \"/table.html\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/table.html",
+                  "offset": 36
+                }
+              ],
+              "location": "TableStepDef.i_have_navigated_to_the_local_page(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 96,
+        "name": "Find a matching cell",
+        "description": "",
+        "id": "tables;find-a-matching-cell;;11",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "error_message": "cucumber.runtime.CucumberException: Could not convert arguments for step [^I search for the first cell in \"(.*?)\" that matches:$] defined at \u0027com.acme.samples.local.stepdef.TableStepDef.i_search_for_the_first_cell_in_that_matches(String,TableMatchParams\u003e) in file:/Users/dan/work/MagenTys/ee/cinnamon/acceptance-test/target/test-classes/\u0027.\nIt appears you did not register a data table type. The details are in the stacktrace below.\n\tat cucumber.runner.PickleStepDefinitionMatch.registerTypeInConfiguration(PickleStepDefinitionMatch.java:59)\n\tat cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:44)\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:63)\n\tat cucumber.runner.TestStep.run(TestStep.java:49)\n\tat cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:43)\n\tat cucumber.runner.TestCase.run(TestCase.java:44)\n\tat cucumber.runner.Runner.runPickle(Runner.java:40)\n\tat cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:67)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:22)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:72)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:122)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:64)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:131)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)\nCaused by: io.cucumber.datatable.UndefinedDataTableTypeException: Can\u0027t convert DataTable to List\u003ccom.acme.samples.local.stepdef.TableMatchParams\u003e.\nYou can register a DataTableType using DataTableType.entry(com.acme.samples.local.stepdef.TableMatchParams.class).\nFor more control you can define your own DataTableType with a TableEntryTransformer or TableRowTransformer for com.acme.samples.local.stepdef.TableMatchParams.\n\n\tat io.cucumber.datatable.UndefinedDataTableTypeException.listNoConverterDefined(UndefinedDataTableTypeException.java:42)\n\tat io.cucumber.datatable.DataTableTypeRegistryTableConverter.toList(DataTableTypeRegistryTableConverter.java:131)\n\tat io.cucumber.datatable.DataTableTypeRegistryTableConverter.convert(DataTableTypeRegistryTableConverter.java:96)\n\tat io.cucumber.datatable.DataTable.convert(DataTable.java:362)\n\tat io.cucumber.stepexpression.StepExpressionFactory$3.transform(StepExpressionFactory.java:73)\n\tat io.cucumber.stepexpression.DataTableArgument.getValue(DataTableArgument.java:19)\n\tat cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:41)\n\t... 30 more\n",
+              "duration": 119321,
+              "status": "failed"
+            },
+            "line": 76,
+            "name": "I search for the first cell in \"pivotMulticellColumnHeader2\" that matches:",
+            "match": {
+              "arguments": [
+                {
+                  "val": "pivotMulticellColumnHeader2",
+                  "offset": 32
+                }
+              ],
+              "location": "TableStepDef.i_search_for_the_first_cell_in_that_matches(String,TableMatchParams\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "row",
+                  "column",
+                  "value"
+                ]
+              },
+              {
+                "cells": [
+                  "Red",
+                  "",
+                  ""
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3339,
+              "status": "skipped"
+            },
+            "line": 79,
+            "name": "the found cell should be:",
+            "match": {
+              "location": "TableStepDef.the_found_cell_should_be(TableMatchParams\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "row",
+                  "column",
+                  "value"
+                ]
+              },
+              {
+                "cells": [
+                  "Red",
+                  "a",
+                  "1"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@local"
+          },
+          {
+            "name": "@table"
+          },
+          {
+            "name": "@complete"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "On table page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 248926700,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I have navigated to the local page \"/table.html\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/table.html",
+                  "offset": 36
+                }
+              ],
+              "location": "TableStepDef.i_have_navigated_to_the_local_page(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 97,
+        "name": "Find a matching cell",
+        "description": "",
+        "id": "tables;find-a-matching-cell;;12",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "error_message": "cucumber.runtime.CucumberException: Could not convert arguments for step [^I search for the first cell in \"(.*?)\" that matches:$] defined at \u0027com.acme.samples.local.stepdef.TableStepDef.i_search_for_the_first_cell_in_that_matches(String,TableMatchParams\u003e) in file:/Users/dan/work/MagenTys/ee/cinnamon/acceptance-test/target/test-classes/\u0027.\nIt appears you did not register a data table type. The details are in the stacktrace below.\n\tat cucumber.runner.PickleStepDefinitionMatch.registerTypeInConfiguration(PickleStepDefinitionMatch.java:59)\n\tat cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:44)\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:63)\n\tat cucumber.runner.TestStep.run(TestStep.java:49)\n\tat cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:43)\n\tat cucumber.runner.TestCase.run(TestCase.java:44)\n\tat cucumber.runner.Runner.runPickle(Runner.java:40)\n\tat cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:67)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:22)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:72)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:122)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:64)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:131)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)\nCaused by: io.cucumber.datatable.UndefinedDataTableTypeException: Can\u0027t convert DataTable to List\u003ccom.acme.samples.local.stepdef.TableMatchParams\u003e.\nYou can register a DataTableType using DataTableType.entry(com.acme.samples.local.stepdef.TableMatchParams.class).\nFor more control you can define your own DataTableType with a TableEntryTransformer or TableRowTransformer for com.acme.samples.local.stepdef.TableMatchParams.\n\n\tat io.cucumber.datatable.UndefinedDataTableTypeException.listNoConverterDefined(UndefinedDataTableTypeException.java:42)\n\tat io.cucumber.datatable.DataTableTypeRegistryTableConverter.toList(DataTableTypeRegistryTableConverter.java:131)\n\tat io.cucumber.datatable.DataTableTypeRegistryTableConverter.convert(DataTableTypeRegistryTableConverter.java:96)\n\tat io.cucumber.datatable.DataTable.convert(DataTable.java:362)\n\tat io.cucumber.stepexpression.StepExpressionFactory$3.transform(StepExpressionFactory.java:73)\n\tat io.cucumber.stepexpression.DataTableArgument.getValue(DataTableArgument.java:19)\n\tat cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:41)\n\t... 30 more\n",
+              "duration": 293739,
+              "status": "failed"
+            },
+            "line": 76,
+            "name": "I search for the first cell in \"pivotMulticellColumnHeader2\" that matches:",
+            "match": {
+              "arguments": [
+                {
+                  "val": "pivotMulticellColumnHeader2",
+                  "offset": 32
+                }
+              ],
+              "location": "TableStepDef.i_search_for_the_first_cell_in_that_matches(String,TableMatchParams\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "row",
+                  "column",
+                  "value"
+                ]
+              },
+              {
+                "cells": [
+                  "",
+                  "2009",
+                  ""
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 7253,
+              "status": "skipped"
+            },
+            "line": 79,
+            "name": "the found cell should be:",
+            "match": {
+              "location": "TableStepDef.the_found_cell_should_be(TableMatchParams\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "row",
+                  "column",
+                  "value"
+                ]
+              },
+              {
+                "cells": [
+                  "Red",
+                  "2009",
+                  "2"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@local"
+          },
+          {
+            "name": "@table"
+          },
+          {
+            "name": "@complete"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "On table page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 240577999,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I have navigated to the local page \"/table.html\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/table.html",
+                  "offset": 36
+                }
+              ],
+              "location": "TableStepDef.i_have_navigated_to_the_local_page(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 98,
+        "name": "Find a matching cell",
+        "description": "",
+        "id": "tables;find-a-matching-cell;;13",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "error_message": "cucumber.runtime.CucumberException: Could not convert arguments for step [^I search for the first cell in \"(.*?)\" that matches:$] defined at \u0027com.acme.samples.local.stepdef.TableStepDef.i_search_for_the_first_cell_in_that_matches(String,TableMatchParams\u003e) in file:/Users/dan/work/MagenTys/ee/cinnamon/acceptance-test/target/test-classes/\u0027.\nIt appears you did not register a data table type. The details are in the stacktrace below.\n\tat cucumber.runner.PickleStepDefinitionMatch.registerTypeInConfiguration(PickleStepDefinitionMatch.java:59)\n\tat cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:44)\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:63)\n\tat cucumber.runner.TestStep.run(TestStep.java:49)\n\tat cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:43)\n\tat cucumber.runner.TestCase.run(TestCase.java:44)\n\tat cucumber.runner.Runner.runPickle(Runner.java:40)\n\tat cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:67)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:22)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:72)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:122)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:64)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:131)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)\nCaused by: io.cucumber.datatable.UndefinedDataTableTypeException: Can\u0027t convert DataTable to List\u003ccom.acme.samples.local.stepdef.TableMatchParams\u003e.\nYou can register a DataTableType using DataTableType.entry(com.acme.samples.local.stepdef.TableMatchParams.class).\nFor more control you can define your own DataTableType with a TableEntryTransformer or TableRowTransformer for com.acme.samples.local.stepdef.TableMatchParams.\n\n\tat io.cucumber.datatable.UndefinedDataTableTypeException.listNoConverterDefined(UndefinedDataTableTypeException.java:42)\n\tat io.cucumber.datatable.DataTableTypeRegistryTableConverter.toList(DataTableTypeRegistryTableConverter.java:131)\n\tat io.cucumber.datatable.DataTableTypeRegistryTableConverter.convert(DataTableTypeRegistryTableConverter.java:96)\n\tat io.cucumber.datatable.DataTable.convert(DataTable.java:362)\n\tat io.cucumber.stepexpression.StepExpressionFactory$3.transform(StepExpressionFactory.java:73)\n\tat io.cucumber.stepexpression.DataTableArgument.getValue(DataTableArgument.java:19)\n\tat cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:41)\n\t... 30 more\n",
+              "duration": 141054,
+              "status": "failed"
+            },
+            "line": 76,
+            "name": "I search for the first cell in \"pivotMulticellColumnHeader2\" that matches:",
+            "match": {
+              "arguments": [
+                {
+                  "val": "pivotMulticellColumnHeader2",
+                  "offset": 32
+                }
+              ],
+              "location": "TableStepDef.i_search_for_the_first_cell_in_that_matches(String,TableMatchParams\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "row",
+                  "column",
+                  "value"
+                ]
+              },
+              {
+                "cells": [
+                  "",
+                  "",
+                  "5"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2910,
+              "status": "skipped"
+            },
+            "line": 79,
+            "name": "the found cell should be:",
+            "match": {
+              "location": "TableStepDef.the_found_cell_should_be(TableMatchParams\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "row",
+                  "column",
+                  "value"
+                ]
+              },
+              {
+                "cells": [
+                  "Blue",
+                  "b",
+                  "5"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@local"
+          },
+          {
+            "name": "@table"
+          },
+          {
+            "name": "@complete"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "On table page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 229069609,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I have navigated to the local page \"/table.html\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/table.html",
+                  "offset": 36
+                }
+              ],
+              "location": "TableStepDef.i_have_navigated_to_the_local_page(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 99,
+        "name": "Find a matching cell",
+        "description": "",
+        "id": "tables;find-a-matching-cell;;14",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "error_message": "cucumber.runtime.CucumberException: Could not convert arguments for step [^I search for the first cell in \"(.*?)\" that matches:$] defined at \u0027com.acme.samples.local.stepdef.TableStepDef.i_search_for_the_first_cell_in_that_matches(String,TableMatchParams\u003e) in file:/Users/dan/work/MagenTys/ee/cinnamon/acceptance-test/target/test-classes/\u0027.\nIt appears you did not register a data table type. The details are in the stacktrace below.\n\tat cucumber.runner.PickleStepDefinitionMatch.registerTypeInConfiguration(PickleStepDefinitionMatch.java:59)\n\tat cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:44)\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:63)\n\tat cucumber.runner.TestStep.run(TestStep.java:49)\n\tat cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:43)\n\tat cucumber.runner.TestCase.run(TestCase.java:44)\n\tat cucumber.runner.Runner.runPickle(Runner.java:40)\n\tat cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:67)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:22)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:72)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:122)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:64)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:131)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)\nCaused by: io.cucumber.datatable.UndefinedDataTableTypeException: Can\u0027t convert DataTable to List\u003ccom.acme.samples.local.stepdef.TableMatchParams\u003e.\nYou can register a DataTableType using DataTableType.entry(com.acme.samples.local.stepdef.TableMatchParams.class).\nFor more control you can define your own DataTableType with a TableEntryTransformer or TableRowTransformer for com.acme.samples.local.stepdef.TableMatchParams.\n\n\tat io.cucumber.datatable.UndefinedDataTableTypeException.listNoConverterDefined(UndefinedDataTableTypeException.java:42)\n\tat io.cucumber.datatable.DataTableTypeRegistryTableConverter.toList(DataTableTypeRegistryTableConverter.java:131)\n\tat io.cucumber.datatable.DataTableTypeRegistryTableConverter.convert(DataTableTypeRegistryTableConverter.java:96)\n\tat io.cucumber.datatable.DataTable.convert(DataTable.java:362)\n\tat io.cucumber.stepexpression.StepExpressionFactory$3.transform(StepExpressionFactory.java:73)\n\tat io.cucumber.stepexpression.DataTableArgument.getValue(DataTableArgument.java:19)\n\tat cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:41)\n\t... 30 more\n",
+              "duration": 132826,
+              "status": "failed"
+            },
+            "line": 76,
+            "name": "I search for the first cell in \"pivotMulticellColumnHeader2\" that matches:",
+            "match": {
+              "arguments": [
+                {
+                  "val": "pivotMulticellColumnHeader2",
+                  "offset": 32
+                }
+              ],
+              "location": "TableStepDef.i_search_for_the_first_cell_in_that_matches(String,TableMatchParams\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "row",
+                  "column",
+                  "value"
+                ]
+              },
+              {
+                "cells": [
+                  "Red",
+                  "2010",
+                  "3"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3109,
+              "status": "skipped"
+            },
+            "line": 79,
+            "name": "the found cell should be:",
+            "match": {
+              "location": "TableStepDef.the_found_cell_should_be(TableMatchParams\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "row",
+                  "column",
+                  "value"
+                ]
+              },
+              {
+                "cells": [
+                  "Red",
+                  "2010",
+                  "3"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@local"
+          },
+          {
+            "name": "@table"
+          },
+          {
+            "name": "@complete"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "On table page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 227332037,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I have navigated to the local page \"/table.html\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/table.html",
+                  "offset": 36
+                }
+              ],
+              "location": "TableStepDef.i_have_navigated_to_the_local_page(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 110,
+        "name": "Fail to find matching cell",
+        "description": "",
+        "id": "tables;fail-to-find-matching-cell;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "error_message": "cucumber.runtime.CucumberException: Could not convert arguments for step [^I search for the first cell in \"(.*?)\" that matches:$] defined at \u0027com.acme.samples.local.stepdef.TableStepDef.i_search_for_the_first_cell_in_that_matches(String,TableMatchParams\u003e) in file:/Users/dan/work/MagenTys/ee/cinnamon/acceptance-test/target/test-classes/\u0027.\nIt appears you did not register a data table type. The details are in the stacktrace below.\n\tat cucumber.runner.PickleStepDefinitionMatch.registerTypeInConfiguration(PickleStepDefinitionMatch.java:59)\n\tat cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:44)\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:63)\n\tat cucumber.runner.TestStep.run(TestStep.java:49)\n\tat cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:43)\n\tat cucumber.runner.TestCase.run(TestCase.java:44)\n\tat cucumber.runner.Runner.runPickle(Runner.java:40)\n\tat cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:67)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:22)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:72)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:122)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:64)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:131)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)\nCaused by: io.cucumber.datatable.UndefinedDataTableTypeException: Can\u0027t convert DataTable to List\u003ccom.acme.samples.local.stepdef.TableMatchParams\u003e.\nYou can register a DataTableType using DataTableType.entry(com.acme.samples.local.stepdef.TableMatchParams.class).\nFor more control you can define your own DataTableType with a TableEntryTransformer or TableRowTransformer for com.acme.samples.local.stepdef.TableMatchParams.\n\n\tat io.cucumber.datatable.UndefinedDataTableTypeException.listNoConverterDefined(UndefinedDataTableTypeException.java:42)\n\tat io.cucumber.datatable.DataTableTypeRegistryTableConverter.toList(DataTableTypeRegistryTableConverter.java:131)\n\tat io.cucumber.datatable.DataTableTypeRegistryTableConverter.convert(DataTableTypeRegistryTableConverter.java:96)\n\tat io.cucumber.datatable.DataTable.convert(DataTable.java:362)\n\tat io.cucumber.stepexpression.StepExpressionFactory$3.transform(StepExpressionFactory.java:73)\n\tat io.cucumber.stepexpression.DataTableArgument.getValue(DataTableArgument.java:19)\n\tat cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:41)\n\t... 30 more\n",
+              "duration": 130625,
+              "status": "failed"
+            },
+            "line": 103,
+            "name": "I search for the first cell in \"pivot\" that matches:",
+            "match": {
+              "arguments": [
+                {
+                  "val": "pivot",
+                  "offset": 32
+                }
+              ],
+              "location": "TableStepDef.i_search_for_the_first_cell_in_that_matches(String,TableMatchParams\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "row",
+                  "column",
+                  "value"
+                ]
+              },
+              {
+                "cells": [
+                  "Green",
+                  "",
+                  ""
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2918,
+              "status": "skipped"
+            },
+            "line": 106,
+            "name": "no matching cell shall be found",
+            "match": {
+              "location": "TableStepDef.no_matching_cell_shall_be_found()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@local"
+          },
+          {
+            "name": "@table"
+          },
+          {
+            "name": "@complete"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "On table page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 215611205,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I have navigated to the local page \"/table.html\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/table.html",
+                  "offset": 36
+                }
+              ],
+              "location": "TableStepDef.i_have_navigated_to_the_local_page(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 111,
+        "name": "Fail to find matching cell",
+        "description": "",
+        "id": "tables;fail-to-find-matching-cell;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "error_message": "cucumber.runtime.CucumberException: Could not convert arguments for step [^I search for the first cell in \"(.*?)\" that matches:$] defined at \u0027com.acme.samples.local.stepdef.TableStepDef.i_search_for_the_first_cell_in_that_matches(String,TableMatchParams\u003e) in file:/Users/dan/work/MagenTys/ee/cinnamon/acceptance-test/target/test-classes/\u0027.\nIt appears you did not register a data table type. The details are in the stacktrace below.\n\tat cucumber.runner.PickleStepDefinitionMatch.registerTypeInConfiguration(PickleStepDefinitionMatch.java:59)\n\tat cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:44)\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:63)\n\tat cucumber.runner.TestStep.run(TestStep.java:49)\n\tat cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:43)\n\tat cucumber.runner.TestCase.run(TestCase.java:44)\n\tat cucumber.runner.Runner.runPickle(Runner.java:40)\n\tat cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:67)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:22)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:72)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:122)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:64)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:131)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)\nCaused by: io.cucumber.datatable.UndefinedDataTableTypeException: Can\u0027t convert DataTable to List\u003ccom.acme.samples.local.stepdef.TableMatchParams\u003e.\nYou can register a DataTableType using DataTableType.entry(com.acme.samples.local.stepdef.TableMatchParams.class).\nFor more control you can define your own DataTableType with a TableEntryTransformer or TableRowTransformer for com.acme.samples.local.stepdef.TableMatchParams.\n\n\tat io.cucumber.datatable.UndefinedDataTableTypeException.listNoConverterDefined(UndefinedDataTableTypeException.java:42)\n\tat io.cucumber.datatable.DataTableTypeRegistryTableConverter.toList(DataTableTypeRegistryTableConverter.java:131)\n\tat io.cucumber.datatable.DataTableTypeRegistryTableConverter.convert(DataTableTypeRegistryTableConverter.java:96)\n\tat io.cucumber.datatable.DataTable.convert(DataTable.java:362)\n\tat io.cucumber.stepexpression.StepExpressionFactory$3.transform(StepExpressionFactory.java:73)\n\tat io.cucumber.stepexpression.DataTableArgument.getValue(DataTableArgument.java:19)\n\tat cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:41)\n\t... 30 more\n",
+              "duration": 214316,
+              "status": "failed"
+            },
+            "line": 103,
+            "name": "I search for the first cell in \"pivot\" that matches:",
+            "match": {
+              "arguments": [
+                {
+                  "val": "pivot",
+                  "offset": 32
+                }
+              ],
+              "location": "TableStepDef.i_search_for_the_first_cell_in_that_matches(String,TableMatchParams\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "row",
+                  "column",
+                  "value"
+                ]
+              },
+              {
+                "cells": [
+                  "",
+                  "2011",
+                  ""
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 16675,
+              "status": "skipped"
+            },
+            "line": 106,
+            "name": "no matching cell shall be found",
+            "match": {
+              "location": "TableStepDef.no_matching_cell_shall_be_found()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@local"
+          },
+          {
+            "name": "@table"
+          },
+          {
+            "name": "@complete"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "On table page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 217174107,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I have navigated to the local page \"/table.html\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/table.html",
+                  "offset": 36
+                }
+              ],
+              "location": "TableStepDef.i_have_navigated_to_the_local_page(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 112,
+        "name": "Fail to find matching cell",
+        "description": "",
+        "id": "tables;fail-to-find-matching-cell;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "error_message": "cucumber.runtime.CucumberException: Could not convert arguments for step [^I search for the first cell in \"(.*?)\" that matches:$] defined at \u0027com.acme.samples.local.stepdef.TableStepDef.i_search_for_the_first_cell_in_that_matches(String,TableMatchParams\u003e) in file:/Users/dan/work/MagenTys/ee/cinnamon/acceptance-test/target/test-classes/\u0027.\nIt appears you did not register a data table type. The details are in the stacktrace below.\n\tat cucumber.runner.PickleStepDefinitionMatch.registerTypeInConfiguration(PickleStepDefinitionMatch.java:59)\n\tat cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:44)\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:63)\n\tat cucumber.runner.TestStep.run(TestStep.java:49)\n\tat cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:43)\n\tat cucumber.runner.TestCase.run(TestCase.java:44)\n\tat cucumber.runner.Runner.runPickle(Runner.java:40)\n\tat cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:67)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:22)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:72)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:122)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:64)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:131)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)\nCaused by: io.cucumber.datatable.UndefinedDataTableTypeException: Can\u0027t convert DataTable to List\u003ccom.acme.samples.local.stepdef.TableMatchParams\u003e.\nYou can register a DataTableType using DataTableType.entry(com.acme.samples.local.stepdef.TableMatchParams.class).\nFor more control you can define your own DataTableType with a TableEntryTransformer or TableRowTransformer for com.acme.samples.local.stepdef.TableMatchParams.\n\n\tat io.cucumber.datatable.UndefinedDataTableTypeException.listNoConverterDefined(UndefinedDataTableTypeException.java:42)\n\tat io.cucumber.datatable.DataTableTypeRegistryTableConverter.toList(DataTableTypeRegistryTableConverter.java:131)\n\tat io.cucumber.datatable.DataTableTypeRegistryTableConverter.convert(DataTableTypeRegistryTableConverter.java:96)\n\tat io.cucumber.datatable.DataTable.convert(DataTable.java:362)\n\tat io.cucumber.stepexpression.StepExpressionFactory$3.transform(StepExpressionFactory.java:73)\n\tat io.cucumber.stepexpression.DataTableArgument.getValue(DataTableArgument.java:19)\n\tat cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:41)\n\t... 30 more\n",
+              "duration": 114793,
+              "status": "failed"
+            },
+            "line": 103,
+            "name": "I search for the first cell in \"pivot\" that matches:",
+            "match": {
+              "arguments": [
+                {
+                  "val": "pivot",
+                  "offset": 32
+                }
+              ],
+              "location": "TableStepDef.i_search_for_the_first_cell_in_that_matches(String,TableMatchParams\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "row",
+                  "column",
+                  "value"
+                ]
+              },
+              {
+                "cells": [
+                  "",
+                  "",
+                  "7"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2623,
+              "status": "skipped"
+            },
+            "line": 106,
+            "name": "no matching cell shall be found",
+            "match": {
+              "location": "TableStepDef.no_matching_cell_shall_be_found()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@local"
+          },
+          {
+            "name": "@table"
+          },
+          {
+            "name": "@complete"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "On table page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 225466008,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I have navigated to the local page \"/table.html\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/table.html",
+                  "offset": 36
+                }
+              ],
+              "location": "TableStepDef.i_have_navigated_to_the_local_page(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 113,
+        "name": "Fail to find matching cell",
+        "description": "",
+        "id": "tables;fail-to-find-matching-cell;;5",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "error_message": "cucumber.runtime.CucumberException: Could not convert arguments for step [^I search for the first cell in \"(.*?)\" that matches:$] defined at \u0027com.acme.samples.local.stepdef.TableStepDef.i_search_for_the_first_cell_in_that_matches(String,TableMatchParams\u003e) in file:/Users/dan/work/MagenTys/ee/cinnamon/acceptance-test/target/test-classes/\u0027.\nIt appears you did not register a data table type. The details are in the stacktrace below.\n\tat cucumber.runner.PickleStepDefinitionMatch.registerTypeInConfiguration(PickleStepDefinitionMatch.java:59)\n\tat cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:44)\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:63)\n\tat cucumber.runner.TestStep.run(TestStep.java:49)\n\tat cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:43)\n\tat cucumber.runner.TestCase.run(TestCase.java:44)\n\tat cucumber.runner.Runner.runPickle(Runner.java:40)\n\tat cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:67)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:22)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:72)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:122)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:64)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:131)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)\nCaused by: io.cucumber.datatable.UndefinedDataTableTypeException: Can\u0027t convert DataTable to List\u003ccom.acme.samples.local.stepdef.TableMatchParams\u003e.\nYou can register a DataTableType using DataTableType.entry(com.acme.samples.local.stepdef.TableMatchParams.class).\nFor more control you can define your own DataTableType with a TableEntryTransformer or TableRowTransformer for com.acme.samples.local.stepdef.TableMatchParams.\n\n\tat io.cucumber.datatable.UndefinedDataTableTypeException.listNoConverterDefined(UndefinedDataTableTypeException.java:42)\n\tat io.cucumber.datatable.DataTableTypeRegistryTableConverter.toList(DataTableTypeRegistryTableConverter.java:131)\n\tat io.cucumber.datatable.DataTableTypeRegistryTableConverter.convert(DataTableTypeRegistryTableConverter.java:96)\n\tat io.cucumber.datatable.DataTable.convert(DataTable.java:362)\n\tat io.cucumber.stepexpression.StepExpressionFactory$3.transform(StepExpressionFactory.java:73)\n\tat io.cucumber.stepexpression.DataTableArgument.getValue(DataTableArgument.java:19)\n\tat cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:41)\n\t... 30 more\n",
+              "duration": 112388,
+              "status": "failed"
+            },
+            "line": 103,
+            "name": "I search for the first cell in \"pivot\" that matches:",
+            "match": {
+              "arguments": [
+                {
+                  "val": "pivot",
+                  "offset": 32
+                }
+              ],
+              "location": "TableStepDef.i_search_for_the_first_cell_in_that_matches(String,TableMatchParams\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "row",
+                  "column",
+                  "value"
+                ]
+              },
+              {
+                "cells": [
+                  "Red",
+                  "2010",
+                  "5"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2490,
+              "status": "skipped"
+            },
+            "line": 106,
+            "name": "no matching cell shall be found",
+            "match": {
+              "location": "TableStepDef.no_matching_cell_shall_be_found()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@local"
+          },
+          {
+            "name": "@table"
+          },
+          {
+            "name": "@complete"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "On table page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 223049695,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I have navigated to the local page \"/table.html\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/table.html",
+                  "offset": 36
+                }
+              ],
+              "location": "TableStepDef.i_have_navigated_to_the_local_page(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 116,
+        "name": "Adapt rows of a table",
+        "description": "",
+        "id": "tables;adapt-rows-of-a-table",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 404191824,
+              "status": "passed"
+            },
+            "line": 117,
+            "name": "I choose to adapt \"table2\" using a row adapter",
+            "match": {
+              "arguments": [
+                {
+                  "val": "table2",
+                  "offset": 19
+                }
+              ],
+              "location": "TableStepDef.i_choose_to_adapt_using_a_row_adapter(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 11994628,
+              "status": "passed"
+            },
+            "line": 118,
+            "name": "the row adapter shall be called 3 times",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 32
+                }
+              ],
+              "location": "TableStepDef.the_row_adapter_shall_be_called_times(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 44041659,
+              "status": "passed"
+            },
+            "line": 119,
+            "name": "the adapter shall be passed 3 \"th\" column headers each time",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 28
+                },
+                {
+                  "val": "th",
+                  "offset": 31
+                }
+              ],
+              "location": "TableStepDef.the_adapter_shall_be_passed_column_headers_each_time(int,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 50245031,
+              "status": "passed"
+            },
+            "line": 120,
+            "name": "the adapter shall be passed 3 \"td\" cells each time",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 28
+                },
+                {
+                  "val": "td",
+                  "offset": 31
+                }
+              ],
+              "location": "TableStepDef.the_adapter_shall_be_passed_cells_each_time(int,String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@local"
+          },
+          {
+            "name": "@table"
+          },
+          {
+            "name": "@complete"
+          }
+        ]
+      }
+    ],
+    "name": "Tables",
+    "description": "  In order to test applications\n  As a tester\n  I want to find things in a table",
+    "id": "tables",
+    "keyword": "Feature",
+    "uri": "features/samples/local/table.feature",
+    "tags": [
+      {
+        "name": "@local",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@table",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 8
+        }
+      }
+    ]
+  }
+]
