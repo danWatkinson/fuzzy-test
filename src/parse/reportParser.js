@@ -1,10 +1,11 @@
 const fs = require("fs");
 const mergeBackground = require('./mergeBackground');
+const scenarioSummary = require('./scenarioSummary');
 
 module.exports = (options) => {
 
   const scenariosFrom = (feature) => {
-    const scenarioResults = [];
+    const scenarios = [];
 
     mergeBackground(feature.elements).forEach( (scenario) => {
       const scenarioResult = scenario.steps.map(step => step.result.status)
@@ -12,13 +13,10 @@ module.exports = (options) => {
           return accumulator == 'failed' ? 'failed' : currentValue;
         });
 
-      scenarioResults.push({
-        name: scenario.name,
-        result: scenarioResult
-      });
+      scenarios.push( scenarioSummary(scenario, scenarioResult) );
     });
 
-    return scenarioResults;
+    return scenarios;
   }
 
   const filterResultsFrom = (jsonContent) => {

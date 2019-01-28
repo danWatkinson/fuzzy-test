@@ -41,6 +41,7 @@ describe('fileProvider(options)', () => {
         'someFolder/file1.json',
         'someFolder/file3.json'
       ]);
-    })
+    });
+    
   });
 });
