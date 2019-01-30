@@ -7,7 +7,8 @@
   },
   "main": "./src/cli.js",
   "scripts": {
-    "test": "nyc mocha \"src/**/*.test.js\""
+    "test": "mocha \"src/**/*.test.js\"",
+    "coverage": "nyc --reporter=html mocha \"src/**/*.test.js\""
   },
   "author": "",
   "license": "ISC",
