@@ -1,0 +1,179 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 8,
+        "name": "pass tag1",
+        "description": "",
+        "id": "tagging;pass-tag1",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 146831044,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "a step that passes",
+            "match": {
+              "location": "StepDefs.a_step_that_passes()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 59924,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "a step that passes",
+            "match": {
+              "location": "StepDefs.a_step_that_passes()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 7,
+            "name": "@tag1"
+          }
+        ]
+      },
+      {
+        "line": 13,
+        "name": "pass again tag1",
+        "description": "",
+        "id": "tagging;pass-again-tag1",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 43580,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "a step that passes",
+            "match": {
+              "location": "StepDefs.a_step_that_passes()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 36709,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "a step that passes",
+            "match": {
+              "location": "StepDefs.a_step_that_passes()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 12,
+            "name": "@tag1"
+          }
+        ]
+      },
+      {
+        "line": 18,
+        "name": "fail tag2",
+        "description": "",
+        "id": "tagging;fail-tag2",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 36466,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "a step that passes",
+            "match": {
+              "location": "StepDefs.a_step_that_passes()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 287949,
+              "error_message": "java.lang.Exception: fail!\n\tat io.magentys.stepdefs.StepDefs.a_step_that_fails(StepDefs.java:24)\n\tat ✽.And a step that fails(features/OneFeature_MultipleTags.feature:20)\n",
+              "status": "failed"
+            },
+            "line": 20,
+            "name": "a step that fails",
+            "match": {
+              "location": "StepDefs.a_step_that_fails()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 17,
+            "name": "@tag2"
+          }
+        ]
+      },
+      {
+        "line": 23,
+        "name": "pass tag2",
+        "description": "",
+        "id": "tagging;pass-tag2",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 84468,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "a step that passes",
+            "match": {
+              "location": "StepDefs.a_step_that_passes()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 70142,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "a step that passes",
+            "match": {
+              "location": "StepDefs.a_step_that_passes()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 22,
+            "name": "@tag2"
+          }
+        ]
+      }
+    ],
+    "name": "Tagging",
+    "description": "In order to ...\nAs a ...\nI want to ...",
+    "id": "tagging",
+    "keyword": "Feature",
+    "uri": "features/OneFeature_MultipleTags.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@wip"
+      }
+    ]
+  }
+]
