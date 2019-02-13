@@ -54,4 +54,18 @@ describe('reportParser(options).parse(file)', () => {
 
     expect(report[0].length).to.equal(1);
   });
+  //
+  // it('understands tags', () => {
+  //   const testFile = path.resolve(testResources, 'TaggingExample/1.json');
+  //
+  //   const report = reportParser({}).parse(testFile);
+  //
+  //   expect(report).to.deep.equal([[
+  //     {name: 'pass tag1', result: 'passed', tags:['@tag1']},
+  //     {name: 'pass again tag1', result: 'passed', tags:['@tag1']},
+  //     {name: 'fail tag2', result: 'failed', tags:['@tag2']},
+  //     {name: 'pass tag2', result: 'passed', tags:['@tag2']}
+  //   ]])
+  // });
+
 });

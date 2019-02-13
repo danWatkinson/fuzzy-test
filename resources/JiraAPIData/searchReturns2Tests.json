@@ -1,0 +1,20 @@
+{
+  "expand": "schema,names",
+  "startAt": 0,
+  "maxResults": 50,
+  "total": 2,
+  "issues": [
+    {
+      "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+      "id": "347519",
+      "self": "https://jira-dev.intdigital.ee.co.uk/rest/api/2/issue/347519",
+      "key": "XTP-16143"
+    },
+    {
+      "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+      "id": "347518",
+      "self": "https://jira-dev.intdigital.ee.co.uk/rest/api/2/issue/347518",
+      "key": "XTP-16142"
+    }
+  ]
+}
