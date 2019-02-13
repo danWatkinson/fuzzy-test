@@ -3,9 +3,7 @@
   "version": "1.0.0",
   "description": "Reads cucumber json output and a config file. Passes or fails the cucumber json based on configured thresholds.",
   "bin": {
-    "findTests-cli": "src/jira/findTests.js",
     "fuzzy-test": "src/cli.js",
-    "createTestPlan": "src/jira/randomTest.js",
     "synchroniseTestPlan": "src/jira/synchroniseTestPlan.js"
   },
   "main": "./src/cli.js",
