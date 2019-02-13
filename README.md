@@ -45,3 +45,4 @@ synchroniseTestPlan -n XTP -s "automated_test_plan_1" -q "Shop:Squad 1" -c Web -
 npm run coverage
 open ./coverage/index.html
 ```
+- 'sad path'.. make sure all reasonable error conditions are handled with some grace..
