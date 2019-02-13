@@ -31,3 +31,17 @@ This example goes to EE's test Jira instance, finds or creates a test plan calle
 ```bash
 synchroniseTestPlan -n XTP -s "automated_test_plan_1" -q "Shop:Squad 1" -c Web -u <Jira username> -p <Jira password> -h https://jira-dev.intdigital.ee.co.uk -l "Marketing_Tribe,Functional"
 ```
+
+
+//TODO
+
+- Handle pagination on big result sets
+
+- refactor; one API object with all the nice methods on it, rather than individual objects for each type of interaction..
+
+- sort out test coverage
+
+```bash
+npm run coverage
+open ./coverage/index.html
+```
