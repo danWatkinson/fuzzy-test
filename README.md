@@ -32,6 +32,17 @@ This example goes to EE's test Jira instance, finds or creates a test plan calle
 synchroniseTestPlan -n XTP -s "automated_test_plan_1" -q "Shop:Squad 1" -c Web -u <Jira username> -p <Jira password> -h https://jira-dev.intdigital.ee.co.uk -l "Marketing_Tribe,Functional"
 ```
 
+## Example of exporting from Jira:
+
+You will need to give this a username/password for the provided Jira instance instead of the dummied-out username/password.
+
+This example goes to EE's test Jira instance, finds a test plan called "automated_test_plan_4", and exports all associated gherkin scripts to features.feature
+
+```bash
+exportFeatures -u <Jira username> -p <Jira password> -h https://jira-dev.intdigital.ee.co.uk  -s "automated_test_plan_4" -o ./features.feature
+
+```
+
 
 //TODO
 
