@@ -57,3 +57,5 @@ npm run coverage
 open ./coverage/index.html
 ```
 - 'sad path'.. make sure all reasonable error conditions are handled with some grace..
+
+- maintaining a clean jira instance...need to be able to delete things! try via api, failing that talk to atlassian team- it could be a permissions thing
