@@ -1,28 +1,23 @@
 const hyperdiff = require('hyperdiff');
 
-const createTestPlan = require('./createTestPlan/createTestPlan');
-const findTestPlanBySummary = require('./findTestPlanBySummary/search');
-const searchTestsByLabel = require('./searchTestsByLabel/search');
-const addTestsToTestPlan = require('./addTestsToTestPlan/addTestsToTestPlan');
-const listTestsAgainstATestPlan = require('./listTestsAgainstATestPlan/listTestsAgainstATestPlan');
-const removeTestsFromTestPlan = require('./removeTestsFromTestPlan/removeTestsFromTestPlan');
+const apiBuilder = require('./apiBuilder');
 
 module.exports = async (options) => {
-  let key = await findTestPlanBySummary(options).execute();
+
+  const api = apiBuilder(options);
+
+  let key = await api.findTestPlanBySummary();
 
   if (!key) {
-    const response = await createTestPlan(options).execute();
-    key = response.data.key;
+    key = await api.createTestPlan();
   }
 
-  const tests = await searchTestsByLabel(options).execute();
+  const testsWithCorrectLabels = await api.findTestsByLabels();
 
-  const existingTests = await listTestsAgainstATestPlan(options).list(key);
+  const testsAlreadyInTestPlan = await api.listTestsAgainstATestPlan(key);
 
-  const delta = hyperdiff(existingTests, tests);
+  const delta = hyperdiff(testsAlreadyInTestPlan, testsWithCorrectLabels);
 
-  await addTestsToTestPlan(options).add(key, delta.added);
-
-  await removeTestsFromTestPlan(options).remove(key, delta.removed);
+  await api.synchroniseTestPlan(key, delta);
 
 }
