@@ -5,7 +5,8 @@
   "bin": {
     "fuzzy-test": "src/cli.js",
     "synchroniseTestPlan": "src/cli-synchronise.js",
-    "exportFeatures": "src/cli-export.js"
+    "exportFeatures": "src/cli-export.js",
+    "cloneStepDefs": "src/cli-clone.js"
   },
   "main": "./src/cli.js",
   "scripts": {
@@ -28,6 +29,8 @@
   "dependencies": {
     "axios": "^0.18.0",
     "commander": "^2.19.0",
+    "fs-extra": "^7.0.1",
+    "git-clone": "^0.1.0",
     "hyperdiff": "^2.0.5"
   }
 }
