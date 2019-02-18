@@ -1,4 +1,4 @@
-const expect = require('../../test/test-hooks').expect;
+const expect = require('../../../test/test-hooks').expect;
 
 const payloadBuilder = require('./payloadBuilder');
 

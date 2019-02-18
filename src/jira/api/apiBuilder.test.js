@@ -1,8 +1,8 @@
 const proxyquire = require('proxyquire').noPreserveCache();
 const sinon = require('sinon');
 
-const axiosStub = require('../../test/axiosStub');
-const expect = require('../../test/test-hooks').expect;
+const axiosStub = require('../../../test/axiosStub');
+const expect = require('../../../test/test-hooks').expect;
 
 const apiBuilder = proxyquire('./apiBuilder', {'axios': axiosStub});
 

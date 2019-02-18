@@ -1,6 +1,6 @@
 const hyperdiff = require('hyperdiff');
 
-const apiBuilder = require('./apiBuilder');
+const apiBuilder = require('./api/apiBuilder');
 
 module.exports = async (options) => {
 

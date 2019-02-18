@@ -4,8 +4,8 @@
   "description": "Reads cucumber json output and a config file. Passes or fails the cucumber json based on configured thresholds.",
   "bin": {
     "fuzzy-test": "src/cli.js",
-    "synchroniseTestPlan": "src/jira/synchroniseTestPlan.js",
-    "exportFeatures": "src/jira/exportFeatures.js"
+    "synchroniseTestPlan": "src/cli-synchronise.js",
+    "exportFeatures": "src/cli-export.js"
   },
   "main": "./src/cli.js",
   "scripts": {

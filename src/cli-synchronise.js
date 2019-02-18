@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 const options = require('commander');
-const synchronise = require('./synchronise');
+const synchronise = require('./jira/synchronise');
 
 options
   .version('0.1.0')

@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 const options = require('commander');
 
-const findTestPlanBySummary = require('./findTestPlanBySummary/search');
-const exportTestPlan = require('./exportTestPlan/exportTestPlan');
+const findTestPlanBySummary = require('./jira/api/findTestPlanBySummary/search');
+const exportTestPlan = require('./jira/exportTestPlan/exportTestPlan');
 
 options
   .version('0.1.0')
