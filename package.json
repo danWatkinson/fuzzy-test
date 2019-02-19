@@ -6,7 +6,8 @@
     "fuzzy-test": "src/cli.js",
     "synchroniseTestPlan": "src/cli-synchronise.js",
     "exportFeatures": "src/cli-export.js",
-    "cloneStepDefs": "src/cli-clone.js"
+    "cloneStepDefs": "src/cli-clone.js",
+    "cli-test-pipeline": "src/cli-test-pipeline.js"
   },
   "main": "./src/cli.js",
   "scripts": {

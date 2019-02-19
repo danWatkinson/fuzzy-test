@@ -1,7 +1,9 @@
 #!/usr/bin/env node
 const options = require('commander');
+const path = require('path');
+const fse = require('fs-extra');
 
-const findTestPlanBySummary = require('./jira/api/findTestPlanBySummary/search');
+const api = require('./jira/api/apiBuilder');
 const exportTestPlan = require('./jira/exportTestPlan/exportTestPlan');
 
 options
@@ -15,7 +17,11 @@ options
 
 
 async function go() {
-  const key = await findTestPlanBySummary(options).execute();
+  const dirName = path.dirname(options.output);
+
+  fse.ensureDirSync(dirName);
+
+  const key = await api(options).findTestPlanBySummary();
 
   await exportTestPlan(options).execute(key);
 }
