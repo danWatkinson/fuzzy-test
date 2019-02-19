@@ -7,6 +7,9 @@ const clone = require('./git/clone');
 const api = require('./jira/api/apiBuilder');
 const exportTestPlan = require('./jira/exportTestPlan/exportTestPlan');
 const synchronise = require('./jira/synchronise.js')
+const prepareDockerImage = require('./build/prepareDockerImage');
+const createRunnerScript = require('./build/createRunnerScript');
+const executeTestsInDocker = require('./build/executeTestsInDocker');
 
 options
   .version('0.1.0')
@@ -25,6 +28,8 @@ options
   .option('-r, --repository <string>', 'url to repository eg. https://bitbucket.intdigital.ee.co.uk/scm/web/aem-automation.git')
   .option('-t, --targetPath <string>', 'where to clone to')
   .option('-b, --branch <string>', 'branch to clone')
+
+  .option('-x, --perfectoToken', 'perfecto security token')
   .parse(process.argv);
 
 
@@ -41,6 +46,11 @@ async function go() {
 
   await exportTestPlan(options).execute(key);
 
+  await prepareDockerImage(options);
+
+  await createRunnerScript(options);
+
+  await executeTestsInDocker(options);
 }
 
 go();

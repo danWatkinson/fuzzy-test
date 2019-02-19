@@ -8,6 +8,8 @@ module.exports = (options) => {
   const cloneOptions = {}
 
   const performClone = async() => {
+    console.log(`cloning ${repository} :: ${branch} into ${targetPath}`)
+
     await clear();
 
     return new Promise( (resolve, reject) => {

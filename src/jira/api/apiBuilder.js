@@ -16,6 +16,8 @@ module.exports = (options) => {
   const auth = {auth: options}
 
   const createTestPlan = async() => {
+    console.log(`creating test plan "${summary}"`);
+
     const url = `${hostname}/rest/api/2/issue`,
           payload = payloadBuilder(options),
           response = await axios.post( url, payload, auth );
@@ -24,6 +26,8 @@ module.exports = (options) => {
   }
 
   const findTestPlanBySummary = async() => {
+    console.log(`looking for test plan "${summary}"`);
+
     const query = querystring.stringify({jql: 'summary ~ "' + summary +'"'}),
           url = `${hostname}/rest/api/2/search?${query}`,
           response = await axios.get( url, {auth: options} );
@@ -36,6 +40,8 @@ module.exports = (options) => {
   }
 
   const findTestsByLabels = async() => {
+    console.log(`looking tests labeled ${labels}`);
+
     const query = searchQueryBuilder(labels),
           url = `${hostname}/rest/api/2/search?${query}`,
           response = await axios.get( url, {auth: options});
@@ -44,6 +50,8 @@ module.exports = (options) => {
   }
 
   const synchroniseTestPlan = async(testPlanKey, delta) => {
+    console.log(`synching test plan ${testPlanKey}, adding ${delta.added}, removing ${delta.removed}`);
+
     await axios.post(
       `${hostname}/rest/raven/1.0/api/testplan/${testPlanKey}/test`,
       { add: delta.added, remove: delta.removed },
@@ -52,12 +60,14 @@ module.exports = (options) => {
   }
 
   const listTestsAgainstATestPlan = async(testPlanKey) => {
-      const response = await axios.get(
-        `${hostname}/rest/raven/1.0/api/testplan/${testPlanKey}/test`,
-        auth
-      );
+    console.log(`retrieving tests against test plan ${testPlanKey}`);
 
-      return response.data.map( (test) => {return test.key} )
+    const response = await axios.get(
+      `${hostname}/rest/raven/1.0/api/testplan/${testPlanKey}/test`,
+      auth
+    );
+
+    return response.data.map( (test) => {return test.key} )
   }
 
   return Object.freeze({
