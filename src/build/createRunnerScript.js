@@ -1,5 +1,4 @@
 const fs = require('fs');
-const chmod = require('chmod');
 
 const runnerScriptArgsBuilder = require('./runnerScriptArgsBuilder');
 
@@ -26,7 +25,7 @@ module.exports = (config) => {
         reject(err);
     }
 
-    chmod(fileName, 777);
+    fs.chmodSync(fileName, 777);
 
     resolve();
     });
