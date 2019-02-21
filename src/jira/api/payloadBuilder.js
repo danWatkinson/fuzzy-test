@@ -1,13 +1,6 @@
 module.exports = (options) => {
 
-  const { squad, components } = options;
-
-  const squadTribe = squad?squad.split(':')[0]:''
-  const squadName = squad?squad.split(':')[1]:''
-
-  const componentElements = components
-                              ? components.split(',').map( (component) => {return {name: component} } )
-                              : [];
+  const namedComponents = options.components ? options.components.map( (component)=> {return {name: component}} ) : [];
 
   return Object.freeze({
     fields: {
@@ -20,12 +13,12 @@ module.exports = (options) => {
         name: "Test Plan"
       },
       customfield_16546: {
-        value: squadTribe,
+        value: options.tribe,
         child: {
-          value: squadName
+          value: options.squad
         }
       },
-      components: componentElements
+      components: namedComponents
     }
   });
 }

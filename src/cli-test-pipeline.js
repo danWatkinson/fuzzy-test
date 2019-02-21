@@ -11,50 +11,43 @@ const prepareDockerImage = require('./build/prepareDockerImage');
 const createRunnerScript = require('./build/createRunnerScript');
 const executeTestsInDocker = require('./build/executeTestsInDocker');
 
+const configParser = require('./configParser');
+
 options
   .version('0.1.0')
-  .option('-h, --hostname <string>', 'jira host')
   .option('-u, --username <string>', 'jira username')
   .option('-p, --password <string>', 'jira password')
+  .option('-f, --config <string>', 'location of config file')
 
-  .option('-s, --summary <string>', 'test-plan "summary"')
-  .option('-o, --output <string>', 'target file')
+  .option('-x, --perfectoToken <string>', 'perfecto security token')
 
-  .option('-n, --project Name <string>', 'project name')
-  .option('-q, --squad <string>', 'tribe:squad')
-  .option('-c, --components <string>', 'comma-separated list of components')
-  .option('-l, --labels <string>', 'comma-separated list of labels')
-
-  .option('-r, --repository <string>', 'url to repository eg. https://bitbucket.intdigital.ee.co.uk/scm/web/aem-automation.git')
-  .option('-t, --targetPath <string>', 'where to clone to')
-  .option('-b, --branch <string>', 'branch to clone')
-
-  .option('-x, --perfectoToken', 'perfecto security token')
   .parse(process.argv);
 
+const config = configParser(options);
 
 async function go() {
-  await clone(options).performClone();
+  await clone(config.config.tests.xray.stepdefs.git).performClone();
 
-  await synchronise(options);
+  await synchronise(config);
 
-  const dirName = path.dirname(options.output);
+  const dirName = path.dirname(config.config.tests.xray.features.output); //TODO do this better
 
   fse.ensureDirSync(dirName);
 
-  const key = await api(options).findTestPlanBySummary();
+  const key = await api(config).findTestPlanBySummary();
 
-  await exportTestPlan(options).execute(key);
+  await exportTestPlan(config).execute(key);
 
-  await prepareDockerImage(options);
+  await prepareDockerImage(config.config.executor.docker);
 
-  await createRunnerScript(options);
+  await createRunnerScript(config.config.executor.docker.script);
 
-  await executeTestsInDocker(options);
+  await executeTestsInDocker(config.config.executor.docker);
 }
+
 
 go();
 
 //
-// cli-test-pipeline -u <user -p <pass> -h https://jira-dev.intdigital.ee.co.uk -n XTP -s "do i still get a testplan after refactoring again" -q "Shop:Squad 1" -c Web -l "Marketing_Tribe,Functional" -r https://bitbucket.intdigital.ee.co.uk/scm/web/aem-automation.git -t ../aem-automation -b features/danTest -o ../aem-automation/src/test/resources/features/exported.feature
+// cli-test-pipeline -u <user> -p <password> -f ../marketingMVP.json
 //

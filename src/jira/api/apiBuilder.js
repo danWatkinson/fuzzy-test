@@ -5,21 +5,20 @@ const searchQueryBuilder = require('./searchQueryBuilder');
 
 const payloadBuilder = require('./payloadBuilder');
 
-module.exports = (options) => {
-  const {hostname, summary, squad, components } = options;
+module.exports = (config) => {
+  const hostname = config.config.tests.xray.features.host;
+  const {summary, labels} = config.config.tests.xray.features.testplan;
 
-  const labels = options.labels ? options.labels.split(',') : [];
-  const squadTribe = squad?squad.split(':')[0]:''
-  const squadName = squad?squad.split(':')[1]:''
-  const componentElements = components ? components.split(',').map((component) => {return {name: component}}) : [];
-
-  const auth = {auth: options}
+  const auth = {auth: {
+    "username": config.username,
+    "password": config.password
+  }};
 
   const createTestPlan = async() => {
     console.log(`creating test plan "${summary}"`);
 
     const url = `${hostname}/rest/api/2/issue`,
-          payload = payloadBuilder(options),
+          payload = payloadBuilder(config.config.tests.xray.features.testplan),
           response = await axios.post( url, payload, auth );
 
     return response.data.key;
@@ -30,7 +29,7 @@ module.exports = (options) => {
 
     const query = querystring.stringify({jql: 'summary ~ "' + summary +'"'}),
           url = `${hostname}/rest/api/2/search?${query}`,
-          response = await axios.get( url, {auth: options} );
+          response = await axios.get( url, auth );
 
     if (response.data.issues.length > 1) {
       throw ('found multiple test-plans matching ' + summary);
@@ -44,7 +43,7 @@ module.exports = (options) => {
 
     const query = searchQueryBuilder(labels),
           url = `${hostname}/rest/api/2/search?${query}`,
-          response = await axios.get( url, {auth: options});
+          response = await axios.get( url, auth);
 
     return response.data.issues.map( (issue) => {return issue.key} );
   }

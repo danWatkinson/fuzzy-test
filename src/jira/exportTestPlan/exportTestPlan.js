@@ -2,10 +2,10 @@ const fs = require('fs')
 const path = require('path')
 const axios = require('axios')
 
-module.exports = (options) => {
-  const {hostname, output} = options;
+module.exports = (config) => {
+  const {host, output} = config.config.tests.xray.features;
 
-  const baseURL = hostname + '/rest/raven/1.0/export/test'
+  const baseURL = host + '/rest/raven/1.0/export/test'
 
   const execute = async (testPlanKey) => {
     const url = baseURL + '?keys=' + testPlanKey;
@@ -16,7 +16,7 @@ module.exports = (options) => {
       url,
       method: 'GET',
       responseType: 'stream',
-      auth: options
+      auth: config
     })
 
     response.data.pipe(writer)

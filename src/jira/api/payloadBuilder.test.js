@@ -28,19 +28,19 @@ describe('payloadBuilder(options)', () => {
   })
 
   it('adds customfield_16546 to the created test plan, based on provided squad information', () => {
-    const payload = payloadBuilder({squad:"shop:squad1"});
+    const payload = payloadBuilder({tribe:"shop"});
 
     expect(payload.fields.customfield_16546.value).to.equal('shop');
   })
 
   it('adds customfield_16546.child to the created test plan, based on provided squad information', () => {
-    const payload = payloadBuilder({squad:"shop:squad1"});
+    const payload = payloadBuilder({squad:"squad1"});
 
     expect(payload.fields.customfield_16546.child.value).to.equal('squad1');
   })
 
   it('adds components to the created test plan, based on provided comma-separated list', () => {
-    const payload = payloadBuilder({components:"web,aem_somethingorother"});
+    const payload = payloadBuilder({components:["web","aem_somethingorother"]});
 
     expect(payload.fields.components).to.deep.equal([
       { "name": "web" },

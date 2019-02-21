@@ -1,0 +1,67 @@
+{
+  "workingDirectory": "",
+
+  "tests": {
+
+    "xray": {
+      "features": {
+        "host": "https://jira-dev.intdigital.ee.co.uk",
+        "output": "../aem-automation/src/test/resources/features/myFeatures.feature",
+        "export": "src/test/resources/features/myFeatures.feature",
+        "testplan": {
+          "project": "XTP",
+          "summary": "do i still get a testplan after refactoring again",
+          "tribe": "Shop",
+          "squad": "Squad 1",
+          "components": ["Web"],
+          "labels": ["Marketing_Tribe", "Functional"]
+        }
+      },
+      "stepdefs": {
+        "git": {
+          "repository": "https://bitbucket.intdigital.ee.co.uk/scm/web/aem-automation.git",
+          "branch": "features/danTest",
+          "targetPath": "../aem-automation"
+        }
+      }
+    }
+  },
+
+  "executor": {
+    "docker": {
+      "targetPath": "../aem-automation",
+      "imageName": "ee/maven",
+      "containerName": "mavenTest",
+      "build": {
+        "dockerFile": "./docker"
+      },
+      "script": {
+        "targetPath": "../aem-automation",
+        "command": "mvn clean install -X -U -Pparallel",
+        "args": {
+          "threads": "1",
+          "browserProfile": "perfecto-chrome",
+          "env":"websquad1",
+          "tribe":"Marketing-tribe",
+          "hubUrl": "https://ee.perfectomobile.com/nexperience/perfectomobile/wd/hub/fast",
+          "reportium-job-name": "TESTING_Marketing-Functional",
+          "reportium-tags=": "Marketing Functional",
+          "featuresDirectory": "src/test/resources/features",
+          "outputDirectory": "target/generated-test-sources/cucumbers",
+          "cucumberOutputDir": "target/cucumber-reports",
+
+          "tags": "@Marketing_Tribe and @Functional",
+
+          "reportium-job-number": "-123",
+          "perfecto.securityToken": "${perfectoToken}"
+        }
+      }
+
+
+    }
+  },
+
+  "thresholds": {},
+  "reporting": {}
+
+}

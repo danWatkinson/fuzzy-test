@@ -2,9 +2,9 @@ const hyperdiff = require('hyperdiff');
 
 const apiBuilder = require('./api/apiBuilder');
 
-module.exports = async (options) => {
+module.exports = async (config) => {
 
-  const api = apiBuilder(options);
+  const api = apiBuilder(config);
 
   let key = await api.findTestPlanBySummary();
 
