@@ -14,7 +14,7 @@
     "test": "mocha \"src/**/*.test.js\"",
     "coverage": "nyc --all --reporter=html mocha \"src/**/*.test.js\""
   },
-  "author": "",
+  "author": "test",
   "license": "ISC",
   "devDependencies": {
     "chai": "^4.2.0",
