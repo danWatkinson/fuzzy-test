@@ -10,11 +10,11 @@
         "export": "src/test/resources/features/myFeatures.feature",
         "testplan": {
           "project": "XTP",
-          "summary": "do i still get a testplan after refactoring again",
+          "summary": "Pipeline: Marketing_Tribe Functional_Tests",
           "tribe": "Shop",
           "squad": "Squad 1",
           "components": ["Web"],
-          "labels": ["Marketing_Tribe", "Functional"]
+          "labels": ["Marketing_Tribe", "Functional_Tests"]
         }
       },
       "stepdefs": {
