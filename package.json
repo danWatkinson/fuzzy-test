@@ -33,6 +33,7 @@
     "docker-cli-js": "^2.5.1",
     "fs-extra": "^7.0.1",
     "git-clone": "^0.1.0",
-    "hyperdiff": "^2.0.5"
+    "hyperdiff": "^2.0.5",
+    "traverse": "^0.6.6"
   }
 }

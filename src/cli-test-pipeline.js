@@ -11,7 +11,7 @@ const prepareDockerImage = require('./build/prepareDockerImage');
 const createRunnerScript = require('./build/createRunnerScript');
 const executeTestsInDocker = require('./build/executeTestsInDocker');
 
-const configParser = require('./configParser');
+const configParser = require('./configuration/configParser');
 
 options
   .version('0.1.0')
