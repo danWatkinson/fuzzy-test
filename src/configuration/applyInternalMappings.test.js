@@ -25,7 +25,7 @@ describe('applyInternalMappings', () => {
     expect(applyInternalMappings(exampleConfig)).to.deep.equal(expectedResult);
   })
 
-  it('leaves missing references unchanged', () => {
+  it('flags missing references', () => {
     const exampleConfig = {
       nestedOnce: {
         nestedTwice: {
@@ -37,7 +37,7 @@ describe('applyInternalMappings', () => {
     const expectedResult = {
       nestedOnce: {
         nestedTwice: {
-          mappedValue: '${aRootValue}'
+          mappedValue: '<unmatched mapping: aRootValue>'
         }
       }
     }
@@ -45,23 +45,49 @@ describe('applyInternalMappings', () => {
     expect(applyInternalMappings(exampleConfig)).to.deep.equal(expectedResult);
   })
 
-  xit('can handle multiple mappings in a single node', () => {
+  it('can handle multiple mappings in a single node', () => {
     const exampleConfig = {
       aRootValue: 'ABC-123',
-      aotherRootValue: 'DEF-456',
+      anotherRootValue: 'DEF-456',
       nestedOnce: {
         nestedTwice: {
-          mappedValue: 'blah blah "${aRootValue}" blah blah ${aotherRootValue}'
+          mappedValue: 'blah blah ${aRootValue} blah blah ${anotherRootValue}'
         }
       }
     }
 
     const expectedResult = {
       aRootValue: 'ABC-123',
-      aotherRootValue: 'DEF-456',
+      anotherRootValue: 'DEF-456',
       nestedOnce: {
         nestedTwice: {
-          mappedValue: 'blah blah "ABC-123" blah blah DEF-456'
+          mappedValue: 'blah blah ABC-123 blah blah DEF-456'
+        }
+      }
+    }
+
+    expect(applyInternalMappings(exampleConfig)).to.deep.equal(expectedResult);
+  })
+
+  it('can handle dot-delimited mappings', () => {
+    const exampleConfig = {
+      in: {
+        more: 'AAA-111'
+      },
+      nestedOnce: {
+        nestedTwice: {
+          mappedValue: 'blah blah ${in.more}'
+        }
+      }
+    }
+
+    const expectedResult = {
+      in: {
+        more: 'AAA-111'
+      },
+      nestedOnce: {
+        nestedTwice: {
+          mappedValue: 'blah blah AAA-111'
         }
       }
     }
