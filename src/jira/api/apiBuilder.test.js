@@ -18,25 +18,9 @@ describe('apiBuilder(config)', () => {
       axiosStub.post.returns(Promise.resolve({data:{}}));
 
       await apiBuilder({
-        config: {
-          tests: {
-              xray: {
-                  features: {
-                    host: "https://127.0.0.1",
-                    testplan: {
-                      project: "myProjectName",
-                      summary: "xxxx",
-                      summary: "mySummary",
-                      tribe:"shop",
-                      squad:"squad1",
-                      components:["web","aem_somethingorother"],
-                      labels: []
-                    }
-                  }
-                }
-              }
-            }
-          }).createTestPlan();
+        hostname: "https://127.0.0.1",
+        testplan: {}
+      }).createTestPlan();
 
       expect(axiosStub.post).to.have.been.calledWith(
         'https://127.0.0.1/rest/api/2/issue',
@@ -49,25 +33,15 @@ describe('apiBuilder(config)', () => {
       axiosStub.post.returns(Promise.resolve({data:{}}));
 
       await apiBuilder({
-        config: {
-          tests: {
-              xray: {
-                  features: {
-                    host: "https://127.0.0.1",
-                    testplan: {
-                      project: "myProjectName",
-                      summary: "xxxx",
-                      summary: "mySummary",
-                      tribe:"shop",
-                      squad:"squad1",
-                      components:["web","aem_somethingorother"],
-                      labels: []
-                    }
-                  }
-                }
-              }
-            }
-          }).createTestPlan();
+        testplan: {
+          project: "myProjectName",
+          summary: "mySummary",
+          tribe:"shop",
+          squad:"squad1",
+          components:["web","aem_somethingorother"],
+          labels: []
+        }
+      }).createTestPlan();
 
 
       const expectedPayload = {
@@ -107,25 +81,8 @@ describe('apiBuilder(config)', () => {
       await apiBuilder({
         username: "user",
         password: "pass",
-        config: {
-          tests: {
-              xray: {
-                  features: {
-                    host: "https://127.0.0.1",
-                    testplan: {
-                      project: "myProjectName",
-                      summary: "xxxx",
-                      summary: "mySummary",
-                      tribe:"shop",
-                      squad:"squad1",
-                      components:["web","aem_somethingorother"],
-                      labels: []
-                    }
-                  }
-                }
-              }
-            }
-          }).createTestPlan();
+        testplan: {}
+      }).createTestPlan();
 
       expect(axiosStub.post).to.have.been.calledWith(
         sinon.match.any,
@@ -140,62 +97,27 @@ describe('apiBuilder(config)', () => {
       }));
 
       const resolution = await apiBuilder({
+        hostname: "https://127.0.0.1",
         username: "user",
         password: "pass",
-        config: {
-          tests: {
-              xray: {
-                  features: {
-                    host: "https://127.0.0.1",
-                    testplan: {
-                      project: "myProjectName",
-                      summary: "xxxx",
-                      summary: "mySummary",
-                      tribe:"shop",
-                      squad:"squad1",
-                      components:["web","aem_somethingorother"],
-                      labels: []
-                    }
-                  }
-                }
-              }
-            }
-          }).createTestPlan();
+        testplan: {}
+      }).createTestPlan();
 
       expect(resolution).to.equal('myKey');
     });
 
   });
 
-
-
-
   describe('.findTestPlanBySummary()', () => {
     it('makes a get request to {config.hostname}/rest/api/2/search?jql=summary ~ {config.summary} (with the query url-encoded..)', async() => {
       axiosStub.get.returns(Promise.resolve({data:{issues:[]}}));
 
       await apiBuilder({
-        username: "user",
-        password: "pass",
-        config: {
-          tests: {
-              xray: {
-                  features: {
-                    host: "https://127.0.0.1",
-                    testplan: {
-                      project: "myProjectName",
-                      summary: "xxxx",
-                      summary: "the name of my test plan",
-                      tribe:"shop",
-                      squad:"squad1",
-                      components:["web","aem_somethingorother"],
-                      labels: []
-                    }
-                  }
-                }
-              }
-            }
-          }).findTestPlanBySummary();
+        hostname: "https://127.0.0.1",
+        testplan: {
+          summary: "the name of my test plan",
+        }
+      }).findTestPlanBySummary();
 
       expect(axiosStub.get).to.have.been.calledWith(
         'https://127.0.0.1/rest/api/2/search?jql=summary%20~%20%22the%20name%20of%20my%20test%20plan%22',
@@ -209,25 +131,8 @@ describe('apiBuilder(config)', () => {
       await apiBuilder({
         username: "user",
         password: "pass",
-        config: {
-          tests: {
-              xray: {
-                  features: {
-                    host: "https://127.0.0.1",
-                    testplan: {
-                      project: "myProjectName",
-                      summary: "xxxx",
-                      summary: "the name of my test plan",
-                      tribe:"shop",
-                      squad:"squad1",
-                      components:["web","aem_somethingorother"],
-                      labels: []
-                    }
-                  }
-                }
-              }
-            }
-          }).findTestPlanBySummary();
+        testplan: {}
+      }).findTestPlanBySummary();
 
       expect(axiosStub.get).to.have.been.calledWith(
         sinon.match.any,
@@ -239,27 +144,8 @@ describe('apiBuilder(config)', () => {
       axiosStub.get.returns(Promise.resolve({data:{issues:[]}}));
 
       const resolution = await apiBuilder({
-        username: "user",
-        password: "pass",
-        config: {
-          tests: {
-              xray: {
-                  features: {
-                    host: "https://127.0.0.1",
-                    testplan: {
-                      project: "myProjectName",
-                      summary: "xxxx",
-                      summary: "the name of my test plan",
-                      tribe:"shop",
-                      squad:"squad1",
-                      components:["web","aem_somethingorother"],
-                      labels: []
-                    }
-                  }
-                }
-              }
-            }
-          }).findTestPlanBySummary();
+        testplan: {}
+      }).findTestPlanBySummary();
 
       expect(resolution).to.equal(null);
     });
@@ -270,27 +156,8 @@ describe('apiBuilder(config)', () => {
       ]}}));
 
       const resolution = await apiBuilder({
-        username: "user",
-        password: "pass",
-        config: {
-          tests: {
-              xray: {
-                  features: {
-                    host: "https://127.0.0.1",
-                    testplan: {
-                      project: "myProjectName",
-                      summary: "xxxx",
-                      summary: "the name of my test plan",
-                      tribe:"shop",
-                      squad:"squad1",
-                      components:["web","aem_somethingorother"],
-                      labels: []
-                    }
-                  }
-                }
-              }
-            }
-          }).findTestPlanBySummary();
+        testplan: {}
+      }).findTestPlanBySummary();
 
       expect(resolution).to.equal('myKey');
     });
@@ -313,27 +180,18 @@ describe('apiBuilder(config)', () => {
       axiosStub.get.returns(Promise.resolve({data:{issues:[]}}));
 
       await apiBuilder({
+        hostname: "https://127.0.0.1",
         username: "user",
         password: "pass",
-        config: {
-          tests: {
-              xray: {
-                  features: {
-                    host: "https://127.0.0.1",
-                    testplan: {
-                      project: "myProjectName",
-                      summary: "xxxx",
-                      summary: "the name of my test plan",
-                      tribe:"shop",
-                      squad:"squad1",
-                      components:["web","aem_somethingorother"],
-                      labels: ["label1","label2","label3"]
-                    }
-                  }
-                }
-              }
-            }
-          }).findTestsByLabels();
+        testplan: {
+          project: "myProjectName",
+          summary: "the name of my test plan",
+          tribe:"shop",
+          squad:"squad1",
+          components:["web","aem_somethingorother"],
+          labels: ["label1", "label2", "label3"]
+        }
+      }).findTestsByLabels();
 
       expect(axiosStub.get).to.have.been.calledWith(
         'https://127.0.0.1/rest/api/2/search?jql=labels%20%3D%20label1%20AND%20labels%20%3D%20label2%20AND%20labels%20%3D%20label3',
@@ -347,25 +205,10 @@ describe('apiBuilder(config)', () => {
       await apiBuilder({
         username: "user",
         password: "pass",
-        config: {
-          tests: {
-              xray: {
-                  features: {
-                    host: "https://127.0.0.1",
-                    testplan: {
-                      project: "myProjectName",
-                      summary: "xxxx",
-                      summary: "the name of my test plan",
-                      tribe:"shop",
-                      squad:"squad1",
-                      components:["web","aem_somethingorother"],
-                      labels: ["label1","label2","label3"]
-                    }
-                  }
-                }
-              }
-            }
-          }).findTestsByLabels();
+        testplan: {
+          labels: []
+        }
+      }).findTestsByLabels();
 
       expect(axiosStub.get).to.have.been.calledWith(
         sinon.match.any,
@@ -382,27 +225,10 @@ describe('apiBuilder(config)', () => {
       }}));
 
       const resolution = await apiBuilder({
-        username: "user",
-        password: "pass",
-        config: {
-          tests: {
-              xray: {
-                  features: {
-                    host: "https://127.0.0.1",
-                    testplan: {
-                      project: "myProjectName",
-                      summary: "xxxx",
-                      summary: "the name of my test plan",
-                      tribe:"shop",
-                      squad:"squad1",
-                      components:["web","aem_somethingorother"],
-                      labels: ["label1","label2","label3"]
-                    }
-                  }
-                }
-              }
-            }
-          }).findTestsByLabels();
+        testplan: {
+          labels: ["label1", "label2", "label3"]
+        }
+      }).findTestsByLabels();
 
       expect(resolution).to.deep.equal(['issue1', 'issue2']);
     });
@@ -414,27 +240,9 @@ describe('apiBuilder(config)', () => {
       axiosStub.post.returns(Promise.resolve({data:{issues:[]}}));
 
       await apiBuilder({
-        username: "user",
-        password: "pass",
-        config: {
-          tests: {
-              xray: {
-                  features: {
-                    host: "https://127.0.0.1",
-                    testplan: {
-                      project: "myProjectName",
-                      summary: "xxxx",
-                      summary: "the name of my test plan",
-                      tribe:"shop",
-                      squad:"squad1",
-                      components:["web","aem_somethingorother"],
-                      labels: ["label1","label2","label3"]
-                    }
-                  }
-                }
-              }
-            }
-          }).synchroniseTestPlan('ABC-123', {added:[],removed:[]});
+        hostname: "https://127.0.0.1",
+        testplan: {}
+      }).synchroniseTestPlan('ABC-123', {added:[],removed:[]});
 
       expect(axiosStub.post).to.have.been.calledWith(
         'https://127.0.0.1/rest/raven/1.0/api/testplan/ABC-123/test',
@@ -449,25 +257,8 @@ describe('apiBuilder(config)', () => {
       await apiBuilder({
         username: "user",
         password: "pass",
-        config: {
-          tests: {
-              xray: {
-                  features: {
-                    host: "https://127.0.0.1",
-                    testplan: {
-                      project: "myProjectName",
-                      summary: "xxxx",
-                      summary: "the name of my test plan",
-                      tribe:"shop",
-                      squad:"squad1",
-                      components:["web","aem_somethingorother"],
-                      labels: ["label1","label2","label3"]
-                    }
-                  }
-                }
-              }
-            }
-          }).synchroniseTestPlan('ABC-123',{added:['ABC-123','DEF-456'],removed:['XYZ-987']});
+        testplan: {}
+      }).synchroniseTestPlan('ABC-123',{added:['ABC-123','DEF-456'],removed:['XYZ-987']});
 
       expect(axiosStub.post).to.have.been.calledWith(
         sinon.match.any,
@@ -482,25 +273,8 @@ describe('apiBuilder(config)', () => {
       await apiBuilder({
         username: "user",
         password: "pass",
-        config: {
-          tests: {
-              xray: {
-                  features: {
-                    host: "https://127.0.0.1",
-                    testplan: {
-                      project: "myProjectName",
-                      summary: "xxxx",
-                      summary: "the name of my test plan",
-                      tribe:"shop",
-                      squad:"squad1",
-                      components:["web","aem_somethingorother"],
-                      labels: ["label1","label2","label3"]
-                    }
-                  }
-                }
-              }
-            }
-          }).synchroniseTestPlan('ABC-123',{added:[],removed:[]});
+        testplan: {}
+      }).synchroniseTestPlan('ABC-123',{added:[],removed:[]});
 
       expect(axiosStub.post).to.have.been.calledWith(
         sinon.match.any,
@@ -516,27 +290,9 @@ describe('apiBuilder(config)', () => {
       axiosStub.get.returns(Promise.resolve({data:[]}));
 
       await apiBuilder({
-        username: "user",
-        password: "pass",
-        config: {
-          tests: {
-              xray: {
-                  features: {
-                    host: "https://127.0.0.1",
-                    testplan: {
-                      project: "myProjectName",
-                      summary: "xxxx",
-                      summary: "the name of my test plan",
-                      tribe:"shop",
-                      squad:"squad1",
-                      components:["web","aem_somethingorother"],
-                      labels: ["label1","label2","label3"]
-                    }
-                  }
-                }
-              }
-            }
-          }).listTestsAgainstATestPlan('ABC-123');
+        hostname: "https://127.0.0.1",
+        testplan: {}
+      }).listTestsAgainstATestPlan('ABC-123');
 
       expect(axiosStub.get).to.have.been.calledWith(
         'https://127.0.0.1/rest/raven/1.0/api/testplan/ABC-123/test',
@@ -550,25 +306,8 @@ describe('apiBuilder(config)', () => {
       await apiBuilder({
         username: "user",
         password: "pass",
-        config: {
-          tests: {
-              xray: {
-                  features: {
-                    host: "https://127.0.0.1",
-                    testplan: {
-                      project: "myProjectName",
-                      summary: "xxxx",
-                      summary: "the name of my test plan",
-                      tribe:"shop",
-                      squad:"squad1",
-                      components:["web","aem_somethingorother"],
-                      labels: ["label1","label2","label3"]
-                    }
-                  }
-                }
-              }
-            }
-          }).listTestsAgainstATestPlan();
+        testplan: {}
+      }).listTestsAgainstATestPlan();
 
       expect(axiosStub.get).to.have.been.calledWith(
         sinon.match.any,
@@ -584,27 +323,8 @@ describe('apiBuilder(config)', () => {
       }));
 
       const resolution = await apiBuilder({
-        username: "user",
-        password: "pass",
-        config: {
-          tests: {
-              xray: {
-                  features: {
-                    host: "https://127.0.0.1",
-                    testplan: {
-                      project: "myProjectName",
-                      summary: "xxxx",
-                      summary: "the name of my test plan",
-                      tribe:"shop",
-                      squad:"squad1",
-                      components:["web","aem_somethingorother"],
-                      labels: ["label1","label2","label3"]
-                    }
-                  }
-                }
-              }
-            }
-          }).listTestsAgainstATestPlan();
+        testplan: {}
+      }).listTestsAgainstATestPlan();
 
       expect(resolution).to.deep.equal(['issue1', 'issue2']);
     });

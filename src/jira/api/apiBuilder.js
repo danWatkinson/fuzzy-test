@@ -6,19 +6,19 @@ const searchQueryBuilder = require('./searchQueryBuilder');
 const payloadBuilder = require('./payloadBuilder');
 
 module.exports = (config) => {
-  const hostname = config.config.tests.xray.features.host;
-  const {summary, labels} = config.config.tests.xray.features.testplan;
+  const {hostname, username, password} = config;
+  const {summary, labels} = config.testplan;
 
   const auth = {auth: {
-    "username": config.username,
-    "password": config.password
+    "username": username,
+    "password": password
   }};
 
   const createTestPlan = async() => {
     console.log(`creating test plan "${summary}"`);
 
     const url = `${hostname}/rest/api/2/issue`,
-          payload = payloadBuilder(config.config.tests.xray.features.testplan),
+          payload = payloadBuilder(config.testplan),
           response = await axios.post( url, payload, auth );
 
     return response.data.key;

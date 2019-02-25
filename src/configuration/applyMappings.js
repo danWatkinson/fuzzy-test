@@ -1,7 +1,7 @@
 const traverse = require('traverse');
 const lodash = require('lodash');
 
-const marker = new RegExp(/.*\${([^}]*)}/); //[anything]${(any number of characters that arent a close bracket)}
+const marker = new RegExp( /.*\${([^}]*)}/ ); //[anything]${(any number of characters that arent a close bracket)}
 
 module.exports = (config) => {
 

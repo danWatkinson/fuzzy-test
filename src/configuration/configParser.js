@@ -1,22 +1,14 @@
 const fs = require('fs');
+const applyMappings = require('./applyMappings');
 
 module.exports = (options) => {
   const {config} = options;
 
-  function readConfigFile(config) {
-    return JSON.parse( fs.readFileSync(config, {encoding:'utf-8'}) );
-  }
-
-
-  function applyCommandlineArgsToConfig(parsedConfig) {
-    parsedConfig.
-  }
-
-  const configFile = readConfigFile(config);
+  const configFile = JSON.parse( fs.readFileSync(config, {encoding:'utf-8'}) );
 
   const combinedConfig = {
-    ...options, ...{config: configFile}
+    ...options, ...process.env, ...configFile
   }
 
-  return combinedConfig;
+  return applyMappings(combinedConfig);
 }

@@ -1,13 +1,14 @@
 {
-  "workingDirectory": "",
+  "workingDirectory": "../aem-automation",
 
   "tests": {
 
     "xray": {
       "features": {
-        "host": "https://jira-dev.intdigital.ee.co.uk",
-        "output": "../aem-automation/src/test/resources/features/myFeatures.feature",
-        "export": "src/test/resources/features/myFeatures.feature",
+        "hostname": "https://jira-dev.intdigital.ee.co.uk",
+        "output": "${workingDirectory}/src/test/resources/features/myFeatures.feature",
+        "username": "${username}",
+        "password": "${password}",
         "testplan": {
           "project": "XTP",
           "summary": "Pipeline: Marketing_Tribe Functional_Tests",
@@ -20,8 +21,8 @@
       "stepdefs": {
         "git": {
           "repository": "https://bitbucket.intdigital.ee.co.uk/scm/web/aem-automation.git",
-          "branch": "features/danTest",
-          "targetPath": "../aem-automation"
+          "branch": "develop",
+          "targetPath": "${workingDirectory}"
         }
       }
     }
@@ -29,14 +30,14 @@
 
   "executor": {
     "docker": {
-      "targetPath": "../aem-automation",
+      "targetPath": "${workingDirectory}",
       "imageName": "ee/maven",
       "containerName": "mavenTest",
       "build": {
         "dockerFile": "./docker"
       },
       "script": {
-        "targetPath": "../aem-automation",
+        "targetPath": "${workingDirectory}",
         "command": "mvn clean install -X -U -Pparallel",
         "args": {
           "threads": "1",

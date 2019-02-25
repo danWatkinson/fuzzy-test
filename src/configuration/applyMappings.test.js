@@ -1,8 +1,8 @@
 const expect = require('../../test/test-hooks').expect;
 
-const applyInternalMappings = require('./applyInternalMappings');
+const applyMappings = require('./applyMappings');
 
-describe('applyInternalMappings', () => {
+describe('applyMappings', () => {
   it('replaces simple references', () => {
     const exampleConfig = {
       aRootValue: 'ABC-123',
@@ -22,7 +22,7 @@ describe('applyInternalMappings', () => {
       }
     }
 
-    expect(applyInternalMappings(exampleConfig)).to.deep.equal(expectedResult);
+    expect(applyMappings(exampleConfig)).to.deep.equal(expectedResult);
   })
 
   it('flags missing references', () => {
@@ -42,7 +42,7 @@ describe('applyInternalMappings', () => {
       }
     }
 
-    expect(applyInternalMappings(exampleConfig)).to.deep.equal(expectedResult);
+    expect(applyMappings(exampleConfig)).to.deep.equal(expectedResult);
   })
 
   it('can handle multiple mappings in a single node', () => {
@@ -66,7 +66,7 @@ describe('applyInternalMappings', () => {
       }
     }
 
-    expect(applyInternalMappings(exampleConfig)).to.deep.equal(expectedResult);
+    expect(applyMappings(exampleConfig)).to.deep.equal(expectedResult);
   })
 
   it('can handle dot-delimited mappings', () => {
@@ -92,6 +92,6 @@ describe('applyInternalMappings', () => {
       }
     }
 
-    expect(applyInternalMappings(exampleConfig)).to.deep.equal(expectedResult);
+    expect(applyMappings(exampleConfig)).to.deep.equal(expectedResult);
   })
 })

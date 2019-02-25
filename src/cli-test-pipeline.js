@@ -26,23 +26,23 @@ options
 const config = configParser(options);
 
 async function go() {
-  await clone(config.config.tests.xray.stepdefs.git).performClone();
+  await clone(config.tests.xray.stepdefs.git).performClone();
 
-  await synchronise(config);
+  await synchronise(config.tests.xray.features);
 
-  const dirName = path.dirname(config.config.tests.xray.features.output); //TODO do this better
+  const dirName = path.dirname(config.tests.xray.features.output); //TODO do this better
 
   fse.ensureDirSync(dirName);
 
-  const key = await api(config).findTestPlanBySummary();
+  const key = await api(config.tests.xray.features).findTestPlanBySummary();
 
-  await exportTestPlan(config).execute(key);
+  await exportTestPlan(config.tests.xray.features).execute(key);
 
-  await prepareDockerImage(config.config.executor.docker);
+  await prepareDockerImage(config.executor.docker);
 
-  await createRunnerScript(config.config.executor.docker.script);
+  await createRunnerScript(config.executor.docker.script);
 
-  await executeTestsInDocker(config.config.executor.docker);
+  await executeTestsInDocker(config.executor.docker);
 }
 
 
