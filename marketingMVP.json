@@ -6,7 +6,8 @@
     "xray": {
       "features": {
         "hostname": "https://jira-dev.intdigital.ee.co.uk",
-        "output": "${workingDirectory}/src/test/resources/features/myFeatures.feature",
+        "exportZip": "${workingDirectory}/exportedFeatures.tar",
+        "unzipTarget": "${workingDirectory}/src/test/resources/features",
         "username": "${username}",
         "password": "${password}",
         "testplan": {

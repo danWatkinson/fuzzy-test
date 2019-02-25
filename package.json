@@ -31,6 +31,7 @@
     "axios": "^0.18.0",
     "commander": "^2.19.0",
     "docker-cli-js": "^2.5.1",
+    "extract-zip": "^1.6.7",
     "fs-extra": "^7.0.1",
     "git-clone": "^0.1.0",
     "hyperdiff": "^2.0.5",

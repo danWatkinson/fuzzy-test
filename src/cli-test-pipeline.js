@@ -30,9 +30,7 @@ async function go() {
 
   await synchronise(config.tests.xray.features);
 
-  const dirName = path.dirname(config.tests.xray.features.output); //TODO do this better
-
-  fse.ensureDirSync(dirName);
+  fse.ensureDirSync(config.tests.xray.features.unzipTarget);
 
   const key = await api(config.tests.xray.features).findTestPlanBySummary();
 
