@@ -19,7 +19,11 @@ module.exports = (config) => {
             value = lodash.get(config, lookup, `<unmatched mapping: ${lookup}>`),
             toReplace = '${'+lookup+'}';
 
-      return substitute( element.replace(toReplace, value) );
+      if (isAString(value)) {
+        return substitute( element.replace(toReplace, value) );
+      } else {
+        return value;
+      }
     }
   }
 

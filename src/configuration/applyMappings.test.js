@@ -94,4 +94,43 @@ describe('applyMappings', () => {
 
     expect(applyMappings(exampleConfig)).to.deep.equal(expectedResult);
   })
+
+  it('can move entire blocks around', () => {
+    const exampleConfig = {
+      plugin: {
+        jira: {
+          hostname: "https://127.0.0.1",
+          username: "user",
+          password: "bob"
+        }
+      },
+      tests: {
+        xray: {
+          jira: '${plugin.jira}'
+        }
+      }
+    }
+
+    const expectedResult = {
+      plugin: {
+        jira: {
+          hostname: "https://127.0.0.1",
+          username: "user",
+          password: "bob"
+        }
+      },
+      tests: {
+        xray: {
+          jira: {
+            hostname: "https://127.0.0.1",
+            username: "user",
+            password: "bob"
+          }
+        }
+      }
+    }
+
+    expect(applyMappings(exampleConfig)).to.deep.equal(expectedResult);
+  })
+
 })

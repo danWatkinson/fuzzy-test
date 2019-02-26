@@ -120,7 +120,7 @@ describe('apiBuilder(config)', () => {
       }).findTestPlanBySummary();
 
       expect(axiosStub.get).to.have.been.calledWith(
-        'https://127.0.0.1/rest/api/2/search?jql=summary%20~%20%22the%20name%20of%20my%20test%20plan%22',
+        'https://127.0.0.1/rest/api/2/search?jql=summary%20~%20%22the%20name%20of%20my%20test%20plan%22%20and%20issueType%20%3D%20%22Test%20Plan%22',
         sinon.match.any
       );
     });
