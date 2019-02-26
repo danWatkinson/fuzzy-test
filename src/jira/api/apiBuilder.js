@@ -4,6 +4,8 @@ const querystring = require("querystring")
 const searchQueryBuilder = require('./searchQueryBuilder');
 
 const payloadBuilder = require('./payloadBuilder');
+const executionPlanPayloadBuilder = require('./executionPlanPayloadBuilder');
+
 
 module.exports = (config) => {
   const {hostname, username, password} = config;
@@ -24,10 +26,40 @@ module.exports = (config) => {
     return response.data.key;
   }
 
+  const createTestExecution = async() => {
+    console.log(`creating test execution`);
+
+    const url = `${hostname}/rest/api/2/issue`,
+          payload = executionPlanPayloadBuilder(config.testplan),
+          response = await axios.post( url, payload, auth );
+
+    return response.data.key;
+  }
+
+  const associateTestExecutionWithPlan = async(executionKey, planKey) => {
+    console.log(`associating test execution ${executionKey} with test plan ${planKey}`);
+
+    await axios.post(
+      `${hostname}/rest/raven/1.0/api/testplan/${planKey}/testexecution`,
+      { add: [executionKey] },
+      auth
+    );
+  }
+
+  const addTestsToTestExecution = async(executionKey, listOfTests) => {
+    console.log(`adding tests to ${executionKey} : ${listOfTests}`);
+
+    await axios.post(
+      `${hostname}/rest/raven/1.0/api/testexec/${executionKey}/test`,
+      { add: listOfTests },
+      auth
+    );
+  }
+
   const findTestPlanBySummary = async() => {
     console.log(`looking for test plan "${summary}"`);
 
-    const query = querystring.stringify({jql: 'summary ~ "' + summary +'"'}),
+    const query = querystring.stringify({jql: 'summary ~ "' + summary +'" and issueType = "Test Plan"'}),
           url = `${hostname}/rest/api/2/search?${query}`,
           response = await axios.get( url, auth );
 
@@ -71,6 +103,9 @@ module.exports = (config) => {
 
   return Object.freeze({
     createTestPlan,
+    createTestExecution,
+    associateTestExecutionWithPlan,
+    addTestsToTestExecution,
     findTestPlanBySummary,
     findTestsByLabels,
     synchroniseTestPlan,

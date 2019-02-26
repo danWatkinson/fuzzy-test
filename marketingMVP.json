@@ -2,7 +2,6 @@
   "workingDirectory": "../aem-automation",
 
   "tests": {
-
     "xray": {
       "features": {
         "hostname": "https://jira-dev.intdigital.ee.co.uk",
@@ -22,7 +21,7 @@
       "stepdefs": {
         "git": {
           "repository": "https://bitbucket.intdigital.ee.co.uk/scm/web/aem-automation.git",
-          "branch": "develop",
+          "branch": "feature/centralised_pipeline",
           "targetPath": "${workingDirectory}"
         }
       }
@@ -41,7 +40,7 @@
         "targetPath": "${workingDirectory}",
         "command": "mvn clean install -X -U -Pparallel",
         "args": {
-          "threads": "1",
+          "threads": "2",
           "browserProfile": "perfecto-chrome",
           "env":"websquad1",
           "tribe":"Marketing-tribe",
@@ -52,18 +51,22 @@
           "outputDirectory": "target/generated-test-sources/cucumbers",
           "cucumberOutputDir": "target/cucumber-reports",
 
-          "tags": "@Marketing_Tribe and @Functional",
+          "tags": "@Marketing_Tribe and @Functional_Tests",
 
-          "reportium-job-number": "-123",
+          "reportium-job-number": "${buildIdentifier}",
           "perfecto.securityToken": "${perfectoToken}"
         }
       }
-
-
     }
   },
 
   "thresholds": {},
-  "reporting": {}
-
+  "reporting": {
+    "xray": {
+      "hostname": "https://jira-dev.intdigital.ee.co.uk",
+      "username": "${username}",
+      "password": "${password}",
+      "reportsDir": "${workingDirectory}/target/cucumber-reports"
+    }
+  }
 }
