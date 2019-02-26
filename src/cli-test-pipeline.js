@@ -12,6 +12,12 @@ const createRunnerScript = require('./build/createRunnerScript');
 const executeTestsInDocker = require('./build/executeTestsInDocker');
 const importCucumberResults = require('./jira/importResults/importCucumberResults');
 
+
+
+const combinedReport = require('./parse/combinedReport');
+const reportAnalyser = require('./threshold/reportAnalyser');
+
+
 const configParser = require('./configuration/configParser');
 
 options
@@ -46,13 +52,31 @@ async function go() {
   await executeTestsInDocker(config.executor.docker);
 
   // report the results
-
   await importCucumberResults(config.reporting.xray).report();
+
+
+
+  // check results against threshold
+  const report = combinedReport(config.thresholds);
+  report.load();
+
+  const analyser = reportAnalyser(config.thresholds);
+
+  const result = analyser.analyse(report.scenarios());
+
+  if (result == 'passed') {
+    console.log('passed');
+    process.exit();
+  } else {
+    console.log('failed');
+    process.exit(1);
+  }
+
 }
 
 
 go();
 
 //
-// cli-test-pipeline -u <user> -p <password> -f ../marketingMVP.json
+// cli-test-pipeline -u <user> -p <password> -x <perfectoToken>  -f <../marketingMVP.json> -b <build Id>
 //

@@ -60,7 +60,6 @@
     }
   },
 
-  "thresholds": {},
   "reporting": {
     "xray": {
       "hostname": "https://jira-dev.intdigital.ee.co.uk",
@@ -68,5 +67,11 @@
       "password": "${password}",
       "reportsDir": "${workingDirectory}/target/cucumber-reports"
     }
+  },
+
+  "thresholds": {
+    "threshold": "0.5",
+    "reportDirectory": "${workingDirectory}/target/cucumber-reports",
+    "verbose": "true"
   }
 }
