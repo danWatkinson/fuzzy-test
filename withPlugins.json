@@ -1,51 +1,45 @@
 {
   "workingDirectory": "../aem-automation",
 
-  "plugins": {
-    "jira": {
-      "hostname": "https://jira-dev.intdigital.ee.co.uk",
-      "username": "${username}",
-      "password": "${password}",
-    }
+  "jira": {
+    "hostname": "https://jira-dev.intdigital.ee.co.uk",
+    "username": "${username}",
+    "password": "${password}"
   },
 
   "tests": {
     "xray": {
-      "features": {
-        "hostname": "https://jira-dev.intdigital.ee.co.uk",
-        "exportZip": "${workingDirectory}/exportedFeatures.tar",
-        "unzipTarget": "${workingDirectory}/src/test/resources/features",
-        "username": "${username}",
-        "password": "${password}",
-        "testplan": {
-          "project": "XTP",
-          "summary": "Pipeline: Marketing_Tribe Functional_Tests",
-          "tribe": "Shop",
-          "squad": "Squad 1",
-          "components": ["Web"],
-          "labels": ["Marketing_Tribe", "Functional_Tests"]
-        }
-      },
-      "stepdefs": {
+      "stepdefinitions": {
         "git": {
           "repository": "https://bitbucket.intdigital.ee.co.uk/scm/web/aem-automation.git",
           "branch": "feature/centralised_pipeline",
           "targetPath": "${workingDirectory}"
         }
+      },
+      "jira": "${jira}",
+      "testplan": {
+        "summary": "Pipeline: Marketing_Tribe Functional_Tests",
+        "project": "XTP",
+        "tribe": "Shop",
+        "squad": "Squad 1",
+        "components": ["Web"],
+        "labels": ["Marketing_Tribe", "Functional_Tests"]
+      },
+      "target": {
+        "temporaryZip": "${workingDirectory}/exportedFeatures.tar",
+        "unzipTarget": "${workingDirectory}/src/test/resources/features"
       }
     }
   },
 
   "executor": {
     "docker": {
-      "targetPath": "${workingDirectory}",
+      "buildfile": "${workingDirectory}/docker",
       "imageName": "ee/maven",
       "containerName": "mavenTest",
-      "build": {
-        "dockerFile": "./docker"
-      },
       "script": {
-        "targetPath": "${workingDirectory}",
+        "imageRoot": "${workingDirectory}",
+        "relativeScriptPath": "./execute.sh",
         "command": "mvn clean install -X -U -Pparallel",
         "args": {
           "threads": "2",
@@ -70,16 +64,19 @@
 
   "reporting": {
     "xray": {
-      "hostname": "https://jira-dev.intdigital.ee.co.uk",
-      "username": "${username}",
-      "password": "${password}",
-      "reportsDir": "${workingDirectory}/target/cucumber-reports"
+      "jira": "${jira}",
+      "results": {
+        "reportsDir": "${workingDirectory}/target/cucumber-reports",
+        "temporaryZip": "${workingDirectory}/results.zip"
+      }
     }
   },
 
   "thresholds": {
-    "threshold": "0.5",
-    "reportDirectory": "${workingDirectory}/target/cucumber-reports",
-    "verbose": "true"
+    "cucumber": {
+      "threshold": "0.9",
+      "reportDirectory": "${workingDirectory}/target/cucumber-reports",
+      "verbose": "true"
+    }
   }
 }

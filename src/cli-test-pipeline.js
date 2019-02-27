@@ -1,22 +1,10 @@
 #!/usr/bin/env node
 const options = require('commander');
-const path = require('path');
-const fse = require('fs-extra');
 
-const clone = require('./git/clone');
-const api = require('./jira/api/apiBuilder');
-const exportTestPlan = require('./jira/exportTestPlan/exportTestPlan');
-const synchronise = require('./jira/synchronise.js')
-const prepareDockerImage = require('./build/prepareDockerImage');
-const createRunnerScript = require('./build/createRunnerScript');
-const executeTestsInDocker = require('./build/executeTestsInDocker');
-const importCucumberResults = require('./jira/importResults/importCucumberResults');
-
-
-
-const combinedReport = require('./parse/combinedReport');
-const reportAnalyser = require('./threshold/reportAnalyser');
-
+const tests = require('./tests');
+const executor = require('./executor');
+const reporting = require('./reporting');
+const thresholds = require('./thresholds');
 
 const configParser = require('./configuration/configParser');
 
@@ -26,57 +14,52 @@ options
   .option('-p, --password <string>', 'jira password')
   .option('-f, --config <string>', 'location of config file')
   .option('-b, --buildIdentifier <string>', 'unique identifier of this execution')
-
   .option('-x, --perfectoToken <string>', 'perfecto security token')
 
   .parse(process.argv);
 
 const config = configParser(options);
 
-async function go() {
+async function executePipeline() {
 
-  // get the tests..
-  await clone(config.tests.xray.stepdefs.git).performClone();
-  await synchronise(config.tests.xray.features);
-  fse.ensureDirSync(config.tests.xray.features.unzipTarget);
-  const testPlanKey = await api(config.tests.xray.features).findTestPlanBySummary();
-  const testExecutionKey = await api(config.tests.xray.features).createTestExecution();
-  await api(config.tests.xray.features).associateTestExecutionWithPlan(testExecutionKey, testPlanKey);
-  const testsWithCorrectLabels = await api(config.tests.xray.features).findTestsByLabels();
-  await api(config.tests.xray.features).addTestsToTestExecution(testExecutionKey, testsWithCorrectLabels);
-  await exportTestPlan(config.tests.xray.features).exportTestPlan(testPlanKey, testExecutionKey);
-
-  // execute the tests..
-  await prepareDockerImage(config.executor.docker);
-  await createRunnerScript(config.executor.docker.script);
-  await executeTestsInDocker(config.executor.docker);
-
-  // report the results
-  await importCucumberResults(config.reporting.xray).report();
-
-
-
-  // check results against threshold
-  const report = combinedReport(config.thresholds);
-  report.load();
-
-  const analyser = reportAnalyser(config.thresholds);
-
-  const result = analyser.analyse(report.scenarios());
-
-  if (result == 'passed') {
-    console.log('passed');
-    process.exit();
-  } else {
-    console.log('failed');
-    process.exit(1);
+  try {
+    await tests(config.tests).executePlugins();
+  } catch (error) {
+    console.err('Failed to acquire tests.');
+    throw(error);
   }
 
+  try {
+    await executor(config.executor).executePlugins();
+  } catch (error) {
+    console.error('Failed to execute tests.');
+    throw(error);
+  }
+
+  try {
+    await reporting(config.reporting).executePlugins();
+  } catch (error) {
+    console.error('Failed to report results of tests.');
+    throw(error);
+  }
+
+  try {
+    return await thresholds(config.thresholds).executePlugins();
+  } catch (error) {
+    console.error('Failed to apply thresholds to tests.');
+    throw(error);
+  }
 }
 
-
-go();
-
-//
-// cli-test-pipeline -u <user> -p <password> -x <perfectoToken>  -f <../marketingMVP.json> -b <build Id>
-//
+executePipeline().then( (result) => {
+  if (result == 'passed') {
+    console.log('tests passed thresholds');
+    system.exit(0);
+  } else {
+    console.error('tests failed to pass thresholds');
+    system.exit(1);
+  }
+}).catch( (error) => {
+  console.error(error);
+  system.exit(1);
+});
