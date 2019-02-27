@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Reads cucumber json output and a config file. Passes or fails the cucumber json based on configured thresholds.",
   "bin": {
-    "cli-test-pipeline": "src/cli-test-pipeline.js"
+    "cli-test-pipeline": "src/bin/cli-test-pipeline.js"
   },
   "main": "./src/cli.js",
   "scripts": {

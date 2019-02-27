@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 const options = require('commander');
 
-const tests = require('./tests');
-const executor = require('./executor');
-const reporting = require('./reporting');
-const thresholds = require('./thresholds');
+const tests = require('../tests');
+const executor = require('../executor');
+const reporting = require('../reporting');
+const thresholds = require('../thresholds');
 
 const configParser = require('./configuration/configParser');
 
@@ -54,12 +54,12 @@ async function executePipeline() {
 executePipeline().then( (result) => {
   if (result == 'passed') {
     console.log('tests passed thresholds');
-    system.exit(0);
+    process.exit(0);
   } else {
     console.error('tests failed to pass thresholds');
-    system.exit(1);
+    process.exit(1);
   }
 }).catch( (error) => {
   console.error(error);
-  system.exit(1);
+  process.exit(1);
 });
