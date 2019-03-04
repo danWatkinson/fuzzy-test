@@ -2,9 +2,9 @@ const jira = require('./jira');
 
 module.exports = (config) => {
 
-  const execute = async() => {
-    const reporter = jira(config.jira);
-    await reporter.sendResults(config.results);
+  const execute = () => {
+    return jira(config.jira)
+            .sendResults(config.results);
   }
 
   return Object.freeze({

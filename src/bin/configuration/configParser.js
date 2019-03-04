@@ -6,12 +6,14 @@ const applyMappings = require('./applyMappings');
 module.exports = (options) => {
   const {config} = options;
 
-  const absoluteConfig = path.resolve(config);
-
-  const configFile = JSON.parse( fs.readFileSync(absoluteConfig, {encoding:'utf-8'}) );
+  function read(config) {
+    return JSON.parse(
+      fs.readFileSync( path.resolve(config), {encoding:'utf-8'} )
+    );
+  }
 
   const combinedConfig = {
-    ...options, ...process.env, ...configFile
+    ...options, ...process.env, ...read(config)
   }
 
   return applyMappings(combinedConfig);

@@ -23,28 +23,28 @@ const config = configParser(options);
 async function executePipeline() {
 
   try {
-    await tests(config.tests).executePlugins();
+    await tests(config.tests);
   } catch (error) {
     console.err('Failed to acquire tests.');
     throw(error);
   }
 
   try {
-    await executor(config.executor).executePlugins();
+    await executor(config.executor);
   } catch (error) {
     console.error('Failed to execute tests.');
     throw(error);
   }
 
   try {
-    await reporting(config.reporting).executePlugins();
+    await reporting(config.reporting);
   } catch (error) {
     console.error('Failed to report results of tests.');
     throw(error);
   }
 
   try {
-    return await thresholds(config.thresholds).executePlugins();
+    return await thresholds(config.thresholds);
   } catch (error) {
     console.error('Failed to apply thresholds to tests.');
     throw(error);

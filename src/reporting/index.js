@@ -5,19 +5,6 @@ const pluginConfiguration = {
 }
 
 module.exports = (config) => {
-  const plugins = pluginManager(config, pluginConfiguration);
-
-  const executePlugins = () => {
-    const executingPlugins = [];
-    plugins.forEach( (plugin) => {
-      const promiseForPlugin = plugin.execute();
-      executingPlugins.push(promiseForPlugin)
-    })
-
-    return Promise.all(executingPlugins);
-  }
-
-  return Object.freeze({
-    executePlugins
-  })
+  return pluginManager(config, pluginConfiguration)
+          .executePlugins();
 }

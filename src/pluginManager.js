@@ -3,6 +3,15 @@ module.exports = (config, plugins) => {
   const configured = [];
   const missing = [];
 
+  const executePlugins = () => {
+    const executingPlugins = [];
+    configured.forEach( (plugin) => {
+      executingPlugins.push(plugin.execute())
+    })
+
+    return Promise.all(executingPlugins);
+  }
+
   requested.forEach( (requestedPlugin) => {
     if (!plugins[requestedPlugin]) {
       missing.push(requestedPlugin);
@@ -17,7 +26,9 @@ module.exports = (config, plugins) => {
 
   if (missing.length >0) {
     throw(`Failed to parse tests. No handler for requested: ${missing}`);
-  } else {
-    return configured;
   }
+
+  return Object.freeze({
+    executePlugins
+  });
 }
