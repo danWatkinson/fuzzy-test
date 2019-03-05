@@ -127,7 +127,6 @@ module.exports = (config) => {
 
     const url = `${hostname}/rest/raven/1.0/import/execution/bundle`;
 
-try {
     await axios({
       url,
       method: 'POST',
@@ -135,9 +134,7 @@ try {
       headers: form.getHeaders(),
       data: form
     });
-} catch(error) {
-  console.log(error);
-}
+
   };
 
   return Object.freeze({

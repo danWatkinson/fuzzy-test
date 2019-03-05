@@ -215,8 +215,7 @@ describe('jiraAPI(config)', () => {
       axiosStub.post.returns(Promise.resolve({data:{issues:[]}}));
 
       await jiraAPI({
-        hostname: "https://127.0.0.1",
-        testplan: {}
+        hostname: "https://127.0.0.1"
       }).synchroniseTestPlan('ABC-123', {added:[],removed:[]});
 
       expect(axiosStub.post).to.have.been.calledWith(
@@ -231,8 +230,7 @@ describe('jiraAPI(config)', () => {
 
       await jiraAPI({
         username: "user",
-        password: "pass",
-        testplan: {}
+        password: "pass"
       }).synchroniseTestPlan('ABC-123',{added:['ABC-123','DEF-456'],removed:['XYZ-987']});
 
       expect(axiosStub.post).to.have.been.calledWith(
@@ -247,8 +245,7 @@ describe('jiraAPI(config)', () => {
 
       await jiraAPI({
         username: "user",
-        password: "pass",
-        testplan: {}
+        password: "pass"
       }).synchroniseTestPlan('ABC-123',{added:[],removed:[]});
 
       expect(axiosStub.post).to.have.been.calledWith(
@@ -265,8 +262,7 @@ describe('jiraAPI(config)', () => {
       axiosStub.get.returns(Promise.resolve({data:[]}));
 
       await jiraAPI({
-        hostname: "https://127.0.0.1",
-        testplan: {}
+        hostname: "https://127.0.0.1"
       }).listTestsAgainstATestPlan('ABC-123');
 
       expect(axiosStub.get).to.have.been.calledWith(
@@ -280,8 +276,7 @@ describe('jiraAPI(config)', () => {
 
       await jiraAPI({
         username: "user",
-        password: "pass",
-        testplan: {}
+        password: "pass"
       }).listTestsAgainstATestPlan();
 
       expect(axiosStub.get).to.have.been.calledWith(
@@ -297,25 +292,19 @@ describe('jiraAPI(config)', () => {
         ]
       }));
 
-      const resolution = await jiraAPI({
-        testplan: {}
-      }).listTestsAgainstATestPlan();
+      const resolution = await jiraAPI({}).listTestsAgainstATestPlan();
 
       expect(resolution).to.deep.equal(['issue1', 'issue2']);
     });
 
   });
 
-
-
-
   describe('.createTestExecution(testPlanKey)', () => {
     it('makes a post request to ${hostname}/rest/api/2/issue', async() => {
       axiosStub.post.returns(Promise.resolve({data:[]}));
 
       await jiraAPI({
-        hostname: "https://127.0.0.1",
-        testplan: {}
+        hostname: "https://127.0.0.1"
       }).createTestExecution('ABC-123');
 
       expect(axiosStub.post).to.have.been.calledWith(
@@ -370,12 +359,96 @@ describe('jiraAPI(config)', () => {
 
       expect(resolution).to.equal('myKey');
     });
-
-
   });
 
+  describe('.associateTestExecutionWithPlan(testExecutionKey, testPlanKey)', () => {
+    it('makes a post request to ${hostname}/rest/raven/1.0/api/testplan/${testPlanKey}/testexecution', async() => {
+      axiosStub.post.returns(Promise.resolve({data:[]}));
 
+      await jiraAPI({
+        hostname: "https://127.0.0.1"
+      }).associateTestExecutionWithPlan('EXE-666', 'ABC-123');
 
+      expect(axiosStub.post).to.have.been.calledWith(
+        'https://127.0.0.1/rest/raven/1.0/api/testplan/ABC-123/testexecution',
+        sinon.match.any
+      );
+    });
 
+    it('builds a payload object using testExecutionKey', async() => {
+      axiosStub.post.returns(Promise.resolve({data:{}}));
+
+      mockExecutionPlanPayloadBuilder.returns({dummy: 'payload'})
+
+      await jiraAPI({
+        hostname: "https://127.0.0.1"
+      }).associateTestExecutionWithPlan('EXE-666', 'ABC-123');
+
+      expect(axiosStub.post).to.have.been.calledWith(
+        sinon.match.any,
+        {add: ['EXE-666']},
+        sinon.match.any
+      );
+    });
+
+    it('passes {config.username} & {config.password} in the auth block', async() => {
+      axiosStub.post.returns(Promise.resolve({data:{}}));
+
+      await jiraAPI({
+        username: "user",
+        password: "pass"
+      }).associateTestExecutionWithPlan('EXE-666', 'ABC-123');
+
+      expect(axiosStub.post).to.have.been.calledWith(
+        sinon.match.any,
+        sinon.match.any,
+        {auth: {username: "user", password: "pass"}}
+      );
+    });
+  });
+
+  describe('.addTestsToTestExecution(testExecutionKey, listOfTests)', () => {
+    it('makes a post request to ${hostname}/rest/raven/1.0/api/testexec/${executionKey}/test', async() => {
+      axiosStub.post.returns(Promise.resolve({data:[]}));
+
+      await jiraAPI({
+        hostname: "https://127.0.0.1"
+      }).addTestsToTestExecution('EXE-666', ['TEST1', 'TEST2']);
+
+      expect(axiosStub.post).to.have.been.calledWith(
+        'https://127.0.0.1/rest/raven/1.0/api/testexec/EXE-666/test',
+        sinon.match.any
+      );
+    });
+
+    it('builds a payload object using testExecutionKey', async() => {
+      axiosStub.post.returns(Promise.resolve({data:{}}));
+
+      await jiraAPI({
+        hostname: "https://127.0.0.1"
+      }).addTestsToTestExecution('EXE-666', ['TEST1', 'TEST2']);
+
+      expect(axiosStub.post).to.have.been.calledWith(
+        sinon.match.any,
+        {add: ['TEST1', 'TEST2']},
+        sinon.match.any
+      );
+    });
+
+    it('passes {config.username} & {config.password} in the auth block', async() => {
+      axiosStub.post.returns(Promise.resolve({data:{}}));
+
+      await jiraAPI({
+        username: "user",
+        password: "pass"
+      }).addTestsToTestExecution('EXE-666', ['TEST1', 'TEST2']);
+
+      expect(axiosStub.post).to.have.been.calledWith(
+        sinon.match.any,
+        sinon.match.any,
+        {auth: {username: "user", password: "pass"}}
+      );
+    });
+  });
 
 });
