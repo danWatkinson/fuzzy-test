@@ -3,8 +3,12 @@ const sinon = require('sinon');
 
 const axiosStub = require('../../test/axiosStub');
 const expect = require('../../test/test-hooks').expect;
+const mockExecutionPlanPayloadBuilder = sinon.stub();
 
-const jiraAPI = proxyquire('./index', {'axios': axiosStub});
+const jiraAPI = proxyquire('./index', {
+  'axios': axiosStub,
+  './executionPlanPayloadBuilder': mockExecutionPlanPayloadBuilder
+});
 
 describe('jiraAPI(config)', () => {
 
@@ -301,5 +305,77 @@ describe('jiraAPI(config)', () => {
     });
 
   });
+
+
+
+
+  describe('.createTestExecution(testPlanKey)', () => {
+    it('makes a post request to ${hostname}/rest/api/2/issue', async() => {
+      axiosStub.post.returns(Promise.resolve({data:[]}));
+
+      await jiraAPI({
+        hostname: "https://127.0.0.1",
+        testplan: {}
+      }).createTestExecution('ABC-123');
+
+      expect(axiosStub.post).to.have.been.calledWith(
+        'https://127.0.0.1/rest/api/2/issue',
+        sinon.match.any
+      );
+    });
+
+    it('builds a payload object using config', async() => {
+      axiosStub.post.returns(Promise.resolve({data:{}}));
+
+      mockExecutionPlanPayloadBuilder.returns({dummy: 'payload'})
+
+      await jiraAPI({})
+        .createTestExecution({
+          project: "myProjectName",
+          summary: "mySummary",
+          tribe:"shop",
+          squad:"squad1",
+          components:["web","aem_somethingorother"],
+          labels: []
+        });
+
+      expect(axiosStub.post).to.have.been.calledWith(
+        sinon.match.any,
+        {dummy: 'payload'},
+        sinon.match.any
+      );
+    });
+
+    it('passes {config.username} & {config.password} in the auth block', async() => {
+      axiosStub.post.returns(Promise.resolve({data:{}}));
+
+      await jiraAPI({
+        username: "user",
+        password: "pass",
+      }).createTestExecution({});
+
+      expect(axiosStub.post).to.have.been.calledWith(
+        sinon.match.any,
+        sinon.match.any,
+        {auth: {username: "user", password: "pass"}}
+      );
+    });
+
+    it('resolves response.data.key', async() => {
+      axiosStub.post.returns(Promise.resolve({data:{
+        key: 'myKey'}
+      }));
+
+      const resolution = await jiraAPI({}).createTestExecution({});
+
+      expect(resolution).to.equal('myKey');
+    });
+
+
+  });
+
+
+
+
 
 });
