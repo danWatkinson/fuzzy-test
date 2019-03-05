@@ -9,7 +9,7 @@ const executor = proxyquire('./index', {
   '../pluginManager': mockPluginManager
 });
 
-describe('reporting', () => {
+describe('tests', () => {
 
   beforeEach( () => {
     mockPluginManager.reset();

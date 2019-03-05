@@ -1,11 +1,9 @@
-const extract = require('extract-zip')
-const fs = require('fs');
 const fse = require('fs-extra');
 const hyperdiff = require('hyperdiff');
-const path = require('path');
-const prependFile = require('prepend-file')
 
 const jiraAPI = require('../../../jiraAPI');
+const unzip = require('./unzip');
+const prependTestExecutionIdToAllFeatures = require('./prependTestExecutionIdToAllFeatures');
 
 module.exports = (config) => {
   const api = jiraAPI(config);
@@ -42,7 +40,6 @@ module.exports = (config) => {
     if (!key) {
       key = await api.createTestPlan(testplan);
     }
-
     return key;
   }
 
@@ -54,26 +51,6 @@ module.exports = (config) => {
 
     return testsWithCorrectLabels;
   }
-
-  const unzip = async(zip, targetPath) => {
-    return new Promise( (resolve, reject) => {
-      extract(zip, {dir: path.resolve(targetPath)}, function (err) {
-       if (err) reject(err);
-       resolve();
-      })
-    });
-  }
-
-  const prependTestExecutionIdToAllFeatures = (locationOfAllFeatures, executionId) => {
-    const featureFiles = fs.readdirSync(locationOfAllFeatures)
-               .filter( filename => filename.endsWith('.feature') )
-               .map( filename => path.join(locationOfAllFeatures, filename ) );
-
-    for(var i=0; i<featureFiles.length; i++) {
-      prependFile.sync(featureFiles[i], `@${executionId}\n`)
-    }
-  }
-
 
   return Object.freeze({
     synchronise,
