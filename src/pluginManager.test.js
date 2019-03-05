@@ -53,7 +53,22 @@ describe('pluginManager', () => {
         plugin2Feature1: '1',
         plugin2Feature2: '2'
       });
-    })
+    });
+
+    it('throws if the config and plugins dont match..', (done) => {
+      const overOptimisticConfig = {
+        ...config,
+        plugin3: {not:'here'},
+        plugin4: {same:'same'}
+      }
+
+      try {
+        pluginManager(overOptimisticConfig, plugins)
+      } catch(error) {
+        expect(error).to.equal('Failed to parse tests. No handler for requested: plugin3,plugin4');
+        done();
+      };
+    });
 
     it('executePlugins calls execute on all the plugins..', async() => {
       await pluginManager(config, plugins).executePlugins();
