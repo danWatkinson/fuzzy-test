@@ -25,7 +25,7 @@ async function executePipeline() {
   try {
     await tests(config.tests);
   } catch (error) {
-    console.err('Failed to acquire tests.');
+    console.error('Failed to acquire tests.');
     throw(error);
   }
 
