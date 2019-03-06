@@ -44,7 +44,7 @@
         "args": {
           "threads": "2",
           "browserProfile": "perfecto-chrome",
-          "env":"websquad1",
+          "env":"live",
           "tribe":"Marketing-tribe",
           "hubUrl": "https://ee.perfectomobile.com/nexperience/perfectomobile/wd/hub/fast",
           "reportium-job-name": "TESTING_Marketing-Functional",
