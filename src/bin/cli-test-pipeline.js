@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 const options = require('commander');
 
-const tests = require('../tests');
-const executor = require('../executor');
-const reporting = require('../reporting');
-const thresholds = require('../thresholds');
+const tests = require('../pipeline/tests');
+const executor = require('../pipeline/executor');
+const reporting = require('../pipeline/reporting');
+const thresholds = require('../pipeline/thresholds');
 
 const configParser = require('./configuration/configParser');
 

@@ -19,10 +19,10 @@ describe('cli-test-pipeline', () => {
     return proxyquire('./cli-test-pipeline', {
       'commander': mockOptions,
       './configuration/configParser': mockConfigParser,
-      '../tests': mockTests,
-      '../executor': mockExecutor,
-      '../reporting': mockReporting,
-      '../thresholds': mockThresholds
+      '../pipeline/tests': mockTests,
+      '../pipeline/executor': mockExecutor,
+      '../pipeline/reporting': mockReporting,
+      '../pipeline/thresholds': mockThresholds
     });
   };
 
