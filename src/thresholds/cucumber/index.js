@@ -1,4 +1,3 @@
-
 const combinedReport = require('./combinedReport');
 const reportAnalyser = require('./reportAnalyser');
 
