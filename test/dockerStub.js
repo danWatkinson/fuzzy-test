@@ -6,6 +6,7 @@ const commandStub = sinon.stub();
 const reset = () => {
   DockerStub.reset();
   commandStub.reset();
+  commandStub.returns(Promise.resolve({response: {dummy:'response'}}));
 
   DockerStub.returns({
     command: commandStub
